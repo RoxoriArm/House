@@ -1,105 +1,304 @@
 <!DOCTYPE html>
-<html lang="lt"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Namų paieška · Klaipėda</title>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Namų paieška — Klaipėda ir rajonas</title>
 <style>
-:root{--bg:#f5f6f8;--kort:#fff;--rmb:#e2e5ea;--t:#1c2026;--pil:#6b7280;--ok:#0f766e}
+:root{
+  --popierius:#eef1f0;
+  --rasalas:#17272b;
+  --gelme:#123037;
+  --pilka:#5d7378;
+  --linija:#c9d4d3;
+  --nauja:#8a6a12;
+  --atpigo:#1c6b4a;
+  --pabrango:#9b3b23;
+  --balta:#fbfcfc;
+}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--t);font:15px/1.55 -apple-system,Segoe UI,Roboto,sans-serif}
-header{background:#fff;border-bottom:1px solid var(--rmb);padding:16px 20px}
-h1{margin:0;font-size:19px}
-.sub{color:var(--pil);font-size:13px;margin-top:3px}
-.filtrai{background:#fff;border-bottom:1px solid var(--rmb);padding:12px 20px;
- display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;position:sticky;top:0;z-index:9}
-.l{display:flex;flex-direction:column;gap:3px}
-.l label{font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:var(--pil)}
-input,select{padding:7px 9px;border:1px solid var(--rmb);border-radius:6px;font-size:14px;background:#fff}
-input[type=number]{width:105px}
-.sk{margin-left:auto;font-size:13px;color:var(--pil);padding-bottom:7px}
-main{padding:18px 20px;display:grid;gap:13px;grid-template-columns:repeat(auto-fill,minmax(325px,1fr))}
-.k{background:var(--kort);border:1px solid var(--rmb);border-radius:10px;padding:15px;
- display:flex;flex-direction:column;gap:7px}
-.k.dingo{opacity:.5}
-.k h3{margin:0;font-size:15px;font-weight:600;line-height:1.35}
-.k h3 a{color:inherit;text-decoration:none}
-.k h3 a:hover{text-decoration:underline}
-.kaina{font-size:20px;font-weight:700;display:flex;align-items:baseline;gap:8px}
-.krito{font-size:12px;font-weight:600;color:#b91c1c}
-.sena{font-size:12px;color:var(--pil);text-decoration:line-through;font-weight:400}
-.e{display:flex;flex-wrap:wrap;gap:5px}
-.z{font-size:11px;padding:3px 8px;border-radius:99px;background:#eef1f4;color:#374151}
-.z.a{background:#d1fae5;color:#065f46}
-.z.b{background:#e0f2fe;color:#075985}
-.z.n{background:#fef3c7;color:#92400e;font-weight:600}
-.z.d{background:#fee2e2;color:#991b1b}
-.meta{font-size:12px;color:var(--pil);margin-top:auto;display:flex;justify-content:space-between;gap:8px}
-.tuscia{padding:48px;text-align:center;color:var(--pil);grid-column:1/-1}
-@media(max-width:640px){.filtrai{position:static}main{padding:12px;grid-template-columns:1fr}}
-</style></head><body>
-<header><h1>Namų paieška · Klaipėda ir rajonas</h1>
-<div class="sub" id="antraste"></div></header>
+body{
+  margin:0;background:var(--popierius);color:var(--rasalas);
+  font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+h1,h2,.kaina,.vieta{font-family:"Iowan Old Style",Palatino,Georgia,serif}
+
+header{background:var(--gelme);color:#dfe8e7;padding:22px 18px 18px}
+.vidus{max-width:1060px;margin:0 auto}
+h1{margin:0;font-size:1.45rem;font-weight:600;letter-spacing:.2px}
+.meta{margin-top:6px;font-size:.85rem;color:#9fb5b4}
+
+.filtrai{
+  position:sticky;top:0;z-index:5;background:var(--balta);
+  border-bottom:1px solid var(--linija);padding:10px 18px;
+}
+.filtrai .vidus{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+label{font-size:.78rem;color:var(--pilka);display:block;margin-bottom:2px}
+select,input[type=number]{
+  font:inherit;font-size:.9rem;padding:5px 8px;border:1px solid var(--linija);
+  border-radius:3px;background:var(--balta);color:var(--rasalas);min-width:112px;
+}
+.suma{margin-left:auto;font-size:.9rem;color:var(--pilka)}
+.suma b{color:var(--rasalas);font-size:1.05rem}
+
+main{max-width:1060px;margin:0 auto;padding:16px 18px 60px}
+
+.irasas{
+  display:grid;grid-template-columns:132px 1fr auto;gap:16px;
+  padding:16px 0;border-bottom:1px solid var(--linija);align-items:start;
+}
+.irasas img{width:132px;height:96px;object-fit:cover;border-radius:2px;background:#dde5e4}
+.vieta{font-size:1.08rem;font-weight:600;margin:0 0 4px;line-height:1.3}
+.vieta a{color:var(--rasalas);text-decoration:none}
+.vieta a:hover,.vieta a:focus{text-decoration:underline}
+.duom{font-size:.88rem;color:var(--pilka)}
+.duom span{margin-right:12px;white-space:nowrap}
+.duom b{color:var(--rasalas);font-weight:600}
+.saltinis{font-size:.75rem;color:var(--pilka);margin-top:6px}
+.desine{text-align:right;white-space:nowrap}
+.kaina{font-size:1.35rem;font-weight:600}
+.uzm2{font-size:.8rem;color:var(--pilka);margin-top:2px}
+
+.zyma{
+  display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;
+  padding:2px 7px;border-radius:2px;margin-bottom:5px;color:var(--balta);
+}
+.z-NAUJAS{background:var(--nauja)}
+.z-ATPIGO{background:var(--atpigo)}
+.z-PABRANGO{background:var(--pabrango)}
+.senakaina{text-decoration:line-through;color:var(--pilka);font-size:.85rem;margin-right:6px}
+
+.zvaig{
+  background:none;border:0;cursor:pointer;font-size:1.25rem;line-height:1;
+  color:var(--linija);padding:4px;margin-top:6px;
+}
+.zvaig[aria-pressed="true"]{color:#c9971b}
+.zvaig:focus-visible{outline:2px solid var(--gelme);outline-offset:2px}
+
+.tuscia{padding:48px 0;text-align:center;color:var(--pilka)}
+details{margin-top:34px;border-top:1px solid var(--linija);padding-top:14px}
+summary{cursor:pointer;font-size:.9rem;color:var(--pilka)}
+details ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
+
+@media (max-width:640px){
+  .irasas{grid-template-columns:88px 1fr;gap:12px}
+  .irasas img{width:88px;height:70px}
+  .desine{grid-column:2;text-align:left;margin-top:6px}
+  .suma{width:100%;margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="vidus">
+    <h1>Namai Klaipėdoje ir Klaipėdos rajone</h1>
+    <p class="meta" id="antraste">Kraunama…</p>
+  </div>
+</header>
 
 <div class="filtrai">
- <div class="l"><label>Kaina iki €</label><input type="number" id="fK" step="5000"></div>
- <div class="l"><label>Plotas nuo m²</label><input type="number" id="fP" step="5"></div>
- <div class="l"><label>Kambarių nuo</label><input type="number" id="fR" value="3"></div>
- <div class="l"><label>Zona</label><select id="fZ"><option value="">Visos</option>
-   <option>Klaipėdos miestas</option><option>Sendvario sen.</option><option>Klaipėdos r.</option></select></div>
- <div class="l"><label>Apdaila</label><select id="fA"><option value="">Bet kokia</option>
-   <option>Dalinė apdaila</option><option>Neįrengtas</option><option>Įrengtas</option><option>Nenurodyta</option></select></div>
- <div class="l"><label>Rodyti</label><select id="fS">
-   <option value="akt">Aktualius</option><option value="nauji">Tik naujus</option>
-   <option value="krito">Kaina krito</option><option value="visi">Su pašalintais</option></select></div>
- <div class="l"><label>Rikiuoti</label><select id="fO">
-   <option value="kaina">Kaina didėjant</option><option value="-kaina">Kaina mažėjant</option>
-   <option value="-plotas">Plotas mažėjant</option><option value="-data">Naujausi</option></select></div>
- <div class="sk" id="sk"></div>
+  <div class="vidus">
+    <div><label for="fKaina">Kaina iki</label>
+      <select id="fKaina">
+        <option value="">bet kokia</option>
+        <option value="120000">120 000 €</option>
+        <option value="160000">160 000 €</option>
+        <option value="200000">200 000 €</option>
+        <option value="250000">250 000 €</option>
+        <option value="300000">300 000 €</option>
+        <option value="400000">400 000 €</option>
+      </select></div>
+    <div><label for="fPlotas">Plotas nuo</label>
+      <select id="fPlotas">
+        <option value="90">90 m²</option>
+        <option value="110">110 m²</option>
+        <option value="130">130 m²</option>
+        <option value="150">150 m²</option>
+      </select></div>
+    <div><label for="fVieta">Teritorija</label>
+      <select id="fVieta">
+        <option value="">visa</option>
+        <option value="miestas">tik Klaipėdos miestas</option>
+        <option value="rajonas">tik rajonas</option>
+      </select></div>
+    <div><label for="fZona">Vieta</label>
+      <select id="fZona">
+        <option value="">visos</option>
+        <option value="A">tik Klaipėdos miestas</option>
+        <option value="AB">miestas + Sendvario sen.</option>
+        <option value="ABC">be tolimo rajono</option>
+      </select></div>
+    <div><label for="fBiudzetas">Biudžetas</label>
+      <select id="fBiudzetas">
+        <option value="">visi</option>
+        <option value="1">telpa į 200 000 € su įrengimu</option>
+      </select></div>
+    <div><label for="fRikiuoti">Rikiuoti</label>
+      <select id="fRikiuoti">
+        <option value="balas">tinkamiausi viršuje</option>
+        <option value="kaina">pigiausi viršuje</option>
+        <option value="kaina-desc">brangiausi viršuje</option>
+        <option value="plotas-desc">didžiausi viršuje</option>
+        <option value="uzm2">pigiausi už m²</option>
+      </select></div>
+    <div><label for="fZvaig">Rodyti</label>
+      <select id="fZvaig">
+        <option value="">visus</option>
+        <option value="1">tik pažymėtus</option>
+      </select></div>
+    <p class="suma"><b id="kiek">0</b> namų</p>
+  </div>
 </div>
-<main id="s"></main>
+
+<main>
+  <div id="sarasas"></div>
+
+  <details id="patikrinti">
+    <summary>Reikia peržiūrėti ranka (<span id="kiekPat">0</span>)</summary>
+    <ul id="sarasasPat"></ul>
+  </details>
+
+  <details id="dingeBlokas" hidden>
+    <summary>Dingę nuo praėjusio karto (<span id="kiekDinge">0</span>)</summary>
+    <ul id="sarasasDinge"></ul>
+  </details>
+</main>
 
 <script src="duomenys.js"></script>
 <script>
-const DB = window.DUOMENYS || {objektai:[], atnaujinta:"-", naujumas:14};
-const O = DB.objektai, g = i => document.getElementById(i);
-g('fK').value = DB.numatyta_kaina || '';
-g('fP').value = DB.numatytas_plotas || 90;
-g('antraste').textContent = `Atnaujinta ${DB.atnaujinta} · ${O.length} objektų bazėje`
-  + (DB.gimnazija ? ` · mokykla: ${DB.gimnazija}` : '');
-const sk = n => n==null ? '—' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g," ");
-const dienos = d => d ? Math.floor((new Date() - new Date(d))/864e5) : 999;
+(function(){
+  var D = window.DUOMENYS || {skelbimai:[], be_ploto:[], dinge:[], statistika:{}};
+  var zvaigzdes = {};
+  try { zvaigzdes = JSON.parse(localStorage.getItem("namai_zvaigzdes") || "{}"); } catch(e) {}
 
-function piesti(){
- const kK=+g('fK').value||1e9, kP=+g('fP').value||0, kR=+g('fR').value||0,
-       zZ=g('fZ').value, aA=g('fA').value, sS=g('fS').value, oO=g('fO').value;
- let x = O.filter(o=>{
-   if(sS==='akt'   && !o.aktyvus) return false;
-   if(sS==='nauji' && (!o.aktyvus || dienos(o.pirma_karta) > (DB.naujumas||14))) return false;
-   if(sS==='krito' && !(o.kainos_istorija && o.kainos_istorija.length>1)) return false;
-   return (o.kaina==null||o.kaina<=kK) && (o.plotas==null||o.plotas>=kP) &&
-          (o.kambariai==null||o.kambariai>=kR) && (!zZ||o.zona===zZ) && (!aA||o.apdaila===aA);
- });
- const r={kaina:(a,b)=>(a.kaina??9e9)-(b.kaina??9e9),'-kaina':(a,b)=>(b.kaina??0)-(a.kaina??0),
-   '-plotas':(a,b)=>(b.plotas??0)-(a.plotas??0),
-   '-data':(a,b)=>String(b.paskelbta||b.pirma_karta).localeCompare(String(a.paskelbta||a.pirma_karta))};
- x.sort(r[oO]);
- g('sk').textContent = `rodoma ${x.length} iš ${O.length}`;
- g('s').innerHTML = x.length ? x.map(o=>{
-   const ist=o.kainos_istorija||[], krito=ist.length>1 && ist[ist.length-1].kaina < ist[0].kaina;
-   const nauj = o.aktyvus && dienos(o.pirma_karta) <= (DB.naujumas||14);
-   return `<div class="k${o.aktyvus?'':' dingo'}">
-    <h3><a href="${o.url}" target="_blank" rel="noopener">${o.pavadinimas||'(be pavadinimo)'}</a></h3>
-    <div class="kaina">${o.kaina?sk(o.kaina)+' €':'kaina nenurodyta'}
-      ${krito?`<span class="sena">${sk(ist[0].kaina)} €</span><span class="krito">↓ ${sk(ist[0].kaina-o.kaina)} €</span>`:''}</div>
-    <div class="e"><span class="z a">${o.zona}</span>
-      ${o.plotas?`<span class="z">${o.plotas} m²</span>`:'<span class="z">plotas ?</span>'}
-      ${o.kambariai?`<span class="z">${o.kambariai} kamb.</span>`:''}
-      <span class="z b">${o.apdaila}</span>
-      ${nauj?'<span class="z n">NAUJAS</span>':''}
-      ${o.aktyvus?'':'<span class="z d">nebeskelbiamas</span>'}</div>
-    <div class="meta"><span>${o.saltinis}</span>
-      <span>${o.paskelbta?'paskelbta '+o.paskelbta:'rasta '+o.pirma_karta}</span></div></div>`;
- }).join('') : '<div class="tuscia">Pagal šiuos filtrus nieko nerasta.</div>';
-}
-['fK','fP','fR','fZ','fA','fS','fO'].forEach(i=>g(i).addEventListener('input',piesti));
-piesti();
-</script></body></html>
+  function issaugok(){
+    try { localStorage.setItem("namai_zvaigzdes", JSON.stringify(zvaigzdes)); } catch(e) {}
+  }
+  function eur(n){
+    if (n === null || n === undefined) return "—";
+    return Math.round(n).toLocaleString("lt-LT") + " €";
+  }
+  function rajone(r){
+    var v = (r.vieta || "") + " " + (r.pavadinimas || "");
+    return /r\.|rajon|Gargžd|Priekul|Kretingal|Dovil|Vėžaič|Agluonėn|Slengi|Gindul|Jakai|Kalotė/i.test(v);
+  }
+
+  document.getElementById("antraste").textContent =
+    "Atnaujinta " + (D.atnaujinta || "—") +
+    " · biudžetas 200 000 € su įrengimu · skelbimai nuo 2025 m." +
+    (D.statistika && D.statistika.nauji ? " · " + D.statistika.nauji + " nauji" : "");
+
+  function piesk(){
+    var maxK = parseFloat(document.getElementById("fKaina").value) || Infinity;
+    var minP = parseFloat(document.getElementById("fPlotas").value) || 0;
+    var ter  = document.getElementById("fVieta").value;
+    var rik  = document.getElementById("fRikiuoti").value;
+    var tikZ = document.getElementById("fZvaig").value;
+    var zona = document.getElementById("fZona").value;
+    var bdz  = document.getElementById("fBiudzetas").value;
+
+    var s = D.skelbimai.filter(function(r){
+      if ((r.kaina || Infinity) > maxK) return false;
+      if ((r.plotas || 0) < minP) return false;
+      if (ter === "rajonas" && !rajone(r)) return false;
+      if (ter === "miestas" && rajone(r)) return false;
+      if (tikZ && !zvaigzdes[r.id]) return false;
+      if (zona && zona.indexOf(r.zona) === -1) return false;
+      if (bdz && !r.telpa) return false;
+      return true;
+    });
+
+    s.sort(function(a,b){
+      if (rik === "balas")       return (b.balas||0) - (a.balas||0);
+      if (rik === "kaina")       return (a.kaina||1e9) - (b.kaina||1e9);
+      if (rik === "kaina-desc")  return (b.kaina||0) - (a.kaina||0);
+      if (rik === "plotas-desc") return (b.plotas||0) - (a.plotas||0);
+      return (a.kaina/a.plotas||1e9) - (b.kaina/b.plotas||1e9);
+    });
+
+    document.getElementById("kiek").textContent = s.length;
+    var box = document.getElementById("sarasas");
+    box.innerHTML = "";
+
+    if (!s.length){
+      box.innerHTML = '<p class="tuscia">Pagal šiuos filtrus namų nėra. Pabandyk pakelti kainos ribą arba sumažinti plotą.</p>';
+      return;
+    }
+
+    s.forEach(function(r){
+      var d = document.createElement("article");
+      d.className = "irasas";
+
+      var uzm2 = (r.kaina && r.plotas) ? Math.round(r.kaina / r.plotas).toLocaleString("lt-LT") + " €/m²" : "";
+      var zyma = r.zyma ? '<span class="zyma z-' + r.zyma + '">' + r.zyma + '</span><br>' : "";
+      var sena = r.sena_kaina ? '<span class="senakaina">' + eur(r.sena_kaina) + '</span>' : "";
+
+      d.innerHTML =
+        '<img loading="lazy" alt="" src="' + (r.nuotrauka || "") + '">' +
+        '<div>' + zyma +
+          '<h2 class="vieta"><a href="' + r.url + '" target="_blank" rel="noopener">' +
+             (r.vieta || r.pavadinimas || "Be pavadinimo") + '</a></h2>' +
+          '<p class="duom">' +
+            '<span><b>' + (r.plotas || "?") + '</b> m²</span>' +
+            (r.sklypas ? '<span><b>' + r.sklypas + '</b> a sklypas</span>' : '') +
+            (r.kambariai ? '<span><b>' + r.kambariai + '</b> kamb.</span>' : '') +
+            (r.metai ? '<span>statyta <b>' + r.metai + '</b></span>' : '') +
+            (r.sildymas ? '<span>' + r.sildymas + '</span>' : '') +
+            (r.apdaila && r.apdaila !== 'nezinoma' ? '<span>' + r.apdaila + ' apdaila</span>' : '') +
+          '</p>' +
+          '<p class="saltinis">' + (r.zonos_aprasas || '') +
+            (r.vietove_nepatikslinta ? ' · gyvenvietė nepatikslinta' : '') + '</p>' +
+          '<p class="saltinis">' + r.saltinis +
+            (r.galimas_dublikatas ? ' · tas pats namas ir ' + r.galimas_dublikatas.join(", ") : '') +
+          '</p>' +
+        '</div>' +
+        '<div class="desine">' +
+          '<div class="kaina">' + sena + eur(r.kaina) + '</div>' +
+          '<div class="uzm2">' + uzm2 + '</div>' +
+          '<div class="uzm2"' + (r.telpa ? ' style="color:var(--atpigo);font-weight:600"' : '') + '>su įrengimu ' +
+             eur(r.bendra_kaina) + '</div>' +
+          '<button class="zvaig" type="button" aria-pressed="' + (zvaigzdes[r.id] ? "true" : "false") +
+            '" aria-label="Pažymėti kaip įdomų">★</button>' +
+        '</div>';
+
+      d.querySelector(".zvaig").addEventListener("click", function(){
+        if (zvaigzdes[r.id]) { delete zvaigzdes[r.id]; } else { zvaigzdes[r.id] = 1; }
+        issaugok();
+        this.setAttribute("aria-pressed", zvaigzdes[r.id] ? "true" : "false");
+        if (document.getElementById("fZvaig").value) piesk();
+      });
+
+      box.appendChild(d);
+    });
+  }
+
+  ["fKaina","fPlotas","fVieta","fZona","fBiudzetas","fRikiuoti","fZvaig"].forEach(function(id){
+    document.getElementById(id).addEventListener("change", piesk);
+  });
+
+  // Peržiūrėti ranka
+  var pat = D.patikrinti || [];
+  document.getElementById("kiekPat").textContent = pat.length;
+  document.getElementById("sarasasPat").innerHTML = pat.map(function(r){
+    return '<li><a href="' + r.url + '" target="_blank" rel="noopener">' +
+           (r.vieta || r.pavadinimas) + '</a> — ' + (r.atmesta || "") + '</li>';
+  }).join("");
+
+  // Dingę
+  var din = D.dinge || [];
+  if (din.length){
+    document.getElementById("dingeBlokas").hidden = false;
+    document.getElementById("kiekDinge").textContent = din.length;
+    document.getElementById("sarasasDinge").innerHTML = din.map(function(r){
+      return '<li>' + (r.vieta || r.pavadinimas) + ' — ' + eur(r.kaina) +
+             ' (nebeskelbiama nuo ' + r.dinge + ')</li>';
+    }).join("");
+  }
+
+  piesk();
+})();
+</script>
+</body>
+</html>
