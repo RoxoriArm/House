@@ -1,6 +1,6 @@
 // Sugeneruota automatiskai. Ranka neredaguoti.
 window.DUOMENYS = {
- "atnaujinta": "2026-09-21 19:38",
+ "atnaujinta": "2026-09-21 19:59",
  "kriterijai": {
   "biudzetas": 200000,
   "min_plotas": 90,
@@ -27,7 +27,7 @@ window.DUOMENYS = {
   "atmesta": 445,
   "patikrinti": 18,
   "telpa_i_biudzeta": 161,
-  "uzklausu": 0,
+  "uzklausu": 132,
   "nauji": 0,
   "atpigo": 0,
   "pabrango": 0,
@@ -42,27 +42,27 @@ window.DUOMENYS = {
   "rinka_lt": {
    "statusas": "is atminties",
    "rasta": 76,
-   "amzius_val": 0.6
+   "amzius_val": 1.0
   },
   "capital_lt": {
    "statusas": "is atminties",
    "rasta": 51,
-   "amzius_val": 0.6
+   "amzius_val": 1.0
   },
   "rutosnt_lt": {
-   "statusas": "is atminties",
+   "statusas": "veikia",
    "rasta": 120,
-   "amzius_val": 0.2
+   "klaida": "HTTP 404"
   },
   "alio_lt": {
    "statusas": "is atminties",
    "rasta": 192,
-   "amzius_val": 0.2
+   "amzius_val": 1.0
   },
   "domoplius_lt": {
    "statusas": "is atminties",
    "rasta": 287,
-   "amzius_val": 0.2
+   "amzius_val": 1.0
   },
   "nekilnojamasturtas_lt": {
    "statusas": "mires",
@@ -71,7 +71,7 @@ window.DUOMENYS = {
   "kampas_lt": {
    "statusas": "is atminties",
    "rasta": 129,
-   "amzius_val": 0.2
+   "amzius_val": 1.0
   },
   "inreal_lt": {
    "statusas": "nepatikrinta",
@@ -94,7 +94,15 @@ window.DUOMENYS = {
    "rasta": 0
   }
  },
- "tinklo_sveikata": {},
+ "tinklo_sveikata": {
+  "rutosnt.lt": {
+   "uzklausu": 132,
+   "klaidu": 1,
+   "is_eiles": 0,
+   "busena": "veikia",
+   "paskutine_klaida": "HTTP 404"
+  }
+ },
  "skelbimai": [
   {
    "id": "rinka-5063648",
@@ -520,7 +528,7 @@ window.DUOMENYS = {
    "sklypas": 4.38,
    "kambariai": 4.0,
    "metai": 2023.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/07/Messenger_creation_0DE6E51D-1BAD-4354-8A44-3B48060F2826.jpeg",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -611,7 +619,7 @@ window.DUOMENYS = {
    "plotas": 105.0,
    "sklypas": 5.0,
    "kambariai": 5.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2020/11/namo-dalis-kotedzas-2.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -698,7 +706,7 @@ window.DUOMENYS = {
    "kaina": 68000.0,
    "plotas": 97.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/10/klaipedos-r-sav-zemgrindziu-k-5.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -779,7 +787,7 @@ window.DUOMENYS = {
    "plotas": 105.0,
    "sklypas": 5.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/04/klaipedos-r-sav-klemiskes-ii-k-uosupenu.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -806,7 +814,7 @@ window.DUOMENYS = {
    "kaina": 170000.0,
    "plotas": 250.0,
    "kambariai": 6.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/09/klaipedos-r-sav-klausmyliu-vs-inku-g.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1692,7 +1700,7 @@ window.DUOMENYS = {
    "kaina": 55000.0,
    "plotas": 100.0,
    "sklypas": 2.5,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2020/08/Namas-Radailiai-35.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1776,7 +1784,7 @@ window.DUOMENYS = {
    "kaina": 120000.0,
    "plotas": 90.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2021/08/klaipedos-r-sav-ginduliu-k-aitvaru-g.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1801,7 +1809,7 @@ window.DUOMENYS = {
    "kaina": 146000.0,
    "plotas": 125.0,
    "kambariai": 5.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/09/klaipedos-r-sav-radailiu-k-saules-al.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1827,7 +1835,7 @@ window.DUOMENYS = {
    "plotas": 91.0,
    "sklypas": 5.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/07/klaipedos-r-sav-baukstininku-k-1-2.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1855,7 +1863,7 @@ window.DUOMENYS = {
    "plotas": 147.0,
    "sklypas": 5.5,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2019/08/savininkas-parduoda-nama-mazuriskiu-k-trapenu-g.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1880,7 +1888,7 @@ window.DUOMENYS = {
    "kaina": 160000.0,
    "plotas": 90.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/04/klaipedos-r-sav-baukstininku-k-vasaros-g-11.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1937,7 +1945,7 @@ window.DUOMENYS = {
    "plotas": 116.0,
    "sklypas": 10.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/03/klaipedos-r-sav-truseliu-k-alnos-g-17.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1964,7 +1972,7 @@ window.DUOMENYS = {
    "plotas": 106.0,
    "kambariai": 4.0,
    "metai": 2022.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/03/klaipedos-r-sav-klausmyliu-vs-astru-g.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -1990,7 +1998,7 @@ window.DUOMENYS = {
    "plotas": 131.68,
    "sklypas": 6.88,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/09/klaipedos-r-sav-mazuriskiu-k.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -2016,7 +2024,7 @@ window.DUOMENYS = {
    "plotas": 125.0,
    "sklypas": 9.0,
    "kambariai": 5.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2021/09/klaipedos-r-sav-radailiu-k-saules-al.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -2043,7 +2051,7 @@ window.DUOMENYS = {
    "kaina": 180000.0,
    "plotas": 112.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/04/klaipedos-r-sav-baukstininku-k-vasaros-g-13.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -2070,7 +2078,7 @@ window.DUOMENYS = {
    "plotas": 108.0,
    "sklypas": 7.2,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/09/klaipedos-r-sav-klemiskes-ii-k.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -2099,7 +2107,7 @@ window.DUOMENYS = {
    "sklypas": 10.0,
    "kambariai": 4.0,
    "metai": 2023.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/11/klaipedos-r-sav-truseliu-k-vilciu-g.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -3946,7 +3954,7 @@ window.DUOMENYS = {
    "plotas": 186.0,
    "sklypas": 8.0,
    "kambariai": 6.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/08/klaipedos-r-sav-gargzdu-m-lauku-g-2.jpg",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3971,7 +3979,7 @@ window.DUOMENYS = {
    "kaina": 138000.0,
    "plotas": 123.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/05/parduodamas-nebaigtos-statybos-namas.jpg",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3999,7 +4007,7 @@ window.DUOMENYS = {
    "plotas": 230.0,
    "sklypas": 12.0,
    "kambariai": 5.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/01/puikus-namas-seimai-salia-klaipedos.jpg",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -6001,7 +6009,7 @@ window.DUOMENYS = {
    "kaina": 166000.0,
    "plotas": 107.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/01/klaipedos-r-sav-klemiskes-ii-k-gyventes.jpg",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -6341,7 +6349,7 @@ window.DUOMENYS = {
    "kaina": 150000.0,
    "plotas": 110.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2022/05/namai-vezaiciuose-1.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6367,7 +6375,7 @@ window.DUOMENYS = {
    "plotas": 116.57,
    "sklypas": 6.0,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2024/05/klaipedos-r-sav-voveriskiu-k-jono-4.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6394,7 +6402,7 @@ window.DUOMENYS = {
    "plotas": 208.0,
    "sklypas": 26.51,
    "kambariai": 4.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/06/klaipedos-r-sav-girininku-k-baltkalnio-g.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6452,7 +6460,7 @@ window.DUOMENYS = {
    "sklypas": 11.5,
    "kambariai": 4.0,
    "metai": 2025.0,
-   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2023/09/4-1-e1695322357889.png",
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2025/01/namas-gargzduose-4.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
