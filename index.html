@@ -201,6 +201,8 @@ main{max-width:1060px;margin:0 auto;padding:16px 18px 60px}
 .kaina{font-size:1.35rem;font-weight:600}
 .uzm2{font-size:.8rem;color:var(--pilka);margin-top:2px}
 .telpa{color:var(--atpigo);font-weight:600}
+.samata{font-size:.73rem;color:var(--pilka);margin-top:2px;line-height:1.35;
+  max-width:190px;margin-left:auto;white-space:normal}
 
 .zyma{
   display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;
@@ -211,11 +213,32 @@ main{max-width:1060px;margin:0 auto;padding:16px 18px 60px}
 .z-PABRANGO{background:var(--pabrango)}
 .senakaina{text-decoration:line-through;color:var(--pilka);font-size:.85rem;margin-right:6px}
 
-.zvaig{
-  background:none;border:0;cursor:pointer;font-size:1.25rem;line-height:1;
-  color:var(--linija);padding:4px;margin-top:6px;
+.sirdele{
+  background:none;border:0;cursor:pointer;font-size:1.3rem;line-height:1;
+  color:var(--linija);padding:4px 6px;margin-top:6px;border-radius:4px;
+  transition:transform .12s ease,color .12s ease;
 }
-.zvaig[aria-pressed="true"]{color:#c9971b}
+.sirdele:hover{color:#c0563a;background:var(--svelni)}
+.sirdele[aria-pressed="true"]{color:#c0392b}
+.sirdele[aria-pressed="true"]:hover{color:#8e2b20}
+.sirdele:active{transform:scale(1.25)}
+
+.megstamiMygt{
+  font:inherit;font-size:.86rem;height:32px;padding:5px 12px;cursor:pointer;
+  border:1px solid var(--linija);border-radius:16px;background:var(--balta);
+  color:var(--rasalas);display:inline-flex;align-items:center;gap:6px;
+}
+.megstamiMygt:hover{border-color:#c0392b}
+.megstamiMygt[aria-pressed="true"]{
+  background:#fdf0ee;border-color:#c0392b;color:#8e2b20;font-weight:600;
+}
+.megstamiMygt .sk{
+  font-variant-numeric:tabular-nums;background:var(--svelni);
+  border-radius:9px;padding:0 7px;font-size:.78rem;
+}
+.megstamiMygt[aria-pressed="true"] .sk{background:#f6d9d3}
+.dingesMegstamas{opacity:.62}
+.dingesMegstamas .kaina{text-decoration:line-through}
 
 .tuscia{padding:48px 0;text-align:center;color:var(--pilka)}
 .daugiauMygt{
@@ -339,10 +362,18 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
       <div class="laukas"><label for="fRodyti">Rodyti</label>
         <select id="fRodyti">
           <option value="">visus</option>
-          <option value="zvaig">tik pažymėtus ★</option>
+          <option value="sirdis">tik mėgstamus ♥</option>
           <option value="nauji">tik naujus</option>
           <option value="atpigo">tik atpigusius</option>
         </select></div>
+
+      <div class="laukas">
+        <span class="uzrasas">&nbsp;</span>
+        <button type="button" class="megstamiMygt" id="megstamiMygt"
+                aria-pressed="false" title="Rodyti tik įsimintus namus">
+          ♥ Mėgstami <span class="sk" id="megstamiKiek">0</span>
+        </button>
+      </div>
 
       <p class="suma"><b id="kiek">0</b> <span id="kiekZodis">namų</span><i id="kiekTelpa"></i></p>
     </div>
@@ -374,6 +405,17 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
         </select>
       </div>
       <div class="grupe">
+        <label for="fData">Skelbimas ne senesnis</label>
+        <select id="fData">
+          <option value="">bet kada</option>
+          <option value="30">30 dienų</option>
+          <option value="90">3 mėnesių</option>
+          <option value="180">pusės metų</option>
+          <option value="365">metų</option>
+          <option value="730">dvejų metų</option>
+        </select>
+      </div>
+      <div class="grupe">
         <label for="fKamb">Kambarių nuo</label>
         <select id="fKamb">
           <option value="">bet kiek</option>
@@ -392,11 +434,12 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
           <option value="20">20 a</option>
         </select>
       </div>
-      <div class="grupe" style="align-self:flex-end">
+      <div class="grupe" style="align-self:flex-end;max-width:250px">
         <span class="uzrasas">&nbsp;</span>
         <span style="font-size:.76rem;color:var(--pilka)">
-          Nenurodyti metai, kambariai ar sklypas skelbimo neatmeta —
-          tokie lieka sąraše ir pažymimi.
+          Nenurodyti metai, kambariai, sklypas ar data skelbimo neatmeta —
+          tokie lieka sąraše ir pažymimi. capital.lt ir rutosnt.lt datos
+          neduoda visai.
         </span>
       </div>
     </div>
@@ -407,6 +450,16 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
 <main>
   <div id="sarasas"></div>
   <div id="sarasoGalas"></div>
+
+  <details class="blokas" id="megstamiDinge" hidden>
+    <summary>Įsiminti namai, kurių sąraše nebėra
+      (<span id="kiekMegstamuDinge">0</span>)</summary>
+    <p style="font-size:.82rem;color:var(--pilka);margin:6px 0">
+      Širdelė lieka net tada, kai skelbimas nebeskelbiamas arba iškrenta
+      pro filtrus. Nuoroda gali nebeveikti.</p>
+    <ul id="sarasasMegstamuDinge"></ul>
+    <p><button type="button" class="tekstMygt" id="kopijuokMegstamus">Kopijuoti visų įsimintų sąrašą</button></p>
+  </details>
 
   <details class="blokas" id="patikrintiBlokas">
     <summary>Reikia peržiūrėti ranka (<span id="kiekPat">0</span>)</summary>
@@ -433,6 +486,11 @@ var D  = window.DUOMENYS || {};
 var SK = D.skelbimai || [];
 var BIUDZETAS = (D.kriterijai && D.kriterijai.biudzetas) || 200000;
 var SEN_ZONOS = D.seniunijos || {};
+
+// Skelbimas pagal id - reikia sirdelems, kad paspaudus nereiketu
+// perbegti viso saraso.
+var PAGAL_ID = {};
+SK.forEach(function(r){ PAGAL_ID[r.id] = r; });
 
 // ============================================================ pagalbinės
 
@@ -493,20 +551,77 @@ function terit(r){ return r.teritorija || (rajone(r) ? "rajonas" : "miestas"); }
 
 // ============================================================ būsena
 
-var ZVAIGZDES = imk("namai_zvaigzdes", {}) || {};
+// ============================================================ širdelės
+//
+// Įsiminti namai. Saugoma naršyklėje, raktas - skelbimo id (pvz.
+// "alio-69653135"), kuris ateina iš pačios svetainės ir nesikeičia.
+// Todėl įkėlus naują duomenys.js širdelės NEDINGSTA - failas keičiasi,
+// o naršyklės atmintis lieka.
+//
+// Saugom ne vien varnelę, o ir skelbimo nuotrupą (vieta, kaina, nuoroda).
+// Taip įsimintas namas matomas net tada, kai jis iš skelbimų dingsta -
+// kitaip tyliai išgaruotų būtent tas, kuris labiausiai rūpėjo.
+var SIRDELES = imk("namai_sirdeles", null);
+if (!SIRDELES || typeof SIRDELES !== "object") {
+  SIRDELES = {};
+  // Senoji žvaigždučių atmintis - perkeliam, kad niekas nedingtų.
+  var senos = imk("namai_zvaigzdes", null);
+  if (senos && typeof senos === "object") {
+    Object.keys(senos).forEach(function(id){ SIRDELES[id] = {}; });
+  }
+}
+
+function sirdeliuKiek(){ return Object.keys(SIRDELES).length; }
+
+function irasykSirdeles(){ dek("namai_sirdeles", SIRDELES); }
+
+function perjunkSirdele(r){
+  if (SIRDELES[r.id]) {
+    delete SIRDELES[r.id];
+  } else {
+    SIRDELES[r.id] = {
+      vieta: r.vieta || r.pavadinimas || "",
+      kaina: r.kaina,
+      plotas: r.plotas,
+      url: r.url,
+      saltinis: r.saltinis,
+      kada: new Date().toISOString().slice(0, 10)
+    };
+  }
+  irasykSirdeles();
+  return !!SIRDELES[r.id];
+}
 
 function numatyta(){
   return {
-    kaina:"", bendra:"", plotas:"90", metai:"", kamb:"", sklypas:"",
+    kaina:"", bendra:"", plotas:"90", metai:"", kamb:"", sklypas:"", data:"",
     tipai:[], apdailos:[], saltiniai:[], rodyti:"", rikiuoti:"balas",
     off:[], daugiau:false, slepti:false
   };
+}
+
+// Skelbimo amziaus riba skaiciuojama nuo PALEIDIMO datos, ne nuo
+// siandienos. Taip tas pats failas visiems rodo ta pati - kitaip
+// atidarius puslapi po savaites riba tyliai pasislinktu.
+// Visur UTC: toISOString() grazina UTC data, tad ir atskaitos taskas turi
+// buti UTC. Su vietiniu laiku Lietuvoje (UTC+3) riba pasislinkdavo viena
+// diena atgal.
+var PALEISTA = (function(){
+  var t = String(D.atnaujinta || "").slice(0, 10);
+  var d = /^\d{4}-\d{2}-\d{2}$/.test(t) ? new Date(t + "T00:00:00Z") : new Date();
+  return isNaN(d.getTime()) ? new Date() : d;
+})();
+
+function dataRiba(dienos){
+  var d = new Date(PALEISTA.getTime() - dienos * 86400000);
+  return d.toISOString().slice(0, 10);   // 2026-09-21 - 90 d. = "2026-06-23"
 }
 var S = numatyta();
 
 // Pasirinkimai keliauja ir i adresa - tada visa peiziura persiunciama
 // zinute. Adresas virsesnis uz naršyklės atminti.
-var EILUCIU = ["kaina","bendra","plotas","metai","kamb","sklypas","rodyti","rikiuoti"];
+var EILUCIU = ["kaina","bendra","plotas","metai","kamb","sklypas","data",
+               "rodyti","rikiuoti"];
 var SARASU  = ["tipai","apdailos","saltiniai"];   // "off" tvarkomas atskirai
 
 function busenaIsAtminties(){
@@ -902,11 +1017,14 @@ var TESTAI = {
   metai:     function(r){ return !S.metai   || !r.metai || r.metai >= +S.metai; },
   kamb:      function(r){ return !S.kamb    || !r.kambariai || r.kambariai >= +S.kamb; },
   sklypas:   function(r){ return !S.sklypas || !r.sklypas || r.sklypas >= +S.sklypas; },
+  // Datos neturintys skelbimai praeina - capital.lt ir rutosnt.lt jos
+  // neduoda visai, tad atmesti reikstu isbraukti du saltinius is karto.
+  data:      function(r){ return !S.data || !r.data || r.data >= dataRiba(+S.data); },
   tipai:     function(r){ return !S.tipai.length || S.tipai.indexOf(r.namo_tipas || "atskiras namas") >= 0; },
   apdailos:  function(r){ return !S.apdailos.length || S.apdailos.indexOf(r.apdaila || "nezinoma") >= 0; },
   saltiniai: function(r){ return !S.saltiniai.length || S.saltiniai.indexOf(r.saltinis || "") >= 0; },
   rodyti:    function(r){
-    if (S.rodyti === "zvaig")  return !!ZVAIGZDES[r.id];
+    if (S.rodyti === "sirdis") return !!SIRDELES[r.id];
     if (S.rodyti === "nauji")  return r.zyma === "NAUJAS";
     if (S.rodyti === "atpigo") return r.zyma === "ATPIGO";
     return true;
@@ -944,6 +1062,24 @@ var PORCIJA = 60;
 var rodoma = PORCIJA;
 var paskutinis = [];
 
+// Įrengimo sąmata rodoma tik tada, kai ji tikrai skaičiuota. Variklis
+// nuo 2026-09-21 nebespėja: jei skelbime nėra statybos baigtumo, sąmata
+// lygi nuliui ir puslapis apie tai pasako atvirai. Melagingas skaičius
+// čia būtų blogiau nei tuščia vieta - pagal jį renkamasi namas.
+function samatosEilute(r){
+  var samata = sk(r.irengimo_samata);
+  if (samata > 0) {
+    return '<div class="uzm2' + (r.telpa ? ' telpa' : '') + '">su įrengimu ' +
+             esc(eur(r.bendra_kaina)) + '</div>' +
+           '<div class="samata" title="Sąmata: ' + esc(r.samatos_budas || '') + '">+' +
+             esc(eur(samata)) + ' · ' + esc(r.samatos_budas || '') + '</div>';
+  }
+  if (r.apdaila === "irengtas") {
+    return '<div class="uzm2 telpa">įrengtas — papildomai 0 €</div>';
+  }
+  return '<div class="samata nezinia">įrengimo sąmata neskaičiuota</div>';
+}
+
 function kortele(r){
   var u = saugusUrl(r.url);
   var pav = esc(r.vieta || r.pavadinimas || "Be pavadinimo");
@@ -962,8 +1098,10 @@ function kortele(r){
   if (r.namo_tipas && r.namo_tipas !== "atskiras namas")
     eilute2.push('<span>' + esc(r.namo_tipas) + '</span>');
   eilute2.push(r.apdaila && r.apdaila !== "nezinoma"
-    ? '<span>' + esc(r.apdaila) + ' apdaila</span>'
+    ? '<span>' + esc(apdailosVardas(r.apdaila)) + '</span>'
     : '<span class="nezinia">apdaila nežinoma</span>');
+  if (r.baigtumas !== undefined && r.baigtumas !== null)
+    eilute2.push('<span>baigtumas <b>' + esc(r.baigtumas) + ' %</b></span>');
 
   var vietosEil = [r.gyvenviete, r.seniunija ? r.seniunija + " sen." : null, r.zonos_aprasas]
                   .filter(Boolean).map(esc).join(" · ");
@@ -971,9 +1109,25 @@ function kortele(r){
 
   var saltEil = esc(r.saltinis || "");
   if (r.kopijos > 1) saltEil += '<span class="kopijos">' + esc(tokiePat(r.kopijos - 1)) + '</span>';
-  if (r.galimas_dublikatas && r.galimas_dublikatas.length)
+  // Tas pats namas kituose portaluose. Variklis jau sujunge irasus i
+  // viena, o cia lieka nuorodos - kartais kitame portale buna daugiau
+  // nuotrauku ar kitas agentas.
+  if (r.kitur && r.kitur.length) {
+    saltEil += ' · taip pat: ' + r.kitur.map(function(k){
+      var u = saugusUrl(k.url);
+      var v = esc(k.saltinis || "kitas portalas");
+      return u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + v + '</a>' : v;
+    }).join(", ");
+  } else if (r.galimas_dublikatas && r.galimas_dublikatas.length) {
     saltEil += ' · tas pats namas ir ' + esc(r.galimas_dublikatas.join(", "));
-  if (r.data) saltEil += ' · ' + esc(r.data);
+  }
+  // Skelbimai be datos i sarasa PATENKA - capital.lt ir rutosnt.lt datos
+  // neduoda visai, tad ju atmetimas isbrauktu du saltinius. Bet tyliai
+  // praleisti irgi negalima: nezinia, ar namas parduodamas savaite, ar
+  // dvejus metus. Todel pazymim atvirai.
+  saltEil += r.data
+    ? ' · ' + esc(r.data)
+    : ' · <span class="nezinia">data nežinoma</span>';
 
   return '<article class="irasas">' +
     (nuotr
@@ -994,11 +1148,10 @@ function kortele(r){
         (r.sena_kaina ? '<span class="senakaina">' + esc(eur(r.sena_kaina)) + '</span>' : '') +
         esc(eur(r.kaina)) + '</div>' +
       '<div class="uzm2">' + esc(uzm2) + '</div>' +
-      '<div class="uzm2' + (r.telpa ? ' telpa' : '') + '">su įrengimu ' +
-         esc(eur(r.bendra_kaina)) + '</div>' +
-      '<button class="zvaig" type="button" data-id="' + esc(r.id) + '" ' +
-        'aria-pressed="' + (ZVAIGZDES[r.id] ? "true" : "false") + '" ' +
-        'aria-label="Pažymėti kaip įdomų">★</button>' +
+      samatosEilute(r) +
+      '<button class="sirdele" type="button" data-id="' + esc(r.id) + '" ' +
+        'aria-pressed="' + (SIRDELES[r.id] ? "true" : "false") + '" ' +
+        'title="Įsiminti šį namą" aria-label="Įsiminti šį namą">♥</button>' +
     '</div>' +
   '</article>';
 }
@@ -1031,15 +1184,84 @@ function pieskSarasa(){
   }
 }
 
-// Zvaigzdutes - viena klausykle visam sarasui, ne po viena kiekvienai kortelei.
+// Sirdeles - viena klausykle visam sarasui, ne po viena kiekvienai kortelei.
 document.getElementById("sarasas").addEventListener("click", function(e){
-  var m = e.target.closest ? e.target.closest(".zvaig") : null;
+  var m = e.target.closest ? e.target.closest(".sirdele") : null;
   if (!m) return;
   var id = m.getAttribute("data-id");
-  if (ZVAIGZDES[id]) { delete ZVAIGZDES[id]; } else { ZVAIGZDES[id] = 1; }
-  dek("namai_zvaigzdes", ZVAIGZDES);
-  m.setAttribute("aria-pressed", ZVAIGZDES[id] ? "true" : "false");
-  if (S.rodyti === "zvaig") piesk();
+  var r = PAGAL_ID[id];
+  if (!r) return;
+  var ijungta = perjunkSirdele(r);
+  m.setAttribute("aria-pressed", ijungta ? "true" : "false");
+  atnaujinkSirdziuSkaiciu();
+  // Jei ziurim tik megstamus, nuimta sirdele turi is karto dingti.
+  if (S.rodyti === "sirdis") piesk();
+});
+
+function atnaujinkSirdziuSkaiciu(){
+  var n = sirdeliuKiek();
+  document.getElementById("megstamiKiek").textContent = n;
+  var m = document.getElementById("megstamiMygt");
+  m.setAttribute("aria-pressed", S.rodyti === "sirdis" ? "true" : "false");
+  m.disabled = n === 0 && S.rodyti !== "sirdis";
+  pieskDingusiusMegstamus();
+}
+
+document.getElementById("megstamiMygt").addEventListener("click", function(){
+  S.rodyti = (S.rodyti === "sirdis") ? "" : "sirdis";
+  document.getElementById("fRodyti").value = S.rodyti;
+  piesk();
+});
+
+// Isiminti namai, kuriu siandienos duomenyse nebera: arba nebeskelbiami,
+// arba iskrito pro variklio filtrus. Rodom is atminties nuotrupos, kad
+// sirdele netyletu dinguse.
+function pieskDingusiusMegstamus(){
+  var dinge = Object.keys(SIRDELES).filter(function(id){ return !PAGAL_ID[id]; });
+  var blokas = document.getElementById("megstamiDinge");
+  blokas.hidden = dinge.length === 0;
+  document.getElementById("kiekMegstamuDinge").textContent = dinge.length;
+  document.getElementById("sarasasMegstamuDinge").innerHTML = dinge.map(function(id){
+    var s = SIRDELES[id] || {};
+    var u = saugusUrl(s.url);
+    var v = esc(s.vieta || id);
+    return '<li>' +
+      (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + v + '</a>' : v) +
+      (s.kaina ? ' — ' + esc(eur(s.kaina)) : '') +
+      (s.saltinis ? ' · ' + esc(s.saltinis) : '') +
+      (s.kada ? ' · įsiminta ' + esc(s.kada) : '') +
+      ' <button type="button" class="tekstMygt" data-nuimk="' + esc(id) + '">nuimti</button>' +
+      '</li>';
+  }).join("");
+}
+
+document.getElementById("sarasasMegstamuDinge").addEventListener("click", function(e){
+  var b = e.target.closest ? e.target.closest("[data-nuimk]") : null;
+  if (!b) return;
+  delete SIRDELES[b.getAttribute("data-nuimk")];
+  irasykSirdeles();
+  atnaujinkSirdziuSkaiciu();
+});
+
+// Atsarginė kopija: jei Rokas persėstų prie kito kompiuterio, naršyklės
+// atmintis ten nekeliauja. Tekstą galima tiesiog pasidėti kur nors.
+document.getElementById("kopijuokMegstamus").addEventListener("click", function(){
+  var eil = Object.keys(SIRDELES).map(function(id){
+    var s = SIRDELES[id] || {};
+    return [id, s.vieta || "", s.kaina || "", s.url || ""].join(" | ");
+  });
+  var t = "Įsiminti namai (" + eil.length + ")\n" + eil.join("\n");
+  var self = this;
+  function pavyko(ok){
+    self.textContent = ok ? "Nukopijuota ✓" : "Nepavyko nukopijuoti";
+    setTimeout(function(){ self.textContent = "Kopijuoti visų įsimintų sąrašą"; }, 2500);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(t).then(function(){ pavyko(true); },
+                                         function(){ pavyko(false); });
+  } else {
+    pavyko(false);
+  }
 });
 
 // ============================================================ čipsai
@@ -1076,11 +1298,12 @@ function pieskCipsus(){
   if (S.metai)   pridek("Statyta nuo " + S.metai, function(){ S.metai = ""; sinchr(); piesk(); });
   if (S.kamb)    pridek("Kambarių nuo " + S.kamb, function(){ S.kamb = ""; sinchr(); piesk(); });
   if (S.sklypas) pridek("Sklypas nuo " + S.sklypas + " a", function(){ S.sklypas = ""; sinchr(); piesk(); });
+  if (S.data)    pridek("Skelbimas nuo " + dataRiba(+S.data), function(){ S.data = ""; sinchr(); piesk(); });
   if (S.tipai.length)     pridek("Tipas: " + S.tipai.join(", "), function(){ S.tipai = []; sinchr(); piesk(); });
   if (S.apdailos.length)  pridek("Apdaila: " + S.apdailos.map(apdailosVardas).join(", "),
                                  function(){ S.apdailos = []; sinchr(); piesk(); });
   if (S.saltiniai.length) pridek("Šaltinis: " + S.saltiniai.join(", "), function(){ S.saltiniai = []; sinchr(); piesk(); });
-  if (S.rodyti) pridek({zvaig:"Tik pažymėti ★", nauji:"Tik nauji", atpigo:"Tik atpigę"}[S.rodyti],
+  if (S.rodyti) pridek({sirdis:"Tik mėgstami ♥", nauji:"Tik nauji", atpigo:"Tik atpigę"}[S.rodyti],
                        function(){ S.rodyti = ""; sinchr(); piesk(); });
 
   var d = document.createElement("button");
@@ -1189,6 +1412,7 @@ function sinchr(){
   document.getElementById("fMetai").value    = S.metai;
   document.getElementById("fKamb").value     = S.kamb;
   document.getElementById("fSklypas").value  = S.sklypas;
+  document.getElementById("fData").value     = S.data;
   document.getElementById("fRikiuoti").value = S.rikiuoti;
   document.getElementById("fRodyti").value   = S.rodyti;
   document.getElementById("daugiau").hidden  = !S.daugiau;
@@ -1240,6 +1464,7 @@ function piesk(){
 
   atnaujinkMedi(kiekiai);
   atnaujinkVarneles();
+  atnaujinkSirdziuSkaiciu();
   pieskCipsus();
   pieskSarasa();
   irasykBusena();
@@ -1259,6 +1484,7 @@ susiek("fPlotas", "plotas");
 susiek("fMetai", "metai");
 susiek("fKamb", "kamb");
 susiek("fSklypas", "sklypas");
+susiek("fData", "data");
 susiek("fRikiuoti", "rikiuoti");
 susiek("fRodyti", "rodyti");
 
