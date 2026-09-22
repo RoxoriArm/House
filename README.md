@@ -3,8 +3,7 @@
 Asmeninis įrankis namui susirasti. **Nekomercinis, be reklamos,
 be registracijos, niekas neparduodama ir niekas nerenkama iš lankytojų.**
 
-Puslapis sukurtas asmeniniam naudojimui, kuri ieško namo Klaipėdoje arba
-Klaipėdos rajone, ir kartu kaip mokymosi projektas — norėjosi
+Puslapis sukurtas asmeniniam naudojimui, kuri ieško namo, ir kartu kaip mokymosi projektas — norėjosi
 išsiaiškinti, kaip praktiškai surinkti ir sutvarkyti viešus duomenis.
 Jokio verslo modelio už jo nėra ir nebus.
 
