@@ -1,4 +1,4 @@
-# Namų paieška — Klaipėda ir Klaipėdos rajonas
+# Paieška
 
 Asmeninis įrankis namui susirasti. **Nekomercinis, be reklamos,
 be registracijos, niekas neparduodama ir niekas nerenkama iš lankytojų.**
