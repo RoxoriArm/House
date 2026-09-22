@@ -259,20 +259,73 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
   border:1px solid var(--linija);border-radius:2px;padding:1px 5px;margin-left:6px;
 }
 
-@media (max-width:760px){
-  .filtrai{padding:8px 12px}
+/* ------------------------------------------------- telefono juosta */
+.mobJuosta,.mobUzdaryk{display:none}
+.mobSuma{font-size:.82rem;color:var(--pilka);white-space:nowrap}
+.mobSuma b{color:var(--rasalas);font-size:1.1rem;font-weight:600}
+.mobFiltrai,.mobSirdis{
+  font:inherit;font-size:.86rem;height:34px;padding:0 13px;cursor:pointer;
+  border:1px solid var(--linija);border-radius:17px;background:var(--balta);
+  color:var(--rasalas);display:inline-flex;align-items:center;gap:6px;
+}
+.mobFiltrai{margin-left:auto;font-weight:600}
+.mobFiltrai[aria-expanded="true"]{
+  background:var(--gelme);border-color:var(--gelme);color:var(--balta);
+}
+.mobZyme{
+  background:var(--gelme);color:var(--balta);border-radius:9px;
+  padding:0 6px;font-size:.72rem;font-weight:700;
+}
+.mobFiltrai[aria-expanded="true"] .mobZyme{background:var(--balta);color:var(--gelme)}
+.mobSirdis{color:#c0392b}
+.mobSirdis[aria-pressed="true"]{background:#fdf0ee;border-color:#c0392b;font-weight:600}
+.mobUzdaryk{
+  width:100%;margin:10px 0 2px;font:inherit;font-size:.92rem;font-weight:600;
+  background:var(--gelme);color:var(--balta);border:0;border-radius:4px;
+  padding:11px;cursor:pointer;
+}
+
+/* Ne tik pagal ploti, bet ir pagal AUKSTI: telefonas pasuktas i sona
+   yra 812 px platus, taigi pagal ploti "kompiuteris", nors ekrano
+   aukstis vos 375 px ir juostai vietos dar maziau nei stacioje. */
+@media (max-width:760px), (max-height:520px){
+  header{padding:9px 12px 8px}
+  h1{font-size:1.02rem;line-height:1.25;letter-spacing:0}
+  .meta{margin-top:2px;font-size:.72rem;line-height:1.35}
+  .metaIlgas{display:none}          /* biudžetas ir datų ribos - tik ekrane */
+
+  .filtrai{padding:7px 12px;max-height:calc(100vh - 6px);overflow-y:auto}
+  .mobJuosta{display:flex;align-items:center;gap:8px;min-height:36px}
+
+  /* Valdikliai telefone paslėpti, kol nepaspaustas "Filtrai". */
+  .filtrai .eilute,.filtrai .cipsai{display:none}
+  body.filtraiAtviri .filtrai .eilute{display:flex;padding-top:8px}
+  body.filtraiAtviri .filtrai .cipsai{display:flex}
+  body.filtraiAtviri .mobUzdaryk{display:block}
+
   .laukas{flex:1 1 140px}
   select,.vietMygt{width:100%;min-width:0}
   .vietSkydas{
     position:fixed;left:8px;right:8px;top:auto;width:auto;
-    max-height:min(76vh,560px);
+    max-height:min(70vh,520px);
   }
-  .suma{margin-left:0;width:100%;text-align:left}
+  .suma{display:none}               /* skaičius rodomas mobJuostoje */
+  #paaiskinimas{max-width:none}
 }
+
 @media (max-width:640px){
-  .irasas{grid-template-columns:88px minmax(0,1fr);gap:12px}
-  .irasas img{width:88px;height:70px}
-  .desine{grid-column:2;text-align:left;margin-top:6px}
+  .irasas{grid-template-columns:78px minmax(0,1fr);gap:10px;padding:12px 0}
+  .irasas img{width:78px;height:62px}
+  .vieta{font-size:.98rem;margin-bottom:3px}
+  .duom{font-size:.8rem}
+  .duom span{margin-right:8px}
+  .saltinis{font-size:.7rem;margin-top:4px}
+  .kaina{font-size:1.15rem}
+  .uzm2{font-size:.74rem}
+  .desine{grid-column:2;text-align:left;margin-top:5px}
+  .samata{margin-left:0;max-width:none;font-size:.7rem}
+  .sirdele{font-size:1.45rem;padding:2px 8px;margin-top:2px}
+  main{padding:10px 12px 48px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -288,6 +341,20 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
 
 <div class="filtrai">
   <div class="vidus">
+
+    <!-- Telefone juosta suspausta i viena eilute: skaicius, sirdeles ir
+         mygtukas "Filtrai". Visi valdikliai atsidaro tik paprasius.
+         Kompiuteryje sios juostos nesimato visai. -->
+    <div class="mobJuosta">
+      <span class="mobSuma"><b id="mobKiek">0</b> <span id="mobZodis">namų</span></span>
+      <button type="button" class="mobSirdis" id="mobSirdis"
+              aria-pressed="false" aria-label="Rodyti tik įsimintus">
+        ♥ <span id="mobSirdziu">0</span>
+      </button>
+      <button type="button" class="mobFiltrai" id="mobFiltrai" aria-expanded="false">
+        Filtrai <span class="mobZyme" id="mobZyme" hidden>0</span>
+      </button>
+    </div>
 
     <div class="eilute">
       <div class="laukas">
@@ -434,7 +501,8 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
           <option value="20">20 a</option>
         </select>
       </div>
-      <div class="grupe" style="align-self:flex-end;max-width:250px">
+      <div class="grupe" style="align-self:flex-end;max-width:250px"
+           id="paaiskinimas">
         <span class="uzrasas">&nbsp;</span>
         <span style="font-size:.76rem;color:var(--pilka)">
           Nenurodyti metai, kambariai, sklypas ar data skelbimo neatmeta —
@@ -443,6 +511,10 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
         </span>
       </div>
     </div>
+
+    <button type="button" class="mobUzdaryk" id="mobUzdaryk">
+      Rodyti <b id="mobKiek2">0</b>&nbsp;<span id="mobZodis2">namų</span>
+    </button>
 
   </div>
 </div>
@@ -540,6 +612,13 @@ function namu(n){
   if (d === 1 && dd !== 11) return "namas";
   if (d === 0 || (dd >= 11 && dd <= 19)) return "namų";
   return "namai";
+}
+// Galininkas: "Rodyti 1 namą / 5 namus / 12 namų".
+function namus(n){
+  var d = n % 10, dd = n % 100;
+  if (d === 1 && dd !== 11) return "namą";
+  if (d === 0 || (dd >= 11 && dd <= 19)) return "namų";
+  return "namus";
 }
 
 // Senesniuose duomenyse teritorijos lauko dar nebuvo - tada spejam is teksto.
@@ -1201,17 +1280,24 @@ document.getElementById("sarasas").addEventListener("click", function(e){
 function atnaujinkSirdziuSkaiciu(){
   var n = sirdeliuKiek();
   document.getElementById("megstamiKiek").textContent = n;
+  document.getElementById("mobSirdziu").textContent = n;
+  var tikSirdys = S.rodyti === "sirdis";
   var m = document.getElementById("megstamiMygt");
-  m.setAttribute("aria-pressed", S.rodyti === "sirdis" ? "true" : "false");
-  m.disabled = n === 0 && S.rodyti !== "sirdis";
+  m.setAttribute("aria-pressed", tikSirdys ? "true" : "false");
+  m.disabled = n === 0 && !tikSirdys;
+  var mm = document.getElementById("mobSirdis");
+  mm.setAttribute("aria-pressed", tikSirdys ? "true" : "false");
+  mm.disabled = n === 0 && !tikSirdys;
   pieskDingusiusMegstamus();
 }
 
-document.getElementById("megstamiMygt").addEventListener("click", function(){
+function perjunkMegstamus(){
   S.rodyti = (S.rodyti === "sirdis") ? "" : "sirdis";
   document.getElementById("fRodyti").value = S.rodyti;
   piesk();
-});
+}
+document.getElementById("megstamiMygt").addEventListener("click", perjunkMegstamus);
+document.getElementById("mobSirdis").addEventListener("click", perjunkMegstamus);
 
 // Isiminti namai, kuriu siandienos duomenyse nebera: arba nebeskelbiami,
 // arba iskrito pro variklio filtrus. Rodom is atminties nuotrupos, kad
@@ -1465,6 +1551,7 @@ function piesk(){
   atnaujinkMedi(kiekiai);
   atnaujinkVarneles();
   atnaujinkSirdziuSkaiciu();
+  atnaujinkMobJuosta();
   pieskCipsus();
   pieskSarasa();
   irasykBusena();
@@ -1487,6 +1574,40 @@ susiek("fSklypas", "sklypas");
 susiek("fData", "data");
 susiek("fRikiuoti", "rikiuoti");
 susiek("fRodyti", "rodyti");
+
+// --- telefono filtrų juosta
+// Telefone visi valdikliai uzima 373 px is 823 px ekrano, o dar 170 px
+// suvalgo antraste - skelbimams nebelieka nei vienos korteles. Todel
+// telefone juosta suspausta i viena eilute, o valdikliai atsidaro
+// paspaudus "Filtrai". Kompiuteryje niekas nesikeicia.
+function atidarykFiltrus(taip){
+  document.body.classList.toggle("filtraiAtviri", !!taip);
+  document.getElementById("mobFiltrai")
+          .setAttribute("aria-expanded", taip ? "true" : "false");
+  if (taip) window.scrollTo(0, 0);
+}
+document.getElementById("mobFiltrai").addEventListener("click", function(){
+  atidarykFiltrus(!document.body.classList.contains("filtraiAtviri"));
+});
+document.getElementById("mobUzdaryk").addEventListener("click", function(){
+  atidarykFiltrus(false);
+});
+
+// Kiek filtru ijungta - skaicius ant mygtuko "Filtrai", kad paslepti
+// valdikliai neislaikytu paslapties.
+function atnaujinkMobJuosta(){
+  var n = numatyta(), kiek = 0;
+  EILUCIU.forEach(function(k){ if (S[k] !== n[k]) kiek++; });
+  SARASU.forEach(function(k){ if (S[k].length) kiek++; });
+  if (S.off.length) kiek++;
+  var z = document.getElementById("mobZyme");
+  z.textContent = kiek;
+  z.hidden = kiek === 0;
+  document.getElementById("mobKiek").textContent = paskutinis.length;
+  document.getElementById("mobKiek2").textContent = paskutinis.length;
+  document.getElementById("mobZodis").textContent = namu(paskutinis.length);
+  document.getElementById("mobZodis2").textContent = namus(paskutinis.length);
+}
 
 // --- vietovių skydelio atidarymas
 var mygt = document.getElementById("vietMygt");
@@ -1562,11 +1683,17 @@ document.getElementById("sparcios").addEventListener("click", function(e){
     '<tr><td>Duomenų apie šaltinius nėra</td></tr>';
 })();
 
-document.getElementById("antraste").textContent =
-  "Atnaujinta " + (D.atnaujinta || "—") +
-  " · biudžetas " + eur(BIUDZETAS) + " su įrengimu" +
-  " · skelbimai nuo " + ((D.kriterijai && D.kriterijai.skelbimai_nuo) || "2025-01-01") +
-  (D.statistika && D.statistika.nauji ? " · " + D.statistika.nauji + " nauji" : "");
+// Antrasteje du gabalai: pirmas matomas visada, antras telefone
+// paslepiamas (.metaIlgas) - kitaip vien antraste suvalgo pusę ekrano.
+document.getElementById("antraste").innerHTML =
+  "Atnaujinta " + esc(D.atnaujinta || "—") +
+  '<span class="metaIlgas">' +
+    " · biudžetas " + esc(eur(BIUDZETAS)) + " su įrengimu" +
+    " · skelbimai nuo " +
+      esc((D.kriterijai && D.kriterijai.skelbimai_nuo) || "2025-01-01") +
+  '</span>' +
+  (D.statistika && D.statistika.nauji
+    ? " · " + esc(D.statistika.nauji) + " nauji" : "");
 
 // ============================================================ startas
 
