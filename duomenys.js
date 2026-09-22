@@ -1,6 +1,6 @@
 // Sugeneruota automatiskai. Ranka neredaguoti.
 window.DUOMENYS = {
- "atnaujinta": "2026-09-21 19:59",
+ "atnaujinta": "2026-09-22 08:17",
  "kriterijai": {
   "biudzetas": 200000,
   "min_plotas": 90,
@@ -22,12 +22,12 @@ window.DUOMENYS = {
   "Judrėnų": "D"
  },
  "statistika": {
-  "surinkta": 852,
-  "tinka": 269,
-  "atmesta": 445,
-  "patikrinti": 18,
-  "telpa_i_biudzeta": 161,
-  "uzklausu": 132,
+  "surinkta": 853,
+  "tinka": 266,
+  "atmesta": 444,
+  "patikrinti": 19,
+  "telpa_i_biudzeta": 157,
+  "uzklausu": 0,
   "nauji": 0,
   "atpigo": 0,
   "pabrango": 0,
@@ -42,27 +42,27 @@ window.DUOMENYS = {
   "rinka_lt": {
    "statusas": "is atminties",
    "rasta": 76,
-   "amzius_val": 1.0
+   "amzius_val": 0.1
   },
   "capital_lt": {
    "statusas": "is atminties",
    "rasta": 51,
-   "amzius_val": 1.0
+   "amzius_val": 0.1
   },
   "rutosnt_lt": {
-   "statusas": "veikia",
+   "statusas": "is atminties",
    "rasta": 120,
-   "klaida": "HTTP 404"
+   "amzius_val": 11.9
   },
   "alio_lt": {
    "statusas": "is atminties",
-   "rasta": 192,
-   "amzius_val": 1.0
+   "rasta": 191,
+   "amzius_val": 0.0
   },
   "domoplius_lt": {
    "statusas": "is atminties",
-   "rasta": 287,
-   "amzius_val": 1.0
+   "rasta": 286,
+   "amzius_val": 0.0
   },
   "nekilnojamasturtas_lt": {
    "statusas": "mires",
@@ -70,16 +70,18 @@ window.DUOMENYS = {
   },
   "kampas_lt": {
    "statusas": "is atminties",
-   "rasta": 129,
-   "amzius_val": 1.0
+   "rasta": 128,
+   "amzius_val": 0.0
   },
   "inreal_lt": {
-   "statusas": "nepatikrinta",
-   "rasta": 0
+   "statusas": "is atminties",
+   "rasta": 3,
+   "amzius_val": 0.0
   },
   "ltestate_lt": {
-   "statusas": "nepatikrinta",
-   "rasta": 0
+   "statusas": "is atminties",
+   "rasta": 1,
+   "amzius_val": 0.0
   },
   "ober_haus_lt": {
    "statusas": "nepatikrinta",
@@ -90,19 +92,11 @@ window.DUOMENYS = {
    "rasta": 0
   },
   "nt6_lt": {
-   "statusas": "nepatikrinta",
+   "statusas": "blokuoja",
    "rasta": 0
   }
  },
- "tinklo_sveikata": {
-  "rutosnt.lt": {
-   "uzklausu": 132,
-   "klaidu": 1,
-   "is_eiles": 0,
-   "busena": "veikia",
-   "paskutine_klaida": "HTTP 404"
-  }
- },
+ "tinklo_sveikata": {},
  "skelbimai": [
   {
    "id": "rinka-5063648",
@@ -171,7 +165,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260717/13/69335849-gerai-irengtas-namas-grazioje-gamtoje-netoli-klaip-8259-19_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -198,7 +192,7 @@ window.DUOMENYS = {
    "sildymas": "Elektra, Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/250729/01/68092375_6887fe998d968_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -280,7 +274,7 @@ window.DUOMENYS = {
    "metai": 2025.0,
    "sildymas": "Elektra",
    "nuotrauka": "https://s.alio.lt/photos/260730/11/69510543-strategiskai-patrauklioje-klaipedos-miesto-vietoje-7320-19_large.jpg",
-   "data": "2026-07-23",
+   "data": "2026-07-24",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -647,7 +641,7 @@ window.DUOMENYS = {
    "metai": 2023.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/250519/16/67810501_682b312de6afe_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -737,7 +731,7 @@ window.DUOMENYS = {
    "sildymas": "Elektra",
    "pastatas": "Blokinis",
    "nuotrauka": "https://s.alio.lt/photos/260914/20/69626791-namas-klaipedos-r-sav-baukstininkai-1817-6_large.jpg",
-   "data": "2026-09-14",
+   "data": "2026-09-15",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -762,7 +756,7 @@ window.DUOMENYS = {
    "sklypas": 4.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260415/16/69148487_69df8d3e71d99_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -843,7 +837,7 @@ window.DUOMENYS = {
    "sildymas": "Geoterminis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/251215/14/68683219-5799-5_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -926,31 +920,6 @@ window.DUOMENYS = {
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 115000.0,
-   "telpa": true,
-   "balas": 65,
-   "metai_nezinomi": true,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "kampas-591363",
-   "saltinis": "kampas.lt",
-   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-ginduliu-k-kalnelio-g-klaipedos-raj-sav-sendvario-sen-591363",
-   "pavadinimas": "Klaipėdos r. sav., Ginduliai, Kalnelio g.",
-   "vieta": "Klaipėdos r. sav., Ginduliai, Kalnelio g.",
-   "kaina": 130000.0,
-   "plotas": 165.0,
-   "sklypas": 9.75,
-   "nuotrauka": "https://i.kampas.lt/images/2026/03/20/62093770_600x450.jpg",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Ginduliai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 130000.0,
    "telpa": true,
    "balas": 65,
    "metai_nezinomi": true,
@@ -1577,7 +1546,7 @@ window.DUOMENYS = {
    "sildymas": "Geoterminis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260209/13/68869053-6090-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -1590,27 +1559,62 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21",
    "kitur": [
     {
-     "saltinis": "alio.lt",
-     "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-kalniskiu-g./ID69042353.html"
-    },
-    {
      "saltinis": "domoplius.lt",
      "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-8664175.html"
     },
     {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-kalniskiu-g-8652448.html"
-    },
-    {
      "saltinis": "kampas.lt",
      "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1048366"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-94-kv-m-ploto/"
     }
    ],
    "sujungti_id": [
     "alio-69042353",
     "domoplius-8664175",
     "domoplius-8652448",
-    "kampas-1048366"
+    "kampas-1048366",
+    "inreal-78034"
+   ]
+  },
+  {
+   "id": "alio-69683363",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-barskiu-g./ID69683363.html",
+   "pavadinimas": "Klaipėda, Paupiai, Barškių g.",
+   "vieta": "Klaipėda, Paupiai, Barškių g.",
+   "kaina": 230000.0,
+   "plotas": 90.0,
+   "sklypas": 5.0,
+   "metai": 2024.0,
+   "pastatas": "Blokinis",
+   "nuotrauka": "https://s.alio.lt/photos/260921/21/69683363_6ab17342236ff_large.jpg",
+   "data": "2026-09-22",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Paupiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 230000.0,
+   "balas": 65,
+   "pirma_karta": "2026-09-22",
+   "kitur": [
+    {
+     "saltinis": "domoplius.lt",
+     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-barskiu-g-8794309.html"
+    },
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-barskiu-g-kotedzai-su-pilna-apdailapristatomi-statomi-apie-1073410"
+    }
+   ],
+   "sujungti_id": [
+    "domoplius-8794309",
+    "kampas-1073410"
    ]
   },
   {
@@ -1625,7 +1629,7 @@ window.DUOMENYS = {
    "metai": 2026.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260917/02/69664361_6aab249992928_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -1645,11 +1649,16 @@ window.DUOMENYS = {
     {
      "saltinis": "kampas.lt",
      "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1072729"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipeda-115-kv-m-ploto/"
     }
    ],
    "sujungti_id": [
     "domoplius-8792281",
-    "kampas-1072729"
+    "kampas-1072729",
+    "inreal-86692"
    ]
   },
   {
@@ -1664,7 +1673,7 @@ window.DUOMENYS = {
    "metai": 2026.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260517/02/69271005_6a08fccd9e31b_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -1684,11 +1693,16 @@ window.DUOMENYS = {
     {
      "saltinis": "kampas.lt",
      "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-parduodamas-sublokuotas-namas-kalniskiu-g-1055954"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-131-kv-m-ploto/"
     }
    ],
    "sujungti_id": [
     "domoplius-8684863",
-    "kampas-1055954"
+    "kampas-1055954",
+    "inreal-79896"
    ]
   },
   {
@@ -1748,6 +1762,41 @@ window.DUOMENYS = {
    ],
    "sujungti_id": [
     "domoplius-8530534"
+   ]
+  },
+  {
+   "id": "alio-69683381",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-alksniai-svyturio-g./ID69683381.html",
+   "pavadinimas": "Klaipėdos r. sav., Alksniai, Švyturio g.",
+   "vieta": "Klaipėdos r. sav., Alksniai, Švyturio g.",
+   "kaina": 110000.0,
+   "plotas": 170.48,
+   "sklypas": 19.04,
+   "metai": 2007.0,
+   "pastatas": "Mūrinis",
+   "nuotrauka": "https://s.alio.lt/photos/260921/21/69683381_6ab1729352321_large.jpg",
+   "data": "2026-09-22",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Alksniai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "neirengtas",
+   "irengimo_samata": 0,
+   "bendra_kaina": 110000.0,
+   "telpa": true,
+   "balas": 63,
+   "pirma_karta": "2026-09-22",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-alksniu-k-svyturio-g-nebaigtas-statyti-sublokuotas-namas-1073429"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1073429"
    ]
   },
   {
@@ -2340,7 +2389,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260903/05/69622503_6a98e05a3c6ab_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2377,7 +2426,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/241129/11/67091201_67498cf3908ba_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2415,12 +2464,7 @@ window.DUOMENYS = {
    "balas": 55,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-sodo-namas-klaipedos-rajono-sav-purmaliuose-roziu-g-8634193.html"
-    }
-   ],
+   "kitur": [],
    "sujungti_id": [
     "domoplius-8634193"
    ]
@@ -2438,7 +2482,7 @@ window.DUOMENYS = {
    "sildymas": "Centrinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/180717/13/54365559-namas-klaipedos-r-sav-gargzdai-pusyno-takas-2337-14_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2464,7 +2508,7 @@ window.DUOMENYS = {
    "sildymas": "Centrinis, Dujinis, Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260722/17/69483351-parduodu-nama-kiskenu-sen-7931-0_large.jpg",
-   "data": "2026-09-11",
+   "data": "2026-09-12",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2492,7 +2536,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260626/21/69393071_6a3ebffe326aa_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2527,7 +2571,7 @@ window.DUOMENYS = {
    "sildymas": "Elektra",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260914/23/69658859_6aa85e878ee24_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2549,32 +2593,6 @@ window.DUOMENYS = {
    "sujungti_id": [
     "domoplius-8791165"
    ]
-  },
-  {
-   "id": "alio-69573601",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-alksniai-svyturio-g./ID69573601.html",
-   "pavadinimas": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "vieta": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "kaina": 120000.0,
-   "plotas": 170.48,
-   "sklypas": 19.04,
-   "metai": 2007.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260819/21/69573601_6a85efd702bda_large.jpg",
-   "data": "2026-09-21",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Alksniai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 120000.0,
-   "telpa": true,
-   "balas": 55,
-   "pirma_karta": "2026-09-21"
   },
   {
    "id": "domoplius-7474978",
@@ -2648,7 +2666,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/251202/19/68627997-parduodamas-namas-klaipedos-raj-katku-km-kretingal-3300-1_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2823,7 +2841,7 @@ window.DUOMENYS = {
    "sklypas": 9.0,
    "sildymas": "Dujinis, Kietu kuru",
    "pastatas": "Mūrinis",
-   "data": "2026-09-10",
+   "data": "2026-09-11",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2850,7 +2868,7 @@ window.DUOMENYS = {
    "metai": 2026.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260902/11/69455401-namas-klaipedos-r-sav-kiskenai-2917-2_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2884,7 +2902,7 @@ window.DUOMENYS = {
    "sklypas": 6.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260313/23/69017377_69b487b57bb85_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2937,7 +2955,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/230330/15/65134193-9091-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -2947,32 +2965,6 @@ window.DUOMENYS = {
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 190000.0,
-   "telpa": true,
-   "balas": 55,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-68315735",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-kretingale/ID68315735.html",
-   "pavadinimas": "Klaipėdos r. sav., Kretingalė",
-   "vieta": "Klaipėdos r. sav., Kretingalė",
-   "kaina": 200000.0,
-   "plotas": 161.71,
-   "sklypas": 9.66,
-   "metai": 2013.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250918/11/68315735_68cbc43b6520e_large.jpg",
-   "data": "2026-09-21",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Kretingalės",
-   "gyvenviete": "Kretingalė",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 200000.0,
    "telpa": true,
    "balas": 55,
    "pirma_karta": "2026-09-21"
@@ -3015,7 +3007,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260707/21/69431023_6a4d4065175a2_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -3026,18 +3018,18 @@ window.DUOMENYS = {
    "bendra_kaina": 210000.0,
    "balas": 55,
    "pirma_karta": "2026-09-21",
-   "kopijos": 14,
+   "kopijos": 13,
    "kopiju_nuorodos": [
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID69378443.html",
     "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732093.html",
     "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732065.html",
     "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732073.html",
+    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732079.html",
     "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732081.html"
    ],
    "kitur": [
     {
      "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787931.html"
+     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787934.html"
     },
     {
      "saltinis": "kampas.lt",
@@ -3045,7 +3037,7 @@ window.DUOMENYS = {
     }
    ],
    "sujungti_id": [
-    "domoplius-8787931",
+    "domoplius-8787934",
     "kampas-959021"
    ]
   },
@@ -3086,7 +3078,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260812/05/69549977_6a7bd869f1ae6_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -3120,7 +3112,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/241129/11/67091061_67498eccbca2d_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -3170,7 +3162,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis, Elektra",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/251109/16/68532133-7558-10_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -3269,7 +3261,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260508/11/69239647-ukinis-pastatas-klaipedos-r-sav-dovilai-klaipedos--2430-4_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-08-23",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3457,12 +3449,7 @@ window.DUOMENYS = {
    "balas": 50,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-mokyklos-8775862.html"
-    }
-   ],
+   "kitur": [],
    "sujungti_id": [
     "domoplius-8775862"
    ]
@@ -3656,7 +3643,7 @@ window.DUOMENYS = {
    "metai": 2026.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260817/14/69566391-namas-klaipedos-r-sav-slapsile-rasos-g-4530-0_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-08-23",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3694,58 +3681,6 @@ window.DUOMENYS = {
    "balas": 50,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "domoplius-8649877",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kretingaleje-8649877.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Kretingalėje",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Kretingalėje",
-   "kaina": 200000.0,
-   "plotas": 161.0,
-   "sklypas": 9.0,
-   "metai": 2013.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8649/8649877-main-144902842-1779195662-12530bb94fac59c7-29cbfaa4410c.webp",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Kretingalės",
-   "gyvenviete": "Kretingalė",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 200000.0,
-   "telpa": true,
-   "balas": 50,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "kampas-1073410",
-   "saltinis": "kampas.lt",
-   "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-barskiu-g-kotedzai-su-pilna-apdailapristatomi-statomi-apie-1073410",
-   "pavadinimas": "Klaipėda, Paupiai, Barškių g.",
-   "vieta": "Klaipėda, Paupiai, Barškių g.",
-   "kaina": 230000.0,
-   "plotas": 90.0,
-   "sklypas": 5.0,
-   "nuotrauka": "https://i.kampas.lt/images/2026/09/21/63059460_600x450.jpg",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Paupiai",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 230000.0,
-   "balas": 50,
-   "metai_nezinomi": true,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21",
-   "kopijos": 2,
-   "kopiju_nuorodos": [
-    "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-barskiu-g-kotedzai-naujame-kvartale-paupiuose-1021411"
-   ]
   },
   {
    "id": "kampas-1060763",
@@ -3880,31 +3815,6 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 258000.0,
    "balas": 50,
-   "metai_nezinomi": true,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "kampas-1073429",
-   "saltinis": "kampas.lt",
-   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-alksniu-k-svyturio-g-nebaigtas-statyti-sublokuotas-namas-1073429",
-   "pavadinimas": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "vieta": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "kaina": 110000.0,
-   "plotas": 170.0,
-   "sklypas": 19.04,
-   "nuotrauka": "https://i.kampas.lt/images/2026/08/19/62903039_600x450.jpg",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Alksniai",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "neirengtas",
-   "irengimo_samata": 0,
-   "bendra_kaina": 110000.0,
-   "telpa": true,
-   "balas": 48,
    "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
@@ -4107,7 +4017,7 @@ window.DUOMENYS = {
    "sildymas": "Geoterminis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/251021/18/68451245-5509-11_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4131,8 +4041,8 @@ window.DUOMENYS = {
    "sklypas": 12.5,
    "metai": 2024.0,
    "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260317/23/69032595_69b9cdbc2d79f_large.jpg",
-   "data": "2026-09-21",
+   "nuotrauka": "https://s.alio.lt/photos/260921/23/69032595_6ab199012463a_large.jpg",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4212,7 +4122,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260915/21/69660265_6aa9893d8ac4a_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4251,7 +4161,7 @@ window.DUOMENYS = {
    "metai": 2023.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260515/17/69252015_6a0732999ccbc_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4292,7 +4202,7 @@ window.DUOMENYS = {
    "sildymas": "Geoterminis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260317/11/68044151-namas-su-pilna-isores-ir-daline-vidaus-apdaila-tod-9796-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -4317,7 +4227,7 @@ window.DUOMENYS = {
    "metai": 2025.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/250522/19/67822799-2100-3_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4352,7 +4262,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260108/15/68746241-4315-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -4385,7 +4295,7 @@ window.DUOMENYS = {
    "metai": 1994.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260619/23/69367999_6a35aca67ad15_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -4525,7 +4435,7 @@ window.DUOMENYS = {
    "sildymas": "Centrinis kolektorinis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260805/07/69528869-8009-19_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-08-23",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -4551,7 +4461,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Karkasinis",
    "nuotrauka": "https://s.alio.lt/photos/241003/16/66682459-namas-klaipedos-r-sav-zadeikiai-zvaginiu-g-5271-9_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -4602,7 +4512,7 @@ window.DUOMENYS = {
    "metai": 1918.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260914/23/69658849_6aa85e756c99a_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -4663,7 +4573,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260714/23/69455399_6a56a186f090b_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -4753,7 +4663,7 @@ window.DUOMENYS = {
    "metai": 2023.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/250820/09/68177253-3969-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -4780,7 +4690,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260911/15/69649303_6aa3eea9e1d85_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -4839,7 +4749,7 @@ window.DUOMENYS = {
    "sklypas": 5.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/251024/11/68465543_68fb3218553df_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -5233,7 +5143,7 @@ window.DUOMENYS = {
    "metai": 1999.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/230320/16/65101799-7917-0_large.jpg",
-   "data": "2026-07-23",
+   "data": "2026-07-24",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -5330,30 +5240,6 @@ window.DUOMENYS = {
    ]
   },
   {
-   "id": "domoplius-8588758",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-slengiuose-karaliskas-tak-8588758.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Slengiuose, Karališkas tak.",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Slengiuose, Karališkas tak.",
-   "kaina": 230000.0,
-   "plotas": 140.0,
-   "sklypas": 8.0,
-   "metai": 2025.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8588/8588758-main-133954174-1755775164-2cec689b9dc53459-fec9e2521fb3.webp",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Slengiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 230000.0,
-   "balas": 40,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
    "id": "domoplius-8699719",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-pareikiu-g-8699719.html",
@@ -5369,6 +5255,30 @@ window.DUOMENYS = {
    "teritorija": "rajonas",
    "seniunija": "Sendvario",
    "gyvenviete": "Klemiškė II",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 230000.0,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8588758",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-slengiuose-karaliskas-tak-8588758.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Slengiuose, Karališkas tak.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Slengiuose, Karališkas tak.",
+   "kaina": 230000.0,
+   "plotas": 140.0,
+   "sklypas": 8.0,
+   "metai": 2025.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8588/8588758-main-133954174-1755775164-2cec689b9dc53459-fec9e2521fb3.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Slengiai",
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
@@ -5788,10 +5698,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21",
    "kitur": [
     {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-8714368.html"
-    },
-    {
      "saltinis": "kampas.lt",
      "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-klemiskes-ii-k-miliunu-g-parduodamas-naujos-statybos-pilnai-1053615"
     }
@@ -6025,6 +5931,31 @@ window.DUOMENYS = {
    "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "ltestate-7038",
+   "saltinis": "ltestate.lt",
+   "url": "https://ltestate.lt/skelbimas/kotedzas-truseliuose/",
+   "pavadinimas": "Parduodamas kotedžas Trušeliuose, Unguros g. – 95 m² su 3,5 a sklypu",
+   "vieta": "Klaipėdos raj. sav Parduodamas kotedžas Trušeliuose, Unguros g. – 95 m² su 3,5 a sklypu",
+   "kaina": 220000.0,
+   "plotas": 95.0,
+   "sklypas": 3.5,
+   "kambariai": 4.0,
+   "metai": 2019.0,
+   "nuotrauka": "https://ltestate.lt/wp-content/uploads/2026/08/dji_fly_20260812_114742_0016_1786878702549_photo_beautify-540x317.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Trušeliai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 220000.0,
+   "balas": 37,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-22"
   },
   {
    "id": "rinka-5052350",
@@ -6261,7 +6192,7 @@ window.DUOMENYS = {
    "metai": 2026.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260817/14/69566527-paruodami-namai-8346-0_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-08-23",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6663,7 +6594,7 @@ window.DUOMENYS = {
    "sklypas": 80.0,
    "pastatas": "Medinis",
    "nuotrauka": "https://s.alio.lt/photos/260909/17/69641057-parduodama-sena-sodyba-priekuleje-2584-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6704,16 +6635,8 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21",
    "kitur": [
     {
-     "saltinis": "alio.lt",
-     "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-kvietiniai/ID69235125.html"
-    },
-    {
      "saltinis": "domoplius.lt",
      "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kvietiniuose-8681725.html"
-    },
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kvietiniuose-liepu-g-8692024.html"
     },
     {
      "saltinis": "kampas.lt",
@@ -6937,7 +6860,7 @@ window.DUOMENYS = {
    "sildymas": "Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260918/23/69672671_6aada47c4bd5c_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -6951,10 +6874,6 @@ window.DUOMENYS = {
    "balas": 30,
    "pirma_karta": "2026-09-21",
    "kitur": [
-    {
-     "saltinis": "alio.lt",
-     "url": "https://www.alio.lt/skelbimai/namas-klaipedos-r.-sav.-kuliai/ID69660037.html"
-    },
     {
      "saltinis": "kampas.lt",
      "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kuliu-k-roziu-3-oji-g-parduodamas-jaukus-ir-pilnai-irengtas-1073157"
@@ -7080,7 +6999,7 @@ window.DUOMENYS = {
    "metai": 1933.0,
    "sildymas": "Kietu kuru",
    "nuotrauka": "https://s.alio.lt/photos/220111/14/63848453-3001-0_large.jpg",
-   "data": "2026-07-23",
+   "data": "2026-07-24",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -7372,7 +7291,7 @@ window.DUOMENYS = {
    "metai": 2006.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260618/23/69362895_6a345b2b83505_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -7531,7 +7450,7 @@ window.DUOMENYS = {
    "sklypas": 230.0,
    "sildymas": "Dujinis",
    "nuotrauka": "https://s.alio.lt/photos/250716/11/68044215-2652-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -7571,6 +7490,20 @@ window.DUOMENYS = {
   }
  ],
  "patikrinti": [
+  {
+   "id": "rinka-5082521",
+   "saltinis": "rinka.lt",
+   "url": "https://www.rinka.lt/skelbimas/audi-a6c7-allraud-id-5082521",
+   "pavadinimas": "Audi a6c7 allraud",
+   "vieta": "Klaipėdos kraštas",
+   "kaina": 13900.0,
+   "nuotrauka": "https://www.rinka.lt/storage/24502505/conversions/1000006124-gallery_preview.jpg",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "vietove_nepatikslinta": true,
+   "atmesta": "plotas nenurodytas"
+  },
   {
    "id": "rinka-5082512",
    "saltinis": "rinka.lt",
@@ -7632,7 +7565,7 @@ window.DUOMENYS = {
    "metai": 2021.0,
    "sildymas": "Dujinis",
    "pastatas": "Mūrinis",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -7647,7 +7580,7 @@ window.DUOMENYS = {
    "vieta": "Parduodami Jūsų svajonių namai prie Baltijos jūros",
    "kaina": 325000.0,
    "nuotrauka": "https://s.alio.lt/photos/260908/18/69637493-parduodami-jusu-svajoniu-namai-prie-baltijos-juros-9502-0_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
@@ -7665,39 +7598,7 @@ window.DUOMENYS = {
    "sklypas": 6.8,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260908/14/69637341-parduodamas-nebaigtas-statyti-gyvenamosios-paskirt-8233-0_large.jpg",
-   "data": "2026-09-21",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69458585",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/sodas-sb-minija-murinis-namas-10965-kv.m./ID69458585.html",
-   "pavadinimas": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
-   "vieta": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
-   "kaina": 175000.0,
-   "plotas": 109.65,
-   "sklypas": 6.0,
-   "metai": 2011.0,
-   "sildymas": "Centrinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260715/07/69458585-2854-11_large.jpg",
-   "data": "2026-09-21",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-68434471",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-isskirtinis-barokinio-stiliaus-290-kv.-m-namas-zeigiuose-netoli-juros-25-km./ID68434471.html",
-   "pavadinimas": "Parduodamas išskirtinis barokinio stiliaus, 290 kv. m namas Zeigiuose, netoli jūros (2,5 km).",
-   "vieta": "Parduodamas išskirtinis barokinio stiliaus, 290 kv. m namas Zeigiuose, netoli jūros (2,5 km).",
-   "kaina": 280000.0,
-   "plotas": 290.0,
-   "sklypas": 15.0,
-   "metai": 2010.0,
-   "sildymas": "Geoterminis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/251017/10/68434471-9188-12_large.jpg",
-   "data": "2026-09-21",
+   "data": "2026-09-22",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7712,7 +7613,7 @@ window.DUOMENYS = {
    "metai": 2011.0,
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260812/08/69550313-puikus-sodo-namas-su-visais-patogumais-6743-0_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-08-23",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7740,7 +7641,7 @@ window.DUOMENYS = {
    "sklypas": 7.5,
    "metai": 1991.0,
    "nuotrauka": "https://s.alio.lt/photos/260718/14/69471975-4766-0_large.jpg",
-   "data": "2026-09-18",
+   "data": "2026-09-22",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7756,6 +7657,22 @@ window.DUOMENYS = {
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260716/12/69462995-parduodamas-334-a-sklypas-su-namo-projektu-ir-stat-2118-1_large.jpg",
    "data": "2026-08-30",
+   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
+  },
+  {
+   "id": "alio-69458585",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/sodas-sb-minija-murinis-namas-10965-kv.m./ID69458585.html",
+   "pavadinimas": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
+   "vieta": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
+   "kaina": 175000.0,
+   "plotas": 109.65,
+   "sklypas": 6.0,
+   "metai": 2011.0,
+   "sildymas": "Centrinis",
+   "pastatas": "Mūrinis",
+   "nuotrauka": "https://s.alio.lt/photos/260715/07/69458585-2854-11_large.jpg",
+   "data": "2026-09-22",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7785,7 +7702,7 @@ window.DUOMENYS = {
    "sildymas": "Dujinis, Kietu kuru",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260322/11/69056355-9467-0_large.jpg",
-   "data": "2026-08-24",
+   "data": "2026-08-25",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7801,7 +7718,7 @@ window.DUOMENYS = {
    "sildymas": "Centrinis, Elektra, Geoterminis",
    "pastatas": "Mūrinis",
    "nuotrauka": "https://s.alio.lt/photos/260318/13/69036207-parduodamas-dalimis-5-funkciniu-zonu-sodybu-komple-8449-0_large.jpg",
-   "data": "2026-07-23",
+   "data": "2026-07-24",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
@@ -7832,7 +7749,23 @@ window.DUOMENYS = {
    "metai": 2017.0,
    "pastatas": "Blokinis",
    "nuotrauka": "https://s.alio.lt/photos/251118/19/68486249-parduodamas-091-ha-sklypas-su-pradetu-statyti-vien-8619-4_large.jpg",
-   "data": "2026-08-22",
+   "data": "2026-09-22",
+   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
+  },
+  {
+   "id": "alio-68434471",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/parduodamas-isskirtinis-barokinio-stiliaus-290-kv.-m-namas-zeigiuose-netoli-juros-25-km./ID68434471.html",
+   "pavadinimas": "Parduodamas išskirtinis barokinio stiliaus, 290 kv. m namas Zeigiuose, netoli jūros (2,5 km).",
+   "vieta": "Parduodamas išskirtinis barokinio stiliaus, 290 kv. m namas Zeigiuose, netoli jūros (2,5 km).",
+   "kaina": 280000.0,
+   "plotas": 290.0,
+   "sklypas": 15.0,
+   "metai": 2010.0,
+   "sildymas": "Geoterminis",
+   "pastatas": "Mūrinis",
+   "nuotrauka": "https://s.alio.lt/photos/251017/10/68434471-9188-12_large.jpg",
+   "data": "2026-09-22",
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
