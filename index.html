@@ -18,6 +18,10 @@
   --pabrango:#9b3b23;
   --balta:#fbfcfc;
   --svelni:#f3f6f5;
+  --kortele:#ffffff;
+  --seselis:0 1px 2px rgba(18,48,55,.06),0 2px 10px rgba(18,48,55,.06);
+  --seselis-hover:0 2px 4px rgba(18,48,55,.08),0 8px 24px rgba(18,48,55,.12);
+  --sirdis:#c0392b;
 }
 *{box-sizing:border-box}
 /* display:flex/grid nustelbia numatytaji [hidden] - be sios eilutes
@@ -30,7 +34,7 @@ body{
 h1,h2,.kaina,.vieta{font-family:"Iowan Old Style",Palatino,Georgia,serif}
 
 header{background:var(--gelme);color:#dfe8e7;padding:22px 18px 18px}
-.vidus{max-width:1060px;margin:0 auto}
+.vidus{max-width:1180px;margin:0 auto}
 h1{margin:0;font-size:1.45rem;font-weight:600;letter-spacing:.2px}
 .meta{margin-top:6px;font-size:.85rem;color:#9fb5b4}
 
@@ -52,7 +56,9 @@ select,input[type=number],input[type=search]{
 select:focus-visible,input:focus-visible,button:focus-visible{
   outline:2px solid var(--gelme);outline-offset:1px;
 }
-.suma{margin-left:auto;font-size:.85rem;color:var(--pilka);text-align:right;line-height:1.3}
+.eil2{display:flex;align-items:flex-end;gap:12px}
+.eil2 .cipsai{flex:1 1 auto;min-width:0}
+.suma{margin:8px 0 0 auto;font-size:.85rem;color:var(--pilka);text-align:right;line-height:1.3;flex:none}
 .suma b{color:var(--rasalas);font-size:1.15rem;font-weight:600}
 .suma i{font-style:normal;display:block;font-size:.76rem}
 
@@ -177,52 +183,116 @@ select:focus-visible,input:focus-visible,button:focus-visible{
 .nerasta{padding:14px 10px;font-size:.85rem;color:var(--pilka);text-align:center}
 
 /* --------------------------------------------------------------- sarasas */
-main{max-width:1060px;margin:0 auto;padding:16px 18px 60px}
+main{max-width:1180px;margin:0 auto;padding:18px 18px 60px}
 
+/* Kortele: kaireje didele nuotrauka, desineje antraste su kaina,
+   po ja savybiu tinklelis su ikonomis. Telefone viskas stulpeliu:
+   nuotrauka per visa ploti, po ja tekstas. */
 .irasas{
-  display:grid;grid-template-columns:132px minmax(0,1fr) auto;gap:16px;
-  padding:16px 0;border-bottom:1px solid var(--linija);align-items:start;
+  position:relative;display:grid;grid-template-columns:290px minmax(0,1fr);
+  background:var(--kortele);border:1px solid #dde5e4;border-radius:10px;
+  box-shadow:var(--seselis);overflow:hidden;margin-bottom:14px;
+  transition:box-shadow .15s ease,border-color .15s ease;
 }
-.irasas>div{min-width:0}
-.vieta,.duom,.saltinis{overflow-wrap:anywhere}
-.irasas img{
-  width:132px;height:96px;object-fit:cover;border-radius:2px;background:#dde5e4;
+.irasas:hover{box-shadow:var(--seselis-hover);border-color:#cbd8d6}
+
+.foto{position:relative;background:#dde5e4;min-height:196px}
+.foto>a{display:block;position:absolute;inset:0}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+.foto img.nera{display:none}
+.foto .beNuotr{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:#a9bab9;
 }
-.irasas img.nera{visibility:hidden}
-.vieta{font-size:1.08rem;font-weight:600;margin:0 0 4px;line-height:1.3}
+.foto .beNuotr svg{width:56px;height:56px}
+.zymos{
+  position:absolute;left:10px;top:10px;display:flex;flex-direction:column;
+  align-items:flex-start;gap:4px;pointer-events:none;
+}
+.zymos .zyma{margin:0;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+
+.turinys{padding:14px 18px 12px;display:flex;flex-direction:column;min-width:0}
+.virsus{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:16px;
+  grid-template-areas:"viet kaina" "pav kaina";grid-template-rows:auto 1fr;align-items:start;
+}
+.virsus>.vietove{grid-area:viet}
+.virsus>.vieta{grid-area:pav}
+.virsus>.desine{grid-area:kaina}
+.vietove{
+  display:flex;align-items:center;gap:7px;flex-wrap:wrap;
+  font-size:.82rem;color:var(--pilka);margin:0 0 2px;
+}
+.zonaZ{
+  flex:none;font-size:.66rem;font-weight:700;letter-spacing:.04em;line-height:1;
+  border:1px solid currentColor;border-radius:3px;padding:3px 5px;
+}
+.vieta,.saltinis{overflow-wrap:anywhere}
+.vieta{font-size:1.14rem;font-weight:600;margin:0;line-height:1.3}
 .vieta a{color:var(--rasalas);text-decoration:none}
 .vieta a:hover,.vieta a:focus{text-decoration:underline}
-.duom{font-size:.88rem;color:var(--pilka);margin:0}
-.duom span{margin-right:12px;white-space:nowrap}
-.duom b{color:var(--rasalas);font-weight:600}
-.nezinia{color:#9b6a23}
-.saltinis{font-size:.75rem;color:var(--pilka);margin:6px 0 0}
-.desine{text-align:right;white-space:nowrap}
-.kaina{font-size:1.35rem;font-weight:600}
-.uzm2{font-size:.8rem;color:var(--pilka);margin-top:2px}
+.desine{text-align:right;white-space:nowrap;flex:none}
+.kaina{font-size:1.42rem;font-weight:600;line-height:1.15}
+.uzm2{font-size:.8rem;color:var(--pilka);margin-top:3px}
 .telpa{color:var(--atpigo);font-weight:600}
-.samata{font-size:.73rem;color:var(--pilka);margin-top:2px;line-height:1.35;
-  max-width:190px;margin-left:auto;white-space:normal}
+.samata{font-size:.74rem;color:var(--pilka);margin-top:2px;line-height:1.35;
+  max-width:200px;margin-left:auto;white-space:normal}
+.nezinia{color:#9b6a23}
+.samata.nezinia{color:#8a9b9e}
+
+/* savybes su ikonomis */
+.savybes{
+  list-style:none;margin:12px 0 0;padding:0;
+  display:flex;flex-wrap:wrap;gap:8px 24px;
+}
+.savybes li{
+  display:flex;align-items:center;gap:7px;font-size:.88rem;color:var(--rasalas);
+  min-width:0;white-space:nowrap;
+}
+.savybes li span{overflow:hidden;text-overflow:ellipsis}
+.savybes li.ilgas{max-width:260px}
+.savybes li b{font-weight:600}
+.savybes svg{
+  width:17px;height:17px;flex:none;color:var(--pilka);
+  fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;
+}
+.savybes li.nezinia{color:#9b6a23}
+.savybes li.nezinia svg{color:#c2a06d}
+
+.apacia{
+  margin-top:auto;padding-top:12px;display:flex;flex-wrap:wrap;
+  align-items:center;gap:6px 12px;
+}
+.biudz{
+  font-size:.74rem;font-weight:600;border-radius:12px;padding:2px 9px;
+  background:#e3f1ea;color:var(--atpigo);white-space:nowrap;
+}
+.biudz.virs{background:var(--svelni);color:var(--pilka);font-weight:500}
+.saltinis{font-size:.76rem;color:var(--pilka);margin:0}
+.saltinis a{color:var(--gelme)}
 
 .zyma{
   display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.06em;
-  padding:2px 7px;border-radius:2px;margin-bottom:5px;color:var(--balta);
+  padding:3px 8px;border-radius:3px;margin-bottom:5px;color:var(--balta);
 }
 .z-NAUJAS{background:var(--nauja)}
 .z-ATPIGO{background:var(--atpigo)}
 .z-PABRANGO{background:var(--pabrango)}
-.z-SENAS{background:var(--pilka);letter-spacing:.02em}
-.senakaina{text-decoration:line-through;color:var(--pilka);font-size:.85rem;margin-right:6px}
+.z-SENAS{background:rgba(61,79,84,.92);letter-spacing:.02em}
+.senakaina{text-decoration:line-through;color:var(--pilka);font-size:.85rem;margin-right:6px;font-weight:400}
 
+/* sirdele - balta apskritima nuotraukos kampe */
 .sirdele{
-  background:none;border:0;cursor:pointer;font-size:1.3rem;line-height:1;
-  color:var(--linija);padding:4px 6px;margin-top:6px;border-radius:4px;
-  transition:transform .12s ease,color .12s ease;
+  position:absolute;top:9px;right:9px;z-index:2;
+  width:38px;height:38px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(255,255,255,.92);box-shadow:0 1px 4px rgba(0,0,0,.22);
+  font-size:1.2rem;line-height:38px;padding:0;text-align:center;
+  color:#9aa9ab;transition:transform .12s ease,color .12s ease;
 }
-.sirdele:hover{color:#c0563a;background:var(--svelni)}
-.sirdele[aria-pressed="true"]{color:#c0392b}
+.sirdele:hover{color:var(--sirdis)}
+.sirdele[aria-pressed="true"]{color:var(--sirdis)}
 .sirdele[aria-pressed="true"]:hover{color:#8e2b20}
-.sirdele:active{transform:scale(1.25)}
+.sirdele:active{transform:scale(1.18)}
 
 .megstamiMygt{
   font:inherit;font-size:.86rem;height:32px;padding:5px 12px;cursor:pointer;
@@ -311,22 +381,41 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
     max-height:min(70vh,520px);
   }
   .suma{display:none}               /* skaičius rodomas mobJuostoje */
+  .megstamiLaukas{display:none}     /* telefone yra ♥ mygtukas juostoje */
   #paaiskinimas{max-width:none}
 }
 
+@media (max-width:900px){
+  .irasas{grid-template-columns:230px minmax(0,1fr)}
+  .foto{min-height:180px}
+  .savybes{gap:8px 18px}
+}
 @media (max-width:640px){
-  .irasas{grid-template-columns:78px minmax(0,1fr);gap:10px;padding:12px 0}
-  .irasas img{width:78px;height:62px}
-  .vieta{font-size:.98rem;margin-bottom:3px}
-  .duom{font-size:.8rem}
-  .duom span{margin-right:8px}
-  .saltinis{font-size:.7rem;margin-top:4px}
-  .kaina{font-size:1.15rem}
-  .uzm2{font-size:.74rem}
-  .desine{grid-column:2;text-align:left;margin-top:5px}
-  .samata{margin-left:0;max-width:none;font-size:.7rem}
-  .sirdele{font-size:1.45rem;padding:2px 8px;margin-top:2px}
-  main{padding:10px 12px 48px}
+  main{padding:12px 10px 48px}
+  .irasas{grid-template-columns:1fr;margin-bottom:12px;border-radius:12px}
+  .foto{min-height:0;aspect-ratio:16/10}
+  .foto.beFoto{aspect-ratio:auto;height:92px}
+  .foto.beFoto .beNuotr svg{width:40px;height:40px}
+  .turinys{padding:11px 13px 11px}
+  /* telefone: kaina pirmoje eiluteje, po ja vietove ir antraste */
+  .virsus{grid-template-columns:minmax(0,1fr);grid-template-areas:"kaina" "viet" "pav"}
+  .desine{text-align:left;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;
+    margin-bottom:5px}
+  .desine .uzm2,.desine .samata{margin:0}
+  .samata{max-width:none}
+  .vietove{font-size:.78rem}
+  .vieta{font-size:1.02rem}
+  .kaina{font-size:1.3rem}
+  .uzm2{font-size:.76rem}
+  .samata{font-size:.72rem}
+  .virsus{grid-template-rows:auto}
+  .savybes{gap:8px 16px;margin-top:10px}
+  .savybes li{font-size:.84rem;gap:5px}
+  .savybes li.ilgas{max-width:100%}
+  .savybes svg{width:16px;height:16px}
+  .apacia{padding-top:10px}
+  .saltinis{font-size:.72rem}
+  .sirdele{width:42px;height:42px;line-height:42px;font-size:1.3rem}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -435,7 +524,7 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
           <option value="atpigo">tik atpigusius</option>
         </select></div>
 
-      <div class="laukas">
+      <div class="laukas megstamiLaukas">
         <span class="uzrasas">&nbsp;</span>
         <button type="button" class="megstamiMygt" id="megstamiMygt"
                 aria-pressed="false" title="Rodyti tik įsimintus namus">
@@ -443,10 +532,12 @@ details.blokas ul{font-size:.85rem;color:var(--pilka);line-height:1.7}
         </button>
       </div>
 
-      <p class="suma"><b id="kiek">0</b> <span id="kiekZodis">namų</span><i id="kiekTelpa"></i></p>
     </div>
 
-    <div class="cipsai" id="cipsai"></div>
+    <div class="eil2">
+      <div class="cipsai" id="cipsai"></div>
+      <p class="suma"><b id="kiek">0</b> <span id="kiekZodis">namų</span><i id="kiekTelpa"></i></p>
+    </div>
 
     <div class="daugiau" id="daugiau" hidden>
       <div class="grupe">
@@ -1160,6 +1251,30 @@ function samatosEilute(r){
   return '<div class="samata nezinia">įrengimo sąmata neskaičiuota</div>';
 }
 
+// Ikonos korteles savybems. Paprastos linijines, piestos cia pat -
+// jokiu isoriniu bibliotekų, kad puslapis liktu du statiniai failai.
+var IKONOS = {
+  plotas:   '<path d="M3 3h11v11H3z"/><path d="M6 11l5-5M8 6h3v3"/>',
+  sklypas:  '<path d="M1.5 14.5h14"/><path d="M5 14.5v-4M5 10.5a2.6 2.6 0 1 1 0-5.2 2.6 2.6 0 0 1 0 5.2z"/><path d="M10 14.5V9.5l2.5-2 2.5 2v5"/>',
+  metai:    '<rect x="2.5" y="3.5" width="12" height="11" rx="1.5"/><path d="M2.5 7h12M6 2v3M11 2v3"/>',
+  kambariai:'<path d="M4 14.5V2.5h8v12M2.5 14.5h12"/><circle cx="10" cy="8.8" r=".5"/>',
+  sildymas: '<path d="M8.5 1.8c.4 2.4 3.7 3.8 3.7 7.3a3.7 3.7 0 0 1-7.4 0c0-1.6.8-2.5 1.6-3.3.2 1.2.8 1.9 1.6 2.1-.4-2.1-.1-4.3.5-6.1z"/>',
+  apdaila:  '<rect x="2" y="2.5" width="10" height="4" rx="1"/><path d="M12 4.5h2v3.5H8V10M7 10h2v4.5H7z"/>',
+  tipas:    '<path d="M2 8.2L8.5 2.5 15 8.2M4 6.8v7.7h9V6.8"/><path d="M7 14.5v-4h3v4"/>',
+  baigtumas:'<circle cx="8.5" cy="8.5" r="6"/><path d="M8.5 2.5v6h6"/>'
+};
+function ikona(v){
+  return '<svg viewBox="0 0 17 17" aria-hidden="true">' + IKONOS[v] + '</svg>';
+}
+function savybe(v, html, antraste, nezinoma){
+  var kl = [nezinoma ? "nezinia" : "", v === "sildymas" ? "ilgas" : ""].filter(Boolean).join(" ");
+  return '<li' + (kl ? ' class="' + kl + '"' : '') +
+         (antraste ? ' title="' + esc(antraste) + '"' : '') + '>' +
+         ikona(v) + '<span>' + html + '</span></li>';
+}
+var ZONU_SPALVOS = {A:"#1c6b4a", B:"#2f7d5c", C:"#8a6a12", D:"#9b3b23"};
+var TIPU_TRUMPI = {"atskiras namas":"atskiras", "kotedžas / dalis":"kotedžas / dalis"};
+
 function kortele(r){
   var u = saugusUrl(r.url);
   var pav = esc(r.vieta || r.pavadinimas || "Be pavadinimo");
@@ -1167,26 +1282,34 @@ function kortele(r){
   var uzm2 = (sk(r.kaina) && sk(r.plotas))
     ? Math.round(r.kaina / r.plotas).toLocaleString("lt-LT") + " €/m²" : "";
 
-  var eilute2 = [];
-  eilute2.push('<span><b>' + esc(r.plotas || "?") + '</b> m²</span>');
-  if (r.sklypas)   eilute2.push('<span><b>' + esc(r.sklypas) + '</b> a sklypas</span>');
-  if (r.kambariai) eilute2.push('<span><b>' + esc(r.kambariai) + '</b> kamb.</span>');
-  eilute2.push(r.metai
-    ? '<span>statyta <b>' + esc(r.metai) + '</b></span>'
-    : '<span class="nezinia">metai nežinomi</span>');
-  if (r.sildymas)  eilute2.push('<span>' + esc(r.sildymas) + '</span>');
-  if (r.namo_tipas && r.namo_tipas !== "atskiras namas")
-    eilute2.push('<span>' + esc(r.namo_tipas) + '</span>');
-  eilute2.push(r.apdaila && r.apdaila !== "nezinoma"
-    ? '<span>' + esc(apdailosVardas(r.apdaila)) + '</span>'
-    : '<span class="nezinia">apdaila nežinoma</span>');
+  // ---- savybes: visada plotas, metai ir apdaila (nezinomi pazymimi
+  // atvirai), kitos - tik jei zinomos.
+  var sav = [];
+  sav.push(savybe("plotas", '<b>' + esc(r.plotas || "?") + '</b> m²', "Namo plotas"));
+  if (r.sklypas) sav.push(savybe("sklypas", '<b>' + esc(r.sklypas) + '</b> a', "Sklypas"));
+  sav.push(r.metai
+    ? savybe("metai", '<b>' + esc(r.metai) + '</b> m.', "Statybos metai")
+    : savybe("metai", 'metai nežinomi', "Statybos metai nenurodyti", true));
+  if (r.kambariai) sav.push(savybe("kambariai", '<b>' + esc(r.kambariai) + '</b> kamb.', "Kambariai"));
+  if (r.sildymas) sav.push(savybe("sildymas", esc(r.sildymas), "Šildymas: " + r.sildymas));
+  sav.push(r.apdaila && r.apdaila !== "nezinoma"
+    ? savybe("apdaila", esc(apdailosVardas(r.apdaila)), "Apdaila")
+    : savybe("apdaila", 'apdaila nežinoma', "Apdaila skelbimo sąraše nenurodyta", true));
   if (r.baigtumas !== undefined && r.baigtumas !== null)
-    eilute2.push('<span>baigtumas <b>' + esc(r.baigtumas) + ' %</b></span>');
+    sav.push(savybe("baigtumas", 'baigta <b>' + esc(r.baigtumas) + ' %</b>', "Statybos baigtumas"));
+  if (r.namo_tipas) sav.push(savybe("tipas", esc(TIPU_TRUMPI[r.namo_tipas] || r.namo_tipas),
+                                    "Namo tipas: " + r.namo_tipas));
 
+  // ---- vietove virs antrastes: zonos raide + gyvenviete + seniunija
+  var zona = r.zona && ZONU_SPALVOS[r.zona]
+    ? '<span class="zonaZ" style="color:' + ZONU_SPALVOS[r.zona] + '" title="Zona ' +
+        esc(r.zona) + ': ' + esc(r.zonos_aprasas || "") + '">' + esc(r.zona) + '</span>' : '';
   var vietosEil = [r.gyvenviete, r.seniunija ? r.seniunija + " sen." : null, r.zonos_aprasas]
-                  .filter(Boolean).map(esc).join(" · ");
+                  .filter(function(x, i, a){ return x && a.indexOf(x) === i; })
+                  .map(esc).join(" · ");
   if (r.vietove_nepatikslinta) vietosEil += ' · <span class="nezinia">vietovė nepatikslinta</span>';
 
+  // ---- saltinis apacioje
   var saltEil = esc(r.saltinis || "");
   if (r.kopijos > 1) saltEil += '<span class="kopijos">' + esc(tokiePat(r.kopijos - 1)) + '</span>';
   // Tas pats namas kituose portaluose. Variklis jau sujunge irasus i
@@ -1209,32 +1332,50 @@ function kortele(r){
     ? ' · ' + esc(r.data)
     : ' · <span class="nezinia">data nežinoma</span>';
 
-  return '<article class="irasas">' +
-    (nuotr
-      ? '<img loading="lazy" decoding="async" width="132" height="96" alt="" ' +
-        'referrerpolicy="no-referrer" onerror="this.classList.add(\'nera\')" src="' + esc(nuotr) + '">'
-      : '<img class="nera" alt="" width="132" height="96">') +
-    '<div>' +
-      (r.zyma ? '<span class="zyma z-' + esc(r.zyma) + '">' + esc(r.zyma) + '</span><br>' : '') +
-      // Saltinis siame paleidime neatsake - rodomi paskutiniai zinomi
-      // duomenys. Namas gal jau parduotas, todel pazymim atvirai.
-      (r.neatnaujinta ? '<span class="zyma z-SENAS" title="Šis šaltinis paskutinio paleidimo metu neatsakė. Rodoma, kas buvo matyta tą dieną.">NEATNAUJINTA NUO ' + esc(r.neatnaujinta) + '</span><br>' : '') +
-      '<h2 class="vieta">' +
-        (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + pav + '</a>' : pav) +
-      '</h2>' +
-      '<p class="duom">' + eilute2.join("") + '</p>' +
-      '<p class="saltinis">' + vietosEil + '</p>' +
-      '<p class="saltinis">' + saltEil + '</p>' +
-    '</div>' +
-    '<div class="desine">' +
-      '<div class="kaina">' +
-        (r.sena_kaina ? '<span class="senakaina">' + esc(eur(r.sena_kaina)) + '</span>' : '') +
-        esc(eur(r.kaina)) + '</div>' +
-      '<div class="uzm2">' + esc(uzm2) + '</div>' +
-      samatosEilute(r) +
+  // ---- zymos ant nuotraukos
+  var zymos = '';
+  if (r.zyma) zymos += '<span class="zyma z-' + esc(r.zyma) + '">' + esc(r.zyma) + '</span>';
+  // Saltinis siame paleidime neatsake - rodomi paskutiniai zinomi
+  // duomenys. Namas gal jau parduotas, todel pazymim atvirai.
+  if (r.neatnaujinta) zymos += '<span class="zyma z-SENAS" title="Šis šaltinis paskutinio paleidimo metu neatsakė. ' +
+    'Rodoma, kas buvo matyta tą dieną.">NEATNAUJINTA NUO ' + esc(r.neatnaujinta) + '</span>';
+
+  var img = nuotr
+    ? '<img loading="lazy" decoding="async" alt="" referrerpolicy="no-referrer" ' +
+      'onerror="this.classList.add(\'nera\')" src="' + esc(nuotr) + '">'
+    : '';
+  var foto = '<div class="foto' + (nuotr ? '' : ' beFoto') + '">' +
+      '<div class="beNuotr">' + '<svg viewBox="0 0 17 17" fill="none" stroke="currentColor" stroke-width="1" ' +
+        'aria-hidden="true">' + IKONOS.tipas + '</svg></div>' +
+      (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">' + img + '</a>' : img) +
+      (zymos ? '<div class="zymos">' + zymos + '</div>' : '') +
       '<button class="sirdele" type="button" data-id="' + esc(r.id) + '" ' +
         'aria-pressed="' + (SIRDELES[r.id] ? "true" : "false") + '" ' +
         'title="Įsiminti šį namą" aria-label="Įsiminti šį namą">♥</button>' +
+    '</div>';
+
+  var biudz = r.telpa
+    ? '<span class="biudz" title="Kaina su įrengimu telpa į biudžetą">✓ telpa į ' + esc(eur(BIUDZETAS)) + '</span>'
+    : '<span class="biudz virs">virš ' + esc(eur(BIUDZETAS)) + '</span>';
+
+  return '<article class="irasas' + (r.telpa ? ' telpaK' : '') + '">' +
+    foto +
+    '<div class="turinys">' +
+      '<div class="virsus">' +
+        '<p class="vietove">' + zona + '<span>' + vietosEil + '</span></p>' +
+        '<h2 class="vieta">' +
+          (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + pav + '</a>' : pav) +
+        '</h2>' +
+        '<div class="desine">' +
+          '<div class="kaina">' +
+            (r.sena_kaina ? '<span class="senakaina">' + esc(eur(r.sena_kaina)) + '</span>' : '') +
+            esc(eur(r.kaina)) + '</div>' +
+          '<div class="uzm2">' + esc(uzm2) + '</div>' +
+          samatosEilute(r) +
+        '</div>' +
+      '</div>' +
+      '<ul class="savybes">' + sav.join("") + '</ul>' +
+      '<div class="apacia">' + biudz + '<p class="saltinis">' + saltEil + '</p></div>' +
     '</div>' +
   '</article>';
 }
