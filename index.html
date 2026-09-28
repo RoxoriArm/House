@@ -211,6 +211,7 @@ main{max-width:1060px;margin:0 auto;padding:16px 18px 60px}
 .z-NAUJAS{background:var(--nauja)}
 .z-ATPIGO{background:var(--atpigo)}
 .z-PABRANGO{background:var(--pabrango)}
+.z-SENAS{background:var(--pilka);letter-spacing:.02em}
 .senakaina{text-decoration:line-through;color:var(--pilka);font-size:.85rem;margin-right:6px}
 
 .sirdele{
@@ -1215,6 +1216,9 @@ function kortele(r){
       : '<img class="nera" alt="" width="132" height="96">') +
     '<div>' +
       (r.zyma ? '<span class="zyma z-' + esc(r.zyma) + '">' + esc(r.zyma) + '</span><br>' : '') +
+      // Saltinis siame paleidime neatsake - rodomi paskutiniai zinomi
+      // duomenys. Namas gal jau parduotas, todel pazymim atvirai.
+      (r.neatnaujinta ? '<span class="zyma z-SENAS" title="Šis šaltinis paskutinio paleidimo metu neatsakė. Rodoma, kas buvo matyta tą dieną.">NEATNAUJINTA NUO ' + esc(r.neatnaujinta) + '</span><br>' : '') +
       '<h2 class="vieta">' +
         (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + pav + '</a>' : pav) +
       '</h2>' +
@@ -1693,7 +1697,10 @@ document.getElementById("antraste").innerHTML =
       esc((D.kriterijai && D.kriterijai.skelbimai_nuo) || "2025-01-01") +
   '</span>' +
   (D.statistika && D.statistika.nauji
-    ? " · " + esc(D.statistika.nauji) + " nauji" : "");
+    ? " · " + esc(D.statistika.nauji) + " nauji" : "") +
+  (D.statistika && D.statistika.neatnaujinta && D.neveike
+    ? " · " + esc(D.neveike.join(", ")) + " neatsakė, " +
+      esc(D.statistika.neatnaujinta) + " namai rodomi neatnaujinti" : "");
 
 // ============================================================ startas
 

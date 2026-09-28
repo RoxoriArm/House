@@ -1,6 +1,6 @@
 // Sugeneruota automatiskai. Ranka neredaguoti.
 window.DUOMENYS = {
- "atnaujinta": "2026-09-22 09:30",
+ "atnaujinta": "2026-09-28 08:26",
  "kriterijai": {
   "biudzetas": 200000,
   "min_plotas": 90,
@@ -22,17 +22,18 @@ window.DUOMENYS = {
   "Judrėnų": "D"
  },
  "statistika": {
-  "surinkta": 887,
-  "tinka": 280,
-  "atmesta": 454,
-  "patikrinti": 17,
-  "telpa_i_biudzeta": 167,
+  "surinkta": 696,
+  "tinka": 279,
+  "atmesta": 371,
+  "patikrinti": 2,
+  "telpa_i_biudzeta": 166,
   "uzklausu": 0,
   "nauji": 7,
-  "atpigo": 0,
+  "atpigo": 1,
   "pabrango": 0,
-  "dinge": 0,
-  "uzsaldyta": 0
+  "dinge": 8,
+  "uzsaldyta": 0,
+  "neatnaujinta": 43
  },
  "saltiniu_sveikata": {
   "aruodas_lt": {
@@ -41,12 +42,12 @@ window.DUOMENYS = {
   },
   "rinka_lt": {
    "statusas": "is atminties",
-   "rasta": 76,
+   "rasta": 77,
    "amzius_val": 0.6
   },
   "capital_lt": {
    "statusas": "is atminties",
-   "rasta": 51,
+   "rasta": 55,
    "amzius_val": 0.6
   },
   "rutosnt_lt": {
@@ -55,14 +56,13 @@ window.DUOMENYS = {
    "amzius_val": 0.1
   },
   "alio_lt": {
-   "statusas": "is atminties",
-   "rasta": 191,
-   "amzius_val": 0.1
+   "statusas": "praleista",
+   "rasta": 0
   },
   "domoplius_lt": {
    "statusas": "is atminties",
-   "rasta": 285,
-   "amzius_val": 0.1
+   "rasta": 280,
+   "amzius_val": 0.6
   },
   "nekilnojamasturtas_lt": {
    "statusas": "mires",
@@ -70,23 +70,23 @@ window.DUOMENYS = {
   },
   "kampas_lt": {
    "statusas": "is atminties",
-   "rasta": 128,
-   "amzius_val": 0.1
+   "rasta": 127,
+   "amzius_val": 0.6
   },
   "inreal_lt": {
    "statusas": "is atminties",
    "rasta": 3,
-   "amzius_val": 0.1
+   "amzius_val": 0.6
   },
   "ntportalas_lt": {
    "statusas": "is atminties",
    "rasta": 35,
-   "amzius_val": 0.1
+   "amzius_val": 0.6
   },
   "ltestate_lt": {
    "statusas": "is atminties",
    "rasta": 1,
-   "amzius_val": 0.1
+   "amzius_val": 0.6
   },
   "ober_haus_lt": {
    "statusas": "nepatikrinta",
@@ -155,7 +155,8 @@ window.DUOMENYS = {
    "bendra_kaina": 100000.0,
    "telpa": true,
    "balas": 80,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69335849",
@@ -182,77 +183,8 @@ window.DUOMENYS = {
    "bendra_kaina": 185000.0,
    "telpa": true,
    "balas": 80,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-68092375",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-centras-h.-manto-g./ID68092375.html",
-   "pavadinimas": "Klaipėda, Centras, H. Manto g.",
-   "vieta": "Klaipėda, Centras, H. Manto g.",
-   "kaina": 198000.0,
-   "plotas": 140.29,
-   "sklypas": 4.87,
-   "metai": 1930.0,
-   "sildymas": "Elektra, Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250729/01/68092375_6887fe998d968_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Centras",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 198000.0,
-   "telpa": true,
-   "balas": 80,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-centras-h-manto-g-parduodamas-murinis-erdvus-ir-galimybiu-pilnas-1016366"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1016366"
-   ]
-  },
-  {
-   "id": "alio-67798073",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-raj.-klemiskes-ii-k.-parduodamas-nebaigtas-statyti-a+-klases-204.17-kv.m.-gyvenamas-nam/ID67798073.html",
-   "pavadinimas": "Klaipėdos raj., Klemiškės II k., parduodamas nebaigtas statyti A+ klasės 204.17 kv.m., gyvenamas nam",
-   "vieta": "Klaipėdos raj., Klemiškės II k., parduodamas nebaigtas statyti A+ klasės 204.17 kv.m., gyvenamas nam",
-   "kaina": 98000.0,
-   "plotas": 204.0,
-   "sklypas": 16.0,
-   "metai": 2023.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250516/17/67798073-klaipedos-raj-klemiskes-ii-k-parduodamas-nebaigtas-1255-9_large.jpg",
-   "data": "2026-09-17",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Klemiškė II",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "neirengtas",
-   "irengimo_samata": 0,
-   "bendra_kaina": 98000.0,
-   "telpa": true,
-   "balas": 78,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-8530534.html"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8530534"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "kampas-784181",
@@ -325,7 +257,41 @@ window.DUOMENYS = {
    "bendra_kaina": 183000.0,
    "telpa": true,
    "balas": 75,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
+  },
+  {
+   "id": "domoplius-8575081",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-centre-h-manto-g-8575081.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdoje, Centre, H. Manto g.",
+   "vieta": "Gyvenamasis namas Klaipėdoje, Centre, H. Manto g.",
+   "kaina": 198000.0,
+   "plotas": 140.29,
+   "sklypas": 4.87,
+   "metai": 1930.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8575/8575081-main-132665398-1753725193-f3e5f62e9c999ed5-0f83cdcc2f12.webp",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Centras",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 198000.0,
+   "telpa": true,
+   "balas": 75,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-centras-h-manto-g-parduodamas-murinis-erdvus-ir-galimybiu-pilnas-1016366"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1016366"
+   ]
   },
   {
    "id": "kampas-297231",
@@ -409,16 +375,16 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8781238",
+   "id": "domoplius-8796076",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-radailiuose-8781238.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Radailiuose",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Radailiuose",
-   "kaina": 110000.0,
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-radailiuose-8796076.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Radailiuose",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Radailiuose",
+   "kaina": 115000.0,
    "plotas": 130.0,
    "sklypas": 8.62,
    "kambariai": 5.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8781/8781238-main-150044410-1787326048-73a0cd0247a6c144-d12649c3b86d.webp",
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8796/8796076-main-151513753-1790324484-73a0cd0247a6c144-068ec3ff6d67.webp",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
@@ -427,7 +393,7 @@ window.DUOMENYS = {
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 110000.0,
+   "bendra_kaina": 115000.0,
    "telpa": true,
    "balas": 72,
    "metai_nezinomi": true,
@@ -436,7 +402,7 @@ window.DUOMENYS = {
    "kitur": [
     {
      "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-radailiu-k-saules-al-klaipedos-rajone-radailiu-k-parduodamas-1066858"
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-radailiu-k-saules-al-klaipedos-rajone-radailiu-k-parduodamas-1074383"
     },
     {
      "saltinis": "capital.lt",
@@ -444,7 +410,7 @@ window.DUOMENYS = {
     }
    ],
    "sujungti_id": [
-    "kampas-1066858",
+    "kampas-1074383",
     "capital-322564"
    ]
   },
@@ -670,42 +636,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-67810501",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-klemiske-ii/ID67810501.html",
-   "pavadinimas": "Klaipėdos r. sav., Klemiškė II",
-   "vieta": "Klaipėdos r. sav., Klemiškė II",
-   "kaina": 83000.0,
-   "plotas": 204.0,
-   "sklypas": 16.1,
-   "metai": 2023.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250519/16/67810501_682b312de6afe_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Klemiškė II",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 83000.0,
-   "telpa": true,
-   "balas": 70,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-8649763.html"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8649763"
-   ]
-  },
-  {
    "id": "alio-69513827",
    "saltinis": "alio.lt",
    "url": "https://www.alio.lt/skelbimai/sodo-namas-parduodu-nama-sodu-bendrijoje-smiltele.-5-km-iki-klaipedos.-yra-garazas-pirtele-silt/ID69513827.html",
@@ -729,7 +659,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 70,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "rutosnt-namas-zemgrindziu-k-2",
@@ -783,7 +714,8 @@ window.DUOMENYS = {
    "bendra_kaina": 135000.0,
    "telpa": true,
    "balas": 70,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69148487",
@@ -809,7 +741,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 70,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "rutosnt-namas-klemiskes-ii-k-19",
@@ -889,7 +822,8 @@ window.DUOMENYS = {
    "bendra_kaina": 190000.0,
    "telpa": true,
    "balas": 70,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68750455",
@@ -915,6 +849,32 @@ window.DUOMENYS = {
    "bendra_kaina": 192000.0,
    "telpa": true,
    "balas": 70,
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
+  },
+  {
+   "id": "domoplius-8649763",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-8649763.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Klemiškė II",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Klemiškė II",
+   "kaina": 83000.0,
+   "plotas": 204.0,
+   "sklypas": 16.0,
+   "metai": 2023.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8649/8649763-main-144902236-1779195601-2963c0608e8b8ce5-0555552bcc43.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Klemiškė II",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 83000.0,
+   "telpa": true,
+   "balas": 65,
+   "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
   },
   {
@@ -936,6 +896,31 @@ window.DUOMENYS = {
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 85000.0,
+   "telpa": true,
+   "balas": 65,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8530534",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-8530534.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Klemiškė II",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Klemiškė II",
+   "kaina": 98000.0,
+   "plotas": 204.17,
+   "sklypas": 16.0,
+   "metai": 2023.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8530/8530534-main-139550542-1765807732-955e756ebb45b2ef-67db9a96625f.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Klemiškė II",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 98000.0,
    "telpa": true,
    "balas": 65,
    "data_nezinoma": true,
@@ -1662,178 +1647,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-22"
   },
   {
-   "id": "alio-68869053",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/namai-a++-energetines-vertes-2026-metu-statybos-puikioje-klaipedos-miesto-vietoje-paupiu-rajone./ID68869053.html",
-   "pavadinimas": "Namai  A++ energetinės vertės, 2026 metų statybos, puikioje Klaipėdos miesto vietoje Paupių rajone.",
-   "vieta": "Namai  A++ energetinės vertės, 2026 metų statybos, puikioje Klaipėdos miesto vietoje Paupių rajone.",
-   "kaina": 220900.0,
-   "plotas": 94.0,
-   "sklypas": 6.0,
-   "metai": 2025.0,
-   "sildymas": "Geoterminis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260209/13/68869053-6090-0_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Paupiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 220900.0,
-   "balas": 65,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-8664175.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1048366"
-    },
-    {
-     "saltinis": "inreal.lt",
-     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-94-kv-m-ploto/"
-    }
-   ],
-   "sujungti_id": [
-    "alio-69042353",
-    "domoplius-8664175",
-    "domoplius-8652448",
-    "kampas-1048366",
-    "inreal-78034"
-   ]
-  },
-  {
-   "id": "alio-69683363",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-barskiu-g./ID69683363.html",
-   "pavadinimas": "Klaipėda, Paupiai, Barškių g.",
-   "vieta": "Klaipėda, Paupiai, Barškių g.",
-   "kaina": 230000.0,
-   "plotas": 90.0,
-   "sklypas": 5.0,
-   "metai": 2024.0,
-   "pastatas": "Blokinis",
-   "nuotrauka": "https://s.alio.lt/photos/260921/21/69683363_6ab17342236ff_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Paupiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 230000.0,
-   "balas": 65,
-   "pirma_karta": "2026-09-22",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-barskiu-g-8794309.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-barskiu-g-kotedzai-su-pilna-apdailapristatomi-statomi-apie-1073410"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8794309",
-    "kampas-1073410"
-   ]
-  },
-  {
-   "id": "alio-69664361",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-kalniskiu-g./ID69664361.html",
-   "pavadinimas": "Klaipėda, Paupiai, Kalniškių g.",
-   "vieta": "Klaipėda, Paupiai, Kalniškių g.",
-   "kaina": 245000.0,
-   "plotas": 115.0,
-   "sklypas": 3.0,
-   "metai": 2026.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260917/02/69664361_6aab249992928_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Paupiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 245000.0,
-   "balas": 65,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-sublokuotas-namas-klaipedoje-paupiuose-8792281.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1072729"
-    },
-    {
-     "saltinis": "inreal.lt",
-     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipeda-115-kv-m-ploto/"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8792281",
-    "kampas-1072729",
-    "inreal-86692"
-   ]
-  },
-  {
-   "id": "alio-69271005",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-kalniskiu-g./ID69271005.html",
-   "pavadinimas": "Klaipėda, Paupiai, Kalniškių g.",
-   "vieta": "Klaipėda, Paupiai, Kalniškių g.",
-   "kaina": 255000.0,
-   "plotas": 131.0,
-   "sklypas": 3.0,
-   "metai": 2026.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260517/02/69271005_6a08fccd9e31b_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Paupiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 255000.0,
-   "balas": 65,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-sublokuotas-namas-klaipedoje-paupiuose-8684863.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-parduodamas-sublokuotas-namas-kalniskiu-g-1055954"
-    },
-    {
-     "saltinis": "inreal.lt",
-     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-131-kv-m-ploto/"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8684863",
-    "kampas-1055954",
-    "inreal-79896"
-   ]
-  },
-  {
    "id": "rutosnt-namas-radailiai-4",
    "saltinis": "rutosnt.lt",
    "url": "https://rutosnt.lt/properties/namas-radailiai-4/",
@@ -1859,41 +1672,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-69683381",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-alksniai-svyturio-g./ID69683381.html",
-   "pavadinimas": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "vieta": "Klaipėdos r. sav., Alksniai, Švyturio g.",
-   "kaina": 110000.0,
-   "plotas": 170.48,
-   "sklypas": 19.04,
-   "metai": 2007.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260921/21/69683381_6ab1729352321_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Alksniai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "neirengtas",
-   "irengimo_samata": 0,
-   "bendra_kaina": 110000.0,
-   "telpa": true,
-   "balas": 63,
-   "pirma_karta": "2026-09-22",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-alksniu-k-svyturio-g-nebaigtas-statyti-sublokuotas-namas-1073429"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1073429"
-   ]
-  },
-  {
    "id": "alio-62542807",
    "saltinis": "alio.lt",
    "url": "https://www.alio.lt/skelbimai/klaipedos-rajone-netoli-golfo-aikstyno-nebaigta-statyti-nama/ID62542807.html",
@@ -1916,7 +1694,8 @@ window.DUOMENYS = {
    "bendra_kaina": 129000.0,
    "telpa": true,
    "balas": 63,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "rutosnt-namas-ginduliu-k-3",
@@ -2277,6 +2056,44 @@ window.DUOMENYS = {
    ]
   },
   {
+   "id": "domoplius-8664175",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-paupiuose-8664175.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdoje, Paupiuose",
+   "vieta": "Gyvenamasis namas Klaipėdoje, Paupiuose",
+   "kaina": 220900.0,
+   "plotas": 94.0,
+   "sklypas": 6.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8664/8664175-main-151070326-1789381467-eaf9bb657d9d20c6-1dacdddfa94f.webp",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Paupiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 220900.0,
+   "balas": 60,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1048366"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-94-kv-m-ploto/"
+    }
+   ],
+   "sujungti_id": [
+    "domoplius-8652448",
+    "kampas-1048366",
+    "inreal-78034"
+   ]
+  },
+  {
    "id": "rinka-5049173",
    "saltinis": "rinka.lt",
    "url": "https://www.rinka.lt/skelbimas/parduodamas-namas-sakiniu-k-id-5049173",
@@ -2536,44 +2353,8 @@ window.DUOMENYS = {
    "bendra_kaina": 38000.0,
    "telpa": true,
    "balas": 55,
-   "zyma": "NAUJAS",
-   "pirma_karta": "2026-09-22"
-  },
-  {
-   "id": "alio-69622503",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-snaukstai/ID69622503.html",
-   "pavadinimas": "Klaipėdos r. sav., Šnaukštai",
-   "vieta": "Klaipėdos r. sav., Šnaukštai",
-   "kaina": 53000.0,
-   "plotas": 140.0,
-   "sklypas": 6.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260903/05/69622503_6a98e05a3c6ab_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dovilų",
-   "gyvenviete": "Šnaukštai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 53000.0,
-   "telpa": true,
-   "balas": 55,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-snaukstu-k-vakaru-g-parduodamas-140-kv-m-namas-snaukstu-k-1070571"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1070571"
-   ]
+   "pirma_karta": "2026-09-22",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-67091201",
@@ -2600,7 +2381,8 @@ window.DUOMENYS = {
    "bendra_kaina": 60000.0,
    "telpa": true,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8680846",
@@ -2656,7 +2438,8 @@ window.DUOMENYS = {
    "bendra_kaina": 85000.0,
    "telpa": true,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69483351",
@@ -2683,78 +2466,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 55,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69393071",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-sakiniai-vezaiciu-sen.-sakiniu-g./ID69393071.html",
-   "pavadinimas": "Klaipėdos r. sav., Šakiniai (Vėžaičių sen.), Šakinių g.",
-   "vieta": "Klaipėdos r. sav., Šakiniai (Vėžaičių sen.), Šakinių g.",
-   "kaina": 95000.0,
-   "plotas": 112.37,
-   "sklypas": 16450.0,
-   "metai": 1936.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260626/21/69393071_6a3ebffe326aa_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Šakiniai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 95000.0,
-   "telpa": true,
-   "balas": 55,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-sakiniu-k-parduodama-sodyba-parduodama-sodyba-ramioje-gamtos-1061245"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1061245"
-   ]
-  },
-  {
-   "id": "alio-69658859",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-gargzdai/ID69658859.html",
-   "pavadinimas": "Klaipėdos r. sav., Gargždai",
-   "vieta": "Klaipėdos r. sav., Gargždai",
-   "kaina": 104800.0,
-   "plotas": 115.0,
-   "metai": 1994.0,
-   "sildymas": "Elektra",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260914/23/69658859_6aa85e878ee24_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Gargždų",
-   "gyvenviete": "Gargždai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 104800.0,
-   "telpa": true,
-   "balas": 55,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-gargzduose-alyvu-g-8791165.html"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8791165"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-7474978",
@@ -2840,7 +2553,8 @@ window.DUOMENYS = {
    "bendra_kaina": 140000.0,
    "telpa": true,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68486249",
@@ -2866,8 +2580,8 @@ window.DUOMENYS = {
    "bendra_kaina": 140000.0,
    "telpa": true,
    "balas": 55,
-   "zyma": "NAUJAS",
-   "pirma_karta": "2026-09-22"
+   "pirma_karta": "2026-09-22",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8668336",
@@ -3043,68 +2757,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 55,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69455401",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/namas-klaipedos-r.-sav.-kiskenai/ID69455401.html",
-   "pavadinimas": "Namas Klaipėdos r. sav., Kiškėnai",
-   "vieta": "Namas Klaipėdos r. sav., Kiškėnai",
-   "kaina": 185000.0,
-   "plotas": 102.0,
-   "sklypas": 12.0,
-   "metai": 2026.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260902/11/69455401-namas-klaipedos-r-sav-kiskenai-2917-2_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dovilų",
-   "gyvenviete": "Kiškėnai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 185000.0,
-   "telpa": true,
-   "balas": 55,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kiskenuose-8706112.html"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8706112"
-   ]
-  },
-  {
-   "id": "alio-69017377",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-dituva/ID69017377.html",
-   "pavadinimas": "Klaipėdos r. sav., Dituva",
-   "vieta": "Klaipėdos r. sav., Dituva",
-   "kaina": 185000.0,
-   "plotas": 105.0,
-   "sklypas": 6.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260313/23/69017377_69b487b57bb85_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Priekulės",
-   "gyvenviete": "Dituva",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 185000.0,
-   "telpa": true,
-   "balas": 55,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8775892",
@@ -3132,6 +2786,33 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "alio-69017377",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-dituva/ID69017377.html",
+   "pavadinimas": "Klaipėdos r. sav., Dituva",
+   "vieta": "Klaipėdos r. sav., Dituva",
+   "kaina": 185000.0,
+   "plotas": 105.0,
+   "sklypas": 6.0,
+   "pastatas": "Mūrinis",
+   "nuotrauka": "https://s.alio.lt/photos/260313/23/69017377_69b487b57bb85_large.jpg",
+   "data": "2026-09-22",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Priekulės",
+   "gyvenviete": "Dituva",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 185000.0,
+   "telpa": true,
+   "balas": 55,
+   "metai_nezinomi": true,
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
+  },
+  {
    "id": "alio-65134193",
    "saltinis": "alio.lt",
    "url": "https://www.alio.lt/skelbimai/namas-liepu-g.-gobergiske-dauparai-klaipedos-raj./ID65134193.html",
@@ -3156,7 +2837,8 @@ window.DUOMENYS = {
    "bendra_kaina": 190000.0,
    "telpa": true,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8338618",
@@ -3184,53 +2866,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-69431023",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID69431023.html",
-   "pavadinimas": "Klaipėda, Klaipėda, Žaibo g.",
-   "vieta": "Klaipėda, Klaipėda, Žaibo g.",
-   "kaina": 210000.0,
-   "plotas": 90.0,
-   "sklypas": 2.5,
-   "metai": 2023.0,
-   "sildymas": "Dujinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260707/21/69431023_6a4d4065175a2_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "vietove_nepatikslinta": true,
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 210000.0,
-   "balas": 55,
-   "pirma_karta": "2026-09-21",
-   "kopijos": 13,
-   "kopiju_nuorodos": [
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732093.html",
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732065.html",
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732073.html",
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732081.html",
-    "https://www.alio.lt/skelbimai/klaipeda-klaipeda-zaibo-g./ID66732079.html"
-   ],
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787934.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-tauralaukis-zaibo-g-parduodami-namai-naujajame-kvartalevakaru-zeme-959021"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8787934",
-    "kampas-959021"
-   ]
-  },
-  {
    "id": "alio-68736929",
    "saltinis": "alio.lt",
    "url": "https://www.alio.lt/skelbimai/klaipedoje.-prestiziniame-rajone-siaurineje-miesto-dalyje-labrenciskese-parduodamas-namas-su-9/ID68736929.html",
@@ -3252,40 +2887,42 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 225000.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
-   "id": "alio-69549977",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda-miskas-kretingos-g./ID69549977.html",
-   "pavadinimas": "Klaipėda, Miškas, Kretingos g.",
-   "vieta": "Klaipėda, Miškas, Kretingos g.",
-   "kaina": 240000.0,
-   "plotas": 119.34,
-   "sklypas": 5.87,
-   "metai": 1982.0,
-   "sildymas": "Dujinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260812/05/69549977_6a7bd869f1ae6_large.jpg",
+   "id": "kampas-1021411",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-barskiu-g-kotedzai-naujame-kvartale-paupiuose-1021411",
+   "pavadinimas": "Klaipėda, Paupiai, Barškių g.",
+   "vieta": "Klaipėda, Paupiai, Barškių g.",
+   "kaina": 230000.0,
+   "plotas": 90.0,
+   "sklypas": 5.0,
+   "metai": 2024.0,
+   "pastatas": "Blokinis",
+   "nuotrauka": "https://i.kampas.lt/images/2026/06/30/62695128_600x450.jpg",
    "data": "2026-09-22",
    "zona": "A",
    "zonos_aprasas": "Klaipėdos miestas",
    "teritorija": "miestas",
-   "gyvenviete": "Miškas",
-   "namo_tipas": "atskiras namas",
+   "gyvenviete": "Paupiai",
+   "namo_tipas": "kotedžas / dalis",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 240000.0,
+   "bendra_kaina": 230000.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21",
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-22",
    "kitur": [
     {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-trekas-kretingos-g-parduodami-du-atskiri-pastatai-viename-sklype-1067175"
+     "saltinis": "alio.lt",
+     "url": "https://www.alio.lt/skelbimai/klaipeda-paupiai-barskiu-g./ID69683363.html"
     }
    ],
    "sujungti_id": [
-    "kampas-1067175"
+    "alio-69683363"
    ]
   },
   {
@@ -3311,7 +2948,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 244000.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68375975",
@@ -3336,7 +2974,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 249900.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68532133",
@@ -3361,7 +3000,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 252000.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69656673",
@@ -3386,7 +3026,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 255000.0,
    "balas": 55,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-7671589",
@@ -3414,43 +3055,15 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "kampas-1066143",
-   "saltinis": "kampas.lt",
-   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kiskenu-k-smilteles-g-parduodamas-140-kv-m-namas-salia-1066143",
-   "pavadinimas": "Klaipėdos r. sav., Kiškėnai, Smiltelės g.",
-   "vieta": "Klaipėdos r. sav., Kiškėnai, Smiltelės g.",
-   "kaina": 45000.0,
-   "plotas": 140.0,
-   "sklypas": 7.29,
-   "nuotrauka": "https://i.kampas.lt/images/2026/08/03/62849702_600x450.jpg",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dovilų",
-   "gyvenviete": "Kiškėnai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 45000.0,
-   "telpa": true,
-   "balas": 50,
-   "metai_nezinomi": true,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69239647",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/ukinis-pastatas-klaipedos-r.-sav.-dovilai/ID69239647.html",
-   "pavadinimas": "Ūkinis pastatas Klaipėdos r. sav., Dovilai",
-   "vieta": "Ūkinis pastatas Klaipėdos r. sav., Dovilai",
+   "id": "domoplius-8681887",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-kita-klaipedos-rajono-sav-doviluose-klaipedos-g-8681887.html",
+   "pavadinimas": "Kita Klaipėdos rajono sav., Doviluose, Klaipėdos g.",
+   "vieta": "Kita Klaipėdos rajono sav., Doviluose, Klaipėdos g.",
    "kaina": 53000.0,
    "plotas": 136.0,
    "sklypas": 20.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260508/11/69239647-ukinis-pastatas-klaipedos-r-sav-dovilai-klaipedos--2430-4_large.jpg",
-   "data": "2026-08-23",
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8681/8681887-main-144482494-1778230115-784c6692708603e1-371cadf3c7d7.webp",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3463,16 +3076,33 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 50,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-kita-klaipedos-rajono-sav-doviluose-klaipedos-g-8681887.html"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8681887"
-   ]
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "kampas-1070571",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-snaukstu-k-vakaru-g-parduodamas-140-kv-m-namas-snaukstu-k-1070571",
+   "pavadinimas": "Klaipėdos r. sav., Šnaukštai, Vakarų g.",
+   "vieta": "Klaipėdos r. sav., Šnaukštai, Vakarų g.",
+   "kaina": 53000.0,
+   "plotas": 140.0,
+   "sklypas": 6.0,
+   "nuotrauka": "https://i.kampas.lt/images/2026/03/30/62160103_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dovilų",
+   "gyvenviete": "Šnaukštai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 53000.0,
+   "telpa": true,
+   "balas": 50,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
   },
   {
    "id": "ntportalas-741577",
@@ -3503,13 +3133,14 @@ window.DUOMENYS = {
   {
    "id": "domoplius-8792626",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-gargzduose-8792626.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Gargžduose",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Gargžduose",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-gargzduose-8792626.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Gargžduose",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Gargžduose",
    "kaina": 100000.0,
    "plotas": 170.0,
    "sklypas": 7.0,
    "metai": 2004.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8792/8792626-main-151486444-1790250462-1bc9845beb6eefb3-080dfc47171e.webp",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -3519,6 +3150,30 @@ window.DUOMENYS = {
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 100000.0,
+   "telpa": true,
+   "balas": 50,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8791165",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-gargzduose-alyvu-g-8791165.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Gargžduose, Alyvų g.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Gargžduose, Alyvų g.",
+   "kaina": 104800.0,
+   "plotas": 115.0,
+   "metai": 1994.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8791/8791165-main-151078918-1789382104-83dcea12b6af2a95-85528232fdde.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Gargždų",
+   "gyvenviete": "Gargždai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 104800.0,
    "telpa": true,
    "balas": 50,
    "data_nezinoma": true,
@@ -3799,11 +3454,36 @@ window.DUOMENYS = {
    ]
   },
   {
+   "id": "domoplius-8706112",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kiskenuose-8706112.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Kiškėnuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Kiškėnuose",
+   "kaina": 185000.0,
+   "plotas": 102.0,
+   "sklypas": 12.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8706/8706112-main-146976286-1784037936-e8d1c4b1cc694fcd-a87d67828da1.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dovilų",
+   "gyvenviete": "Kiškėnai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 185000.0,
+   "telpa": true,
+   "balas": 50,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
    "id": "domoplius-8668483",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-slapsileje-8668483.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Šlapšilėje",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Šlapšilėje",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-slapsileje-8668483.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Šlapšilėje",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Šlapšilėje",
    "kaina": 185000.0,
    "plotas": 180.0,
    "sklypas": 16.0,
@@ -3870,7 +3550,8 @@ window.DUOMENYS = {
    "bendra_kaina": 199000.0,
    "telpa": true,
    "balas": 50,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8655784",
@@ -3896,6 +3577,46 @@ window.DUOMENYS = {
    "balas": 50,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8787979",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787979.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdoje, Tauralaukyje",
+   "vieta": "Gyvenamasis namas Klaipėdoje, Tauralaukyje",
+   "kaina": 210000.0,
+   "plotas": 90.0,
+   "sklypas": 2.5,
+   "metai": 2024.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8787/8787979-main-150659197-1788646216-d459c70f123b9d72-e5736455109a.webp",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Tauralaukis",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 210000.0,
+   "balas": 50,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kopijos": 13,
+   "kopiju_nuorodos": [
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787967.html",
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787964.html",
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787961.html",
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787958.html",
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedoje-tauralaukyje-8787955.html"
+   ],
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-tauralaukis-zaibo-g-parduodami-namai-naujajame-kvartalevakaru-zeme-959021"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-959021"
+   ]
   },
   {
    "id": "kampas-1060763",
@@ -3976,6 +3697,66 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "kampas-1067175",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-trekas-kretingos-g-parduodami-du-atskiri-pastatai-viename-sklype-1067175",
+   "pavadinimas": "Klaipėda, Trekas, Kretingos g.",
+   "vieta": "Klaipėda, Trekas, Kretingos g.",
+   "kaina": 240000.0,
+   "plotas": 119.0,
+   "sklypas": 5.87,
+   "nuotrauka": "https://i.kampas.lt/images/2026/05/09/62403732_600x450.jpg",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "vietove_nepatikslinta": true,
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 240000.0,
+   "balas": 50,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8792281",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-sublokuotas-namas-klaipedoje-paupiuose-8792281.html",
+   "pavadinimas": "Sublokuotas namas Klaipėdoje, Paupiuose",
+   "vieta": "Sublokuotas namas Klaipėdoje, Paupiuose",
+   "kaina": 245000.0,
+   "plotas": 115.0,
+   "sklypas": 3.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8792/8792281-main-151201564-1789567312-2fa218276730969d-a591b5fe970e.webp",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Paupiai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 245000.0,
+   "balas": 50,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-ieskote-modernaus-kokybisko-ir-strategiskai-1072729"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipeda-115-kv-m-ploto/"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1072729",
+    "inreal-86692"
+   ]
+  },
+  {
    "id": "kampas-975259",
    "saltinis": "kampas.lt",
    "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-mazasis-kaimelis-baltijos-10-oji-g-parduodamas-namas-andscaronalia-975259",
@@ -4023,6 +3804,29 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-22"
   },
   {
+   "id": "kampas-1040648",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-poilsis-poilsio-g-1040648",
+   "pavadinimas": "Klaipėda, Poilsis, Poilsio g.",
+   "vieta": "Klaipėda, Poilsis, Poilsio g.",
+   "kaina": 249999.0,
+   "plotas": 114.9,
+   "sklypas": 3.0,
+   "nuotrauka": "https://www.kampas.lt/storage/images/2026/01/15/61626273_600x450.jpg",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Poilsio",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 249999.0,
+   "balas": 50,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
    "id": "kampas-1024382",
    "saltinis": "kampas.lt",
    "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-tauralaukis-griaustinio-g-parduodami-2-dvibuciai-namai-klaipedoje-1024382",
@@ -4044,6 +3848,43 @@ window.DUOMENYS = {
    "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8684863",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-sublokuotas-namas-klaipedoje-paupiuose-8684863.html",
+   "pavadinimas": "Sublokuotas namas Klaipėdoje, Paupiuose",
+   "vieta": "Sublokuotas namas Klaipėdoje, Paupiuose",
+   "kaina": 255000.0,
+   "plotas": 131.0,
+   "sklypas": 3.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8684/8684863-main-151071049-1789381510-2fa218276730969d-760994547d32.webp",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Paupiai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 255000.0,
+   "balas": 50,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-paupiai-kalniskiu-g-parduodamas-sublokuotas-namas-kalniskiu-g-1055954"
+    },
+    {
+     "saltinis": "inreal.lt",
+     "url": "https://www.inreal.lt/objektas/parduodamas-namas-kalniskiu-g-paupiuose-klaipedoje-131-kv-m-ploto/"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1055954",
+    "inreal-79896"
+   ]
   },
   {
    "id": "ntportalas-741465",
@@ -4077,6 +3918,31 @@ window.DUOMENYS = {
    "sujungti_id": [
     "kampas-383680"
    ]
+  },
+  {
+   "id": "kampas-1073429",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-alksniu-k-svyturio-g-nebaigtas-statyti-sublokuotas-namas-1073429",
+   "pavadinimas": "Klaipėdos r. sav., Alksniai, Švyturio g.",
+   "vieta": "Klaipėdos r. sav., Alksniai, Švyturio g.",
+   "kaina": 110000.0,
+   "plotas": 170.0,
+   "sklypas": 19.04,
+   "nuotrauka": "https://i.kampas.lt/images/2026/08/19/62903039_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Alksniai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "neirengtas",
+   "irengimo_samata": 0,
+   "bendra_kaina": 110000.0,
+   "telpa": true,
+   "balas": 48,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-22"
   },
   {
    "id": "kampas-1040415",
@@ -4235,201 +4101,8 @@ window.DUOMENYS = {
    "bendra_kaina": 60000.0,
    "telpa": true,
    "balas": 45,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-68451245",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-erdvus-a++-klases-110-kv.-m-namas-prie-pat-klaipedos-miesto-klipsciuose./ID68451245.html",
-   "pavadinimas": "Parduodamas erdvus A++ klasės, 110 kv. m namas prie pat Klaipėdos miesto, Klipščiuose.",
-   "vieta": "Parduodamas erdvus A++ klasės, 110 kv. m namas prie pat Klaipėdos miesto, Klipščiuose.",
-   "kaina": 209000.0,
-   "plotas": 110.0,
-   "sklypas": 4.75,
-   "metai": 2025.0,
-   "sildymas": "Geoterminis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/251021/18/68451245-5509-11_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Klipščiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 209000.0,
-   "balas": 45,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "ntportalas.lt",
-     "url": "https://ntportalas.lt/parduodamas-erdvus-a++-klases-110-kv-m-namas-pri_741674"
-    }
-   ],
-   "sujungti_id": [
-    "ntportalas-741674"
-   ]
-  },
-  {
-   "id": "alio-69032595",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-mazuriskiai-stones-g./ID69032595.html",
-   "pavadinimas": "Klaipėdos r. sav., Mazūriškiai, Stonės g.",
-   "vieta": "Klaipėdos r. sav., Mazūriškiai, Stonės g.",
-   "kaina": 215000.0,
-   "plotas": 170.0,
-   "sklypas": 12.5,
-   "metai": 2024.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260921/23/69032595_6ab199012463a_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Mazūriškiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 215000.0,
-   "balas": 45,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-mazuriskiuose-stones-g-8663389.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-mazuriskiu-k-stones-g-parduodamas-modernus-ir-erdvus-namas-1048021"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8663389",
-    "kampas-1048021"
-   ]
-  },
-  {
-   "id": "alio-69597647",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/8-kambariu-karkasinis-namas-klaipedos-raj.-radailiai/ID69597647.html",
-   "pavadinimas": "8 kambarių karkasinis namas Klaipėdos raj., Radailiai",
-   "vieta": "8 kambarių karkasinis namas Klaipėdos raj., Radailiai",
-   "kaina": 225000.0,
-   "plotas": 205.28,
-   "sklypas": 12.68,
-   "metai": 2006.0,
-   "sildymas": "Geoterminis",
-   "pastatas": "Karkasinis",
-   "nuotrauka": "https://s.alio.lt/photos/260827/12/69597647-3915-0_large.jpg",
-   "data": "2026-09-10",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Radailiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 225000.0,
-   "balas": 45,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-radailiuose-berzyno-g-8783386.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-radailiu-k-berzyno-g-teiraukites-telefonu37066223391-ruta205-1069268"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8783386",
-    "kampas-1069268"
-   ]
-  },
-  {
-   "id": "alio-69660265",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-truseliai/ID69660265.html",
-   "pavadinimas": "Klaipėdos r. sav., Trušeliai",
-   "vieta": "Klaipėdos r. sav., Trušeliai",
-   "kaina": 230000.0,
-   "plotas": 99.46,
-   "sklypas": 14.5,
-   "metai": 2018.0,
-   "sildymas": "Dujinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260915/21/69660265_6aa9893d8ac4a_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Trušeliai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 230000.0,
-   "balas": 45,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-truseliuose-8791918.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-truseliu-k-deimenos-g-parduodamas-dvibutis-blokuotas-namas-1072460"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8791918",
-    "kampas-1072460"
-   ]
-  },
-  {
-   "id": "alio-69252015",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-klipsciai/ID69252015.html",
-   "pavadinimas": "Klaipėdos r. sav., Klipščiai",
-   "vieta": "Klaipėdos r. sav., Klipščiai",
-   "kaina": 237000.0,
-   "plotas": 119.0,
-   "sklypas": 5.0,
-   "metai": 2023.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260515/17/69252015_6a0732999ccbc_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Klipščiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 237000.0,
-   "balas": 45,
-   "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klipsciuose-8682691.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-klipsciu-k-sviesus-ir-erdvus-namai-klipsciuose-andndash-1055194"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8682691",
-    "kampas-1055194"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68044151",
@@ -4455,119 +4128,8 @@ window.DUOMENYS = {
    "samatos_budas": "įrengtas — skaičiuoti nėra ko",
    "bendra_kaina": 239000.0,
    "balas": 45,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-67822799",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/puikiai-suprojektuotas-aukstomis-lubomis-modernaus-dizaino-namas-mazuriskiu-kaime./ID67822799.html",
-   "pavadinimas": "Puikiai suprojektuotas, aukštomis lubomis, modernaus dizaino namas Mazūriškių kaime.",
-   "vieta": "Puikiai suprojektuotas, aukštomis lubomis, modernaus dizaino namas Mazūriškių kaime.",
-   "kaina": 243000.0,
-   "plotas": 122.0,
-   "sklypas": 5.0,
-   "metai": 2025.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250522/19/67822799-2100-3_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Mazūriškiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 243000.0,
-   "balas": 45,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "ntportalas.lt",
-     "url": "https://ntportalas.lt/puikiai-suprojektuotas-aukscaron;tomis-lubomis-mo_741635"
-    },
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-mazuriskiuose-8534257.html"
-    }
-   ],
-   "sujungti_id": [
-    "ntportalas-741635",
-    "domoplius-8534257"
-   ]
-  },
-  {
-   "id": "alio-68746241",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-naujai-sublokuotas-namas-poilsio-g./ID68746241.html",
-   "pavadinimas": "Parduodamas naujai sublokuotas namas Poilsio g.",
-   "vieta": "Parduodamas naujai sublokuotas namas Poilsio g.",
-   "kaina": 249999.0,
-   "plotas": 114.9,
-   "sklypas": 3.0,
-   "metai": 2025.0,
-   "sildymas": "Dujinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260108/15/68746241-4315-0_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Poilsio",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 249999.0,
-   "balas": 45,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedoje-poilsis-poilsio-g-1040648"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1040648"
-   ]
-  },
-  {
-   "id": "alio-69367999",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-jakai-bajoru-g./ID69367999.html",
-   "pavadinimas": "Klaipėdos r. sav., Jakai, Bajorų g.",
-   "vieta": "Klaipėdos r. sav., Jakai, Bajorų g.",
-   "kaina": 250000.0,
-   "plotas": 222.0,
-   "sklypas": 6.0,
-   "metai": 1994.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260619/23/69367999_6a35aca67ad15_large.jpg",
-   "data": "2026-09-22",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Jakai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 250000.0,
-   "balas": 45,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-jakuose-bajoru-g-8697901.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-jaku-k-bajoru-g-gyvenk-ir-kurk-savo-versla-vieno-1060521"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8697901",
-    "kampas-1060521"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69640623",
@@ -4592,7 +4154,34 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 255000.0,
    "balas": 45,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
+  },
+  {
+   "id": "capital-357568",
+   "saltinis": "capital.lt",
+   "url": "https://www.capital.lt/lt/parduodamas-namas-perkunu-g-16-vezaiciu-mstl-24089-kvm-ploto-1-aukstai-p357568",
+   "pavadinimas": "Klaipėdos r. sav., Vėžaičių mstl., Perkūnų g.",
+   "vieta": "Klaipėdos r. sav., Vėžaičių mstl., Perkūnų g.",
+   "kaina": 95000.0,
+   "plotas": 240.89,
+   "kambariai": 6.0,
+   "metai": 2024.0,
+   "tipas": "Namą",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Vėžaičių",
+   "gyvenviete": "Vėžaičiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 95000.0,
+   "telpa": true,
+   "balas": 42,
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
   },
   {
    "id": "domoplius-8339278",
@@ -4694,7 +4283,8 @@ window.DUOMENYS = {
    "bendra_kaina": 69000.0,
    "telpa": true,
    "balas": 40,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8680480",
@@ -4722,41 +4312,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-69658849",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-voveriskiai/ID69658849.html",
-   "pavadinimas": "Klaipėdos r. sav., Voveriškiai",
-   "vieta": "Klaipėdos r. sav., Voveriškiai",
-   "kaina": 75000.0,
-   "plotas": 138.0,
-   "sklypas": 50.0,
-   "metai": 1918.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260914/23/69658849_6aa85e756c99a_large.jpg",
-   "data": "2026-09-22",
-   "zona": "D",
-   "zonos_aprasas": "Tolimesnis rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Priekulės",
-   "gyvenviete": "Voveriškiai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 75000.0,
-   "telpa": true,
-   "balas": 40,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-voveriskiu-k-parduodama-sodybos-dalis-klaipedos-rajone-993762"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-993762"
-   ]
-  },
-  {
    "id": "domoplius-8188774",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-sublokuotas-namas-klaipedos-rajono-sav-slapsileje-8188774.html",
@@ -4780,47 +4335,6 @@ window.DUOMENYS = {
    "balas": 40,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69455399",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-veivirzenai/ID69455399.html",
-   "pavadinimas": "Klaipėdos r. sav., Veiviržėnai",
-   "vieta": "Klaipėdos r. sav., Veiviržėnai",
-   "kaina": 85000.0,
-   "plotas": 119.0,
-   "sklypas": 9.0,
-   "metai": 1925.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260714/23/69455399_6a56a186f090b_large.jpg",
-   "data": "2026-09-22",
-   "zona": "D",
-   "zonos_aprasas": "Tolimesnis rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Veiviržėnų",
-   "gyvenviete": "Veiviržėnai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 85000.0,
-   "telpa": true,
-   "balas": 40,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-veivirzenuose-8706202.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-veivirzenu-mstl-parduodama-1063595"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8706202",
-    "kampas-1063595"
-   ]
   },
   {
    "id": "domoplius-8668252",
@@ -4873,6 +4387,30 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "kampas-1061245",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-sakiniu-k-parduodama-sodyba-parduodama-sodyba-ramioje-gamtos-1061245",
+   "pavadinimas": "Klaipėdos r. sav., Šakiniai",
+   "vieta": "Klaipėdos r. sav., Šakiniai",
+   "kaina": 95000.0,
+   "plotas": 112.0,
+   "nuotrauka": "https://i.kampas.lt/images/2025/08/13/60258540_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Šakiniai",
+   "namo_tipas": "sodyba",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 95000.0,
+   "telpa": true,
+   "balas": 40,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
    "id": "alio-68177253",
    "saltinis": "alio.lt",
    "url": "https://www.alio.lt/skelbimai/vezaiciu-miestelyje-prie-uztvankos-parduodamas-erdvus-4-kambariu-namas-su-8a-sklypu./ID68177253.html",
@@ -4896,42 +4434,68 @@ window.DUOMENYS = {
    "bendra_kaina": 135000.0,
    "telpa": true,
    "balas": 40,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
-   "id": "alio-69649303",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-tilvikai/ID69649303.html",
-   "pavadinimas": "Klaipėdos r. sav., Tilvikai",
-   "vieta": "Klaipėdos r. sav., Tilvikai",
-   "kaina": 142900.0,
-   "plotas": 167.39,
-   "sklypas": 0.196,
-   "metai": 1989.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260911/15/69649303_6aa3eea9e1d85_large.jpg",
-   "data": "2026-09-22",
-   "zona": "D",
-   "zonos_aprasas": "Tolimesnis rajonas",
+   "id": "rutosnt-3-kambariu-murinis-namas-klaipedos-r-sav",
+   "saltinis": "rutosnt.lt",
+   "url": "https://rutosnt.lt/properties/3-kambariu-murinis-namas-klaipedos-r-sav-kvietiniu-k-2/",
+   "pavadinimas": "3 Kambarių mūrinis namas Klaipėdos r. sav., Kvietinių k. Klaipėdos r. sav.",
+   "vieta": "3 Kambarių mūrinis namas Klaipėdos r. sav., Kvietinių k. Klaipėdos r. sav.",
+   "kaina": 140000.0,
+   "plotas": 163.0,
+   "kambariai": 3.0,
+   "metai": 1972.0,
+   "nuotrauka": "https://rutosnt.lt/wp-content/uploads/2026/03/3-Photoroom-1-1.png",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
-   "seniunija": "Vėžaičių",
-   "gyvenviete": "Tilvikai",
-   "namo_tipas": "atskiras namas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Kvietiniai",
+   "namo_tipas": "kotedžas / dalis",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 142900.0,
+   "bendra_kaina": 140000.0,
    "telpa": true,
    "balas": 40,
-   "pirma_karta": "2026-09-21",
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8794579",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-kotedzas-klaipedos-r-sav-kretingaleje-rudens-g-8794579.html",
+   "pavadinimas": "Kotedžas Klaipėdos r. sav., Kretingalėje, Rudens g.",
+   "vieta": "Kotedžas Klaipėdos r. sav., Kretingalėje, Rudens g.",
+   "kaina": 145000.0,
+   "plotas": 101.0,
+   "sklypas": 7.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8794/8794579-main-151398193-1790070066-a757d764fa474eeb-c839ff89eec2.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Kretingalės",
+   "gyvenviete": "Kretingalė",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 145000.0,
+   "telpa": true,
+   "balas": 40,
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28",
    "kitur": [
     {
      "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-tilviku-k-zvelsos-g-parduodamas-erdvus-gyvenamasis-namas-su-1071955"
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kretingales-mstl-rudens-g-teiraukites-telefonu37067844599-1073731"
     }
    ],
    "sujungti_id": [
-    "kampas-1071955"
+    "kampas-1073731"
    ]
   },
   {
@@ -4983,7 +4547,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 40,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8775484",
@@ -5086,31 +4651,6 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8775775",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodama-gyvenamojo-namo-dalis-klaipedos-rajono-sav-slapsileje-8775775.html",
-   "pavadinimas": "Gyvenamojo namo dalis Klaipėdos rajono sav., Šlapšilėje",
-   "vieta": "Gyvenamojo namo dalis Klaipėdos rajono sav., Šlapšilėje",
-   "kaina": 195000.0,
-   "plotas": 120.0,
-   "sklypas": 7.0,
-   "metai": 2023.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8775/8775775-main-149334685-1786440046-95086ad4028926ef-168c88892d54.webp",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Šlapšilė",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 195000.0,
-   "telpa": true,
-   "balas": 40,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
    "id": "domoplius-8566405",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-truseliuose-alnos-g-8566405.html",
@@ -5156,6 +4696,31 @@ window.DUOMENYS = {
    "balas": 40,
    "metai_nezinomi": true,
    "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "ntportalas-741674",
+   "saltinis": "ntportalas.lt",
+   "url": "https://ntportalas.lt/parduodamas-erdvus-a++-klases-110-kv-m-namas-pri_741674",
+   "pavadinimas": "Klipščių k. Lazdynų g.",
+   "vieta": "Klipščių k. Lazdynų g.",
+   "kaina": 209000.0,
+   "plotas": 110.0,
+   "sklypas": 5.0,
+   "metai": 2025.0,
+   "pastatas": "mūrinis",
+   "nuotrauka": "https://ntportalas.lt/images/objphoto/min/min_ntxml148c784039df155b2ad225bb7e5b606f2_58582eksterjeras-5.jpg",
+   "data": "2026-03-20",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Klipščiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 209000.0,
+   "balas": 40,
    "pirma_karta": "2026-09-21"
   },
   {
@@ -5230,6 +4795,39 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "domoplius-8663389",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-mazuriskiuose-stones-g-8663389.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Mazūriškiuose, Stonės g.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Mazūriškiuose, Stonės g.",
+   "kaina": 215000.0,
+   "plotas": 170.0,
+   "sklypas": 12.0,
+   "metai": 2025.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8663/8663389-main-151380532-1790025343-98a9e7c668f957a8-56e829c7bb2b.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Mazūriškiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 215000.0,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-mazuriskiu-k-stones-g-parduodamas-modernus-ir-erdvus-namas-1048021"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1048021"
+   ]
+  },
+  {
    "id": "ntportalas-741641",
    "saltinis": "ntportalas.lt",
    "url": "https://ntportalas.lt/sparciai-vystosi-gyvenamasi-kvartalas-kurio-staty_741641",
@@ -5252,7 +4850,6 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 216000.0,
    "balas": 40,
-   "zyma": "NAUJAS",
    "pirma_karta": "2026-09-22"
   },
   {
@@ -5379,31 +4976,36 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-65101799",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/namo-dalis-klaipeda-vetrunge/ID65101799.html",
-   "pavadinimas": "Namo dalis Klaipėda, Vėtrungė",
-   "vieta": "Namo dalis Klaipėda, Vėtrungė",
+   "id": "domoplius-8783386",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-radailiuose-berzyno-g-8783386.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Radailiuose, Beržyno g.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Radailiuose, Beržyno g.",
    "kaina": 225000.0,
-   "plotas": 193.0,
-   "sklypas": 1.0,
-   "metai": 1999.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/230320/16/65101799-7917-0_large.jpg",
-   "data": "2026-07-24",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Vėtrungė",
-   "namo_tipas": "kotedžas / dalis",
+   "plotas": 205.28,
+   "sklypas": 12.68,
+   "metai": 2006.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8783/8783386-main-150284482-1787834477-6f86dacec56e8611-3c05e8e45a0c.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Radailiai",
+   "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 225000.0,
    "balas": 40,
+   "data_nezinoma": true,
    "pirma_karta": "2026-09-21",
-   "kopijos": 2,
-   "kopiju_nuorodos": [
-    "https://www.alio.lt/skelbimai/namo-dalis-klaipeda-vetrunge/ID68562475.html"
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-radailiu-k-berzyno-g-teiraukites-telefonu37066223391-ruta205-1069268"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1069268"
    ]
   },
   {
@@ -5438,6 +5040,35 @@ window.DUOMENYS = {
    ],
    "sujungti_id": [
     "kampas-852154"
+   ]
+  },
+  {
+   "id": "alio-65101799",
+   "saltinis": "alio.lt",
+   "url": "https://www.alio.lt/skelbimai/namo-dalis-klaipeda-vetrunge/ID65101799.html",
+   "pavadinimas": "Namo dalis Klaipėda, Vėtrungė",
+   "vieta": "Namo dalis Klaipėda, Vėtrungė",
+   "kaina": 225000.0,
+   "plotas": 193.0,
+   "sklypas": 1.0,
+   "metai": 1999.0,
+   "pastatas": "Mūrinis",
+   "nuotrauka": "https://s.alio.lt/photos/230320/16/65101799-7917-0_large.jpg",
+   "data": "2026-07-24",
+   "zona": "A",
+   "zonos_aprasas": "Klaipėdos miestas",
+   "teritorija": "miestas",
+   "gyvenviete": "Vėtrungė",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 225000.0,
+   "balas": 40,
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22",
+   "kopijos": 2,
+   "kopiju_nuorodos": [
+    "https://www.alio.lt/skelbimai/namo-dalis-klaipeda-vetrunge/ID68562475.html"
    ]
   },
   {
@@ -5494,6 +5125,39 @@ window.DUOMENYS = {
    ],
    "sujungti_id": [
     "kampas-1071879"
+   ]
+  },
+  {
+   "id": "domoplius-8791918",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-truseliuose-8791918.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Trušeliuose",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Trušeliuose",
+   "kaina": 230000.0,
+   "plotas": 99.46,
+   "sklypas": 14.5,
+   "metai": 2018.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8791/8791918-main-151598983-1790545144-185a05a4eb784748-25d72b9467ab.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Trušeliai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 230000.0,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-truseliu-k-deimenos-g-parduodamas-dvibutis-blokuotas-namas-1072460"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1072460"
    ]
   },
   {
@@ -5616,12 +5280,45 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "domoplius-8682691",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klipsciuose-8682691.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Klipščiuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Klipščiuose",
+   "kaina": 237000.0,
+   "plotas": 119.0,
+   "sklypas": 5.0,
+   "metai": 2023.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8682/8682691-main-144905794-1779195892-85e5d56baaea5545-43d7e1b353f0.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Klipščiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 237000.0,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-klipsciu-k-sviesus-ir-erdvus-namai-klipsciuose-andndash-1055194"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1055194"
+   ]
+  },
+  {
    "id": "domoplius-8793373",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-truseliuose-silininku-g-8793373.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Trušeliuose, Šilininkų g.",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Trušeliuose, Šilininkų g.",
-   "kaina": 239000.0,
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-truseliuose-silininku-g-8793373.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Trušeliuose, Šilininkų g.",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Trušeliuose, Šilininkų g.",
+   "kaina": 238000.0,
    "plotas": 90.0,
    "sklypas": 1.79,
    "metai": 2026.0,
@@ -5634,10 +5331,12 @@ window.DUOMENYS = {
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 239000.0,
+   "bendra_kaina": 238000.0,
    "balas": 40,
    "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
+   "zyma": "ATPIGO",
+   "pirma_karta": "2026-09-21",
+   "sena_kaina": 239000.0
   },
   {
    "id": "rinka-5041208",
@@ -5732,28 +5431,38 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "kampas-1045296",
-   "saltinis": "kampas.lt",
-   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-truseliu-k-ragupes-g-parduodami-a-klases-namai-isvystytame-1045296",
-   "pavadinimas": "Klaipėdos r. sav., Trušeliai, Ragupės g.",
-   "vieta": "Klaipėdos r. sav., Trušeliai, Ragupės g.",
-   "kaina": 240000.0,
-   "plotas": 125.0,
+   "id": "ntportalas-741635",
+   "saltinis": "ntportalas.lt",
+   "url": "https://ntportalas.lt/puikiai-suprojektuotas-aukscaron;tomis-lubomis-mo_741635",
+   "pavadinimas": "Mazūriškių k.",
+   "vieta": "Mazūriškių k.",
+   "kaina": 243000.0,
+   "plotas": 122.0,
    "sklypas": 5.0,
-   "nuotrauka": "https://www.kampas.lt/storage/images/2026/04/29/62355815_600x450.jpg",
+   "metai": 2025.0,
+   "pastatas": "mūrinis",
+   "nuotrauka": "https://ntportalas.lt/images/objphoto/min/min_ntxml11a8ab01d778aa986e665e24e5f0bff38_707002a5a0faa-eb88-41cd-902f-b3556c590fb8.jpg",
+   "data": "2026-03-20",
    "zona": "B",
    "zonos_aprasas": "Sendvario seniūnija",
    "teritorija": "rajonas",
    "seniunija": "Sendvario",
-   "gyvenviete": "Trušeliai",
+   "gyvenviete": "Mazūriškiai",
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 240000.0,
+   "bendra_kaina": 243000.0,
    "balas": 40,
-   "metai_nezinomi": true,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "domoplius.lt",
+     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-mazuriskiuose-8534257.html"
+    }
+   ],
+   "sujungti_id": [
+    "domoplius-8534257"
+   ]
   },
   {
    "id": "ntportalas-741850",
@@ -5839,6 +5548,39 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "domoplius-8697901",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-jakuose-bajoru-g-8697901.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Jakuose, Bajorų g.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Jakuose, Bajorų g.",
+   "kaina": 250000.0,
+   "plotas": 222.0,
+   "sklypas": 6.0,
+   "metai": 1994.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8697/8697901-main-149290957-1786380104-92713506c374eaea-86ebd1069086.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Jakai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 250000.0,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-jaku-k-bajoru-g-gyvenk-ir-kurk-savo-versla-vieno-1060521"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1060521"
+   ]
+  },
+  {
    "id": "domoplius-8706040",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-klemiske-ii-arimu-g-8706040.html",
@@ -5918,6 +5660,31 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "kampas-1074068",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-sudmantu-k-eriko-purvino-g-teiraukites-telefonu37065742770-1074068",
+   "pavadinimas": "Klaipėdos r. sav., Sudmantai, Eriko Purvino g.",
+   "vieta": "Klaipėdos r. sav., Sudmantai, Eriko Purvino g.",
+   "kaina": 250000.0,
+   "plotas": 140.0,
+   "sklypas": 10.0,
+   "nuotrauka": "https://www.kampas.lt/storage/images/2026/09/24/63090006_600x450.jpg",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Sudmantai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 250000.0,
+   "balas": 40,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
+  },
+  {
    "id": "ntportalas-741580",
    "saltinis": "ntportalas.lt",
    "url": "https://ntportalas.lt/parduodamas-2ju-aukscaron;tu-pilnai-irengtas-kot_741580",
@@ -5989,7 +5756,6 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 255000.0,
    "balas": 40,
-   "zyma": "NAUJAS",
    "pirma_karta": "2026-09-22",
    "kitur": [
     {
@@ -6126,7 +5892,6 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 260000.0,
    "balas": 40,
-   "zyma": "NAUJAS",
    "pirma_karta": "2026-09-22",
    "kitur": [
     {
@@ -6297,16 +6062,7 @@ window.DUOMENYS = {
    "samatos_budas": "baigtumas 100 %",
    "bendra_kaina": 250000.0,
    "balas": 37,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-klausmyliu-vs-gijos-g-teiraukites-telefonu-37066223391-rutaa-978667"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-978667"
-   ]
+   "pirma_karta": "2026-09-21"
   },
   {
    "id": "ntportalas-741582",
@@ -6332,7 +6088,6 @@ window.DUOMENYS = {
    "bendra_kaina": 65000.0,
    "telpa": true,
    "balas": 35,
-   "zyma": "NAUJAS",
    "pirma_karta": "2026-09-22",
    "kitur": [
     {
@@ -6396,6 +6151,40 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "domoplius-8706202",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-veivirzenuose-8706202.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Veiviržėnuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Veiviržėnuose",
+   "kaina": 85000.0,
+   "plotas": 119.0,
+   "sklypas": 9.0,
+   "metai": 1925.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8706/8706202-main-149267908-1786358033-5f10547fc474afd1-c806997a4433.webp",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Veiviržėnų",
+   "gyvenviete": "Veiviržėnai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 85000.0,
+   "telpa": true,
+   "balas": 35,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-veivirzenu-mstl-parduodama-1063595"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-1063595"
+   ]
+  },
+  {
    "id": "domoplius-7471933",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-priekuleje-7471933.html",
@@ -6420,16 +6209,15 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8776027",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-vezaiciuose-8776027.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
-   "kaina": 122000.0,
-   "plotas": 193.0,
-   "sklypas": 14.0,
-   "metai": 2002.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8776/8776027-main-149336659-1786440223-95140a598ee6dc0d-8e577d656017.webp",
+   "id": "kampas-1074261",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-vezaiciu-mstl-perkunu-g-parduodamas-erdvus-namas-su-50-aru-1074261",
+   "pavadinimas": "Klaipėdos r. sav., Vėžaičiai, Perkūnų g.",
+   "vieta": "Klaipėdos r. sav., Vėžaičiai, Perkūnų g.",
+   "kaina": 95000.0,
+   "plotas": 240.0,
+   "sklypas": 50.0,
+   "nuotrauka": "https://i.kampas.lt/images/2026/09/25/63097861_600x450.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6438,11 +6226,13 @@ window.DUOMENYS = {
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 122000.0,
+   "bendra_kaina": 95000.0,
    "telpa": true,
    "balas": 35,
+   "metai_nezinomi": true,
    "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
   },
   {
    "id": "domoplius-8775559",
@@ -6470,27 +6260,27 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8791564",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-vezaiciuose-8791564.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
-   "kaina": 145000.0,
-   "plotas": 230.0,
-   "sklypas": 18.0,
-   "metai": 1981.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8791/8791564-main-151178569-1789536503-e1aca359fb12caa1-ce9d3a29b360.webp",
+   "id": "kampas-1071955",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-tilviku-k-zvelsos-g-parduodamas-erdvus-gyvenamasis-namas-su-1071955",
+   "pavadinimas": "Klaipėdos r. sav., Tilvikai, Žvelsos g.",
+   "vieta": "Klaipėdos r. sav., Tilvikai, Žvelsos g.",
+   "kaina": 142900.0,
+   "plotas": 167.0,
+   "sklypas": 0.19,
+   "nuotrauka": "https://i.kampas.lt/images/2026/09/10/63013616_600x450.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
    "seniunija": "Vėžaičių",
-   "gyvenviete": "Vėžaičiai",
+   "gyvenviete": "Tilvikai",
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 145000.0,
+   "bendra_kaina": 142900.0,
    "telpa": true,
    "balas": 35,
+   "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
   },
@@ -6521,16 +6311,15 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-22"
   },
   {
-   "id": "domoplius-7324990",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-vezaiciuose-purienu-g-7324990.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose, Purienų g.",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose, Purienų g.",
+   "id": "kampas-784237",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-vezaiciu-mstl-purienu-g-galimas-pirkimas-su-banko-paskola-784237",
+   "pavadinimas": "Klaipėdos r. sav., Vėžaičiai, Purienų g.",
+   "vieta": "Klaipėdos r. sav., Vėžaičiai, Purienų g.",
    "kaina": 170000.0,
    "plotas": 100.0,
    "sklypas": 6.0,
-   "metai": 2022.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/7324/7324990-main-144865333-1779189795-ad9821f3150a28c6-8731294d0a87.webp",
+   "nuotrauka": "https://i.kampas.lt/images/2023/10/11/44917797_600x450.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
@@ -6542,17 +6331,9 @@ window.DUOMENYS = {
    "bendra_kaina": 170000.0,
    "telpa": true,
    "balas": 35,
+   "metai_nezinomi": true,
    "data_nezinoma": true,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-vezaiciu-mstl-purienu-g-galimas-pirkimas-su-banko-paskola-784237"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-784237"
-   ]
+   "pirma_karta": "2026-09-21"
   },
   {
    "id": "ntportalas-741569",
@@ -6604,7 +6385,8 @@ window.DUOMENYS = {
    "bendra_kaina": 183000.0,
    "telpa": true,
    "balas": 35,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8775796",
@@ -6655,48 +6437,7 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 35,
    "metai_nezinomi": true,
-   "zyma": "NAUJAS",
    "pirma_karta": "2026-09-22"
-  },
-  {
-   "id": "alio-69600989",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/4-kambariu-blokinis-kotedzas-klaipedos-raj.-mazuriskiu-k./ID69600989.html",
-   "pavadinimas": "4 kambarių blokinis kotedžas Klaipėdos raj., Mazūriškių k.",
-   "vieta": "4 kambarių blokinis kotedžas Klaipėdos raj., Mazūriškių k.",
-   "kaina": 250000.0,
-   "plotas": 129.11,
-   "sklypas": 4.5,
-   "metai": 2015.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Blokinis",
-   "nuotrauka": "https://s.alio.lt/photos/260828/07/69600989-5151-0_large.jpg",
-   "data": "2026-09-10",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Mazūriškiai",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 250000.0,
-   "balas": 35,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-kotedzas-klaipedos-rajono-sav-mazuriskiuose-kinciu-g-8783635.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-mazuriskiu-k-kinciu-g-teiraukites-telefonu37067844599-782542"
-    }
-   ],
-   "sujungti_id": [
-    "domoplius-8783635",
-    "kampas-782542"
-   ]
   },
   {
    "id": "rutosnt-namas-vezaiciu-mstl-2",
@@ -6917,17 +6658,17 @@ window.DUOMENYS = {
    ]
   },
   {
-   "id": "domoplius-8786134",
+   "id": "domoplius-8794852",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-slapsileje-8786134.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Šlapšilėje",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Šlapšilėje",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-slapsileje-8794852.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Šlapšilėje",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Šlapšilėje",
    "kaina": 255000.0,
    "plotas": 251.3,
    "sklypas": 9.0,
    "kambariai": 7.0,
    "metai": 2015.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8786/8786134-main-150540115-1788422446-f871e074a9327b8b-978798e6c9e9.webp",
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8794/8794852-main-151410742-1790087023-f871e074a9327b8b-485a83cf4027.webp",
    "zona": "C",
    "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
@@ -6943,7 +6684,7 @@ window.DUOMENYS = {
    "kitur": [
     {
      "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-slapsiles-k-lasu-g-pamatykite-si-nama-gyvai-rugsejo-8-d-nuo-1070734"
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-slapsiles-k-lasu-g-________________________salia-klaipedos-1073805"
     },
     {
      "saltinis": "capital.lt",
@@ -6951,7 +6692,7 @@ window.DUOMENYS = {
     }
    ],
    "sujungti_id": [
-    "kampas-1070734",
+    "kampas-1073805",
     "capital-321720"
    ]
   },
@@ -7008,7 +6749,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 30,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69528869",
@@ -7034,7 +6776,8 @@ window.DUOMENYS = {
    "bendra_kaina": 40000.0,
    "telpa": true,
    "balas": 30,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69641057",
@@ -7060,48 +6803,8 @@ window.DUOMENYS = {
    "telpa": true,
    "balas": 30,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69330471",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/4-kambariu-murinis-namas-klaipedos-r.-sav.-kvietiniu-k./ID69330471.html",
-   "pavadinimas": "4 Kambarių mūrinis namas Klaipėdos r. sav., Kvietinių k.",
-   "vieta": "4 Kambarių mūrinis namas Klaipėdos r. sav., Kvietinių k.",
-   "kaina": 205000.0,
-   "plotas": 90.0,
-   "sklypas": 10.0,
-   "metai": 2026.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260603/08/69330471-1268-0_large.jpg",
-   "data": "2026-09-10",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dauparų-Kvietinių",
-   "gyvenviete": "Kvietiniai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 205000.0,
-   "balas": 30,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "domoplius.lt",
-     "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kvietiniuose-8681728.html"
-    },
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kvietiniu-k-liepu-g-teiraukites-telefonu37065742770-1058270"
-    }
-   ],
-   "sujungti_id": [
-    "alio-69235125",
-    "domoplius-8681728",
-    "domoplius-8692024",
-    "kampas-1058270"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-68750481",
@@ -7127,7 +6830,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 205000.0,
    "balas": 30,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8694202",
@@ -7175,6 +6879,31 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 210000.0,
    "balas": 30,
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
+  },
+  {
+   "id": "domoplius-7684732",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodama-gyvenamojo-namo-dalis-klaipedos-rajono-sav-mazuriskiuose-7684732.html",
+   "pavadinimas": "Gyvenamojo namo dalis Klaipėdos rajono sav., Mazūriškiuose",
+   "vieta": "Gyvenamojo namo dalis Klaipėdos rajono sav., Mazūriškiuose",
+   "kaina": 215000.0,
+   "plotas": 129.0,
+   "sklypas": 4.0,
+   "metai": 2015.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/7684/7684732-main-144880000-1779192030-fcbf2fb14c958076-d94bf6473ee6.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Mazūriškiai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 215000.0,
+   "balas": 30,
+   "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
   },
   {
@@ -7201,31 +6930,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 215000.0,
    "balas": 30,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "domoplius-7684732",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodama-gyvenamojo-namo-dalis-klaipedos-rajono-sav-mazuriskiuose-7684732.html",
-   "pavadinimas": "Gyvenamojo namo dalis Klaipėdos rajono sav., Mazūriškiuose",
-   "vieta": "Gyvenamojo namo dalis Klaipėdos rajono sav., Mazūriškiuose",
-   "kaina": 215000.0,
-   "plotas": 129.0,
-   "sklypas": 4.0,
-   "metai": 2015.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/7684/7684732-main-144880000-1779192030-fcbf2fb14c958076-d94bf6473ee6.webp",
-   "zona": "B",
-   "zonos_aprasas": "Sendvario seniūnija",
-   "teritorija": "rajonas",
-   "seniunija": "Sendvario",
-   "gyvenviete": "Mazūriškiai",
-   "namo_tipas": "kotedžas / dalis",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 215000.0,
-   "balas": 30,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8430880",
@@ -7298,44 +7004,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 245000.0,
    "balas": 30,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "alio-69672671",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-kuliai/ID69672671.html",
-   "pavadinimas": "Klaipėdos r. sav., Kuliai",
-   "vieta": "Klaipėdos r. sav., Kuliai",
-   "kaina": 249000.0,
-   "plotas": 120.0,
-   "sklypas": 6.0,
-   "metai": 2008.0,
-   "sildymas": "Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260918/23/69672671_6aada47c4bd5c_large.jpg",
-   "data": "2026-09-22",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Dovilų",
-   "gyvenviete": "Kuliai",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "irengtas",
-   "irengimo_samata": 0,
-   "samatos_budas": "įrengtas — skaičiuoti nėra ko",
-   "bendra_kaina": 249000.0,
-   "balas": 30,
    "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kuliu-k-roziu-3-oji-g-parduodamas-jaukus-ir-pilnai-irengtas-1073157"
-    }
-   ],
-   "sujungti_id": [
-    "alio-69660037",
-    "kampas-1073157"
-   ]
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8655250",
@@ -7360,6 +7030,39 @@ window.DUOMENYS = {
    "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8783635",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-kotedzas-klaipedos-rajono-sav-mazuriskiuose-kinciu-g-8783635.html",
+   "pavadinimas": "Kotedžas Klaipėdos rajono sav., Mazūriškiuose, Kinčių g.",
+   "vieta": "Kotedžas Klaipėdos rajono sav., Mazūriškiuose, Kinčių g.",
+   "kaina": 250000.0,
+   "plotas": 129.11,
+   "sklypas": 4.5,
+   "metai": 2015.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8783/8783635-main-150312706-1787902927-5fc4490d71614b0d-a4f4aa07fa5e.webp",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Mazūriškiai",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 250000.0,
+   "balas": 30,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-mazuriskiu-k-kinciu-g-teiraukites-telefonu37067844599-782542"
+    }
+   ],
+   "sujungti_id": [
+    "kampas-782542"
+   ]
   },
   {
    "id": "domoplius-8636008",
@@ -7408,7 +7111,8 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 255000.0,
    "balas": 30,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "kampas-1071575",
@@ -7464,14 +7168,15 @@ window.DUOMENYS = {
    "bendra_kaina": 30000.0,
    "telpa": true,
    "balas": 25,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "domoplius-8465524",
    "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodama-sodyba-klaipedos-rajono-sav-agluonenuose-8465524.html",
-   "pavadinimas": "Sodyba Klaipėdos rajono sav., Agluonėnuose",
-   "vieta": "Sodyba Klaipėdos rajono sav., Agluonėnuose",
+   "url": "https://domoplius.lt/skelbimai/parduodama-sodyba-klaipedos-r-sav-agluonenuose-8465524.html",
+   "pavadinimas": "Sodyba Klaipėdos r. sav., Agluonėnuose",
+   "vieta": "Sodyba Klaipėdos r. sav., Agluonėnuose",
    "kaina": 52000.0,
    "plotas": 126.0,
    "sklypas": 26.0,
@@ -7492,27 +7197,27 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8668432",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodama-sodyba-klaipedos-rajono-sav-vezaiciuose-8668432.html",
-   "pavadinimas": "Sodyba Klaipėdos rajono sav., Vėžaičiuose",
-   "vieta": "Sodyba Klaipėdos rajono sav., Vėžaičiuose",
-   "kaina": 80000.0,
-   "plotas": 200.0,
-   "sklypas": 58.0,
-   "metai": 1939.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8668/8668432-main-144888838-1779192575-aac61b445b87edba-7b379575ce19.webp",
+   "id": "kampas-993762",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-voveriskiu-k-parduodama-sodybos-dalis-klaipedos-rajone-993762",
+   "pavadinimas": "Klaipėdos r. sav., Voveriškiai",
+   "vieta": "Klaipėdos r. sav., Voveriškiai",
+   "kaina": 75000.0,
+   "plotas": 138.0,
+   "sklypas": 50.0,
+   "nuotrauka": "https://i.kampas.lt/images/2026/09/14/63025700_600x450.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
-   "seniunija": "Vėžaičių",
-   "gyvenviete": "Vėžaičiai",
+   "seniunija": "Priekulės",
+   "gyvenviete": "Voveriškiai",
    "namo_tipas": "sodyba",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 80000.0,
+   "bendra_kaina": 75000.0,
    "telpa": true,
    "balas": 25,
+   "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
   },
@@ -7539,6 +7244,44 @@ window.DUOMENYS = {
    "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
+  },
+  {
+   "id": "domoplius-8681728",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kvietiniuose-8681728.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Kvietiniuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Kvietiniuose",
+   "kaina": 205000.0,
+   "plotas": 90.0,
+   "sklypas": 10.0,
+   "metai": 2026.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8681/8681728-main-144904408-1779195793-730f89972cfc7276-7bd97dbd9273.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Kvietiniai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 205000.0,
+   "balas": 25,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "kopijos": 2,
+   "kopiju_nuorodos": [
+    "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kvietiniuose-8681725.html"
+   ],
+   "kitur": [
+    {
+     "saltinis": "kampas.lt",
+     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kvietiniu-k-liepu-g-teiraukites-telefonu37065742770-1058270"
+    }
+   ],
+   "sujungti_id": [
+    "domoplius-8692024",
+    "kampas-1058270"
+   ]
   },
   {
    "id": "domoplius-8784493",
@@ -7613,6 +7356,55 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
+   "id": "domoplius-8796151",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-r-sav-gargzduose-8796151.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos r. sav., Gargžduose",
+   "vieta": "Gyvenamasis namas Klaipėdos r. sav., Gargžduose",
+   "kaina": 235000.0,
+   "plotas": 209.0,
+   "sklypas": 8.0,
+   "metai": 2015.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8796/8796151-main-151520764-1790331635-b8b4ce570cbb68ab-750f13181d88.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Gargždų",
+   "gyvenviete": "Gargždai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 235000.0,
+   "balas": 25,
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
+  },
+  {
+   "id": "kampas-1073157",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kuliu-k-roziu-3-oji-g-parduodamas-jaukus-ir-pilnai-irengtas-1073157",
+   "pavadinimas": "Klaipėdos r. sav., Kuliai, Rožių 3-oji g.",
+   "vieta": "Klaipėdos r. sav., Kuliai, Rožių 3-oji g.",
+   "kaina": 239000.0,
+   "plotas": 120.0,
+   "nuotrauka": "https://i.kampas.lt/images/2026/09/18/63051733_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dovilų",
+   "gyvenviete": "Kuliai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "irengtas",
+   "irengimo_samata": 0,
+   "samatos_budas": "įrengtas — skaičiuoti nėra ko",
+   "bendra_kaina": 239000.0,
+   "balas": 25,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21"
+  },
+  {
    "id": "domoplius-8235268",
    "saltinis": "domoplius.lt",
    "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-kaloteje-8235268.html",
@@ -7628,30 +7420,6 @@ window.DUOMENYS = {
    "teritorija": "rajonas",
    "seniunija": "Kretingalės",
    "gyvenviete": "Kalotė",
-   "namo_tipas": "atskiras namas",
-   "apdaila": "nezinoma",
-   "irengimo_samata": 0,
-   "bendra_kaina": 240000.0,
-   "balas": 25,
-   "data_nezinoma": true,
-   "pirma_karta": "2026-09-21"
-  },
-  {
-   "id": "domoplius-8268346",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-plikiuose-8268346.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Plikiuose",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Plikiuose",
-   "kaina": 240000.0,
-   "plotas": 229.47,
-   "sklypas": 30.0,
-   "metai": 2020.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8268/8268346-main-115951393-1713433175-360c511f930ccbf5-8806d8b9e819.webp",
-   "zona": "C",
-   "zonos_aprasas": "Artimiausias rajonas",
-   "teritorija": "rajonas",
-   "seniunija": "Kretingalės",
-   "gyvenviete": "Plikiai",
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
@@ -7733,38 +7501,28 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "alio-69362895",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipedos-r.-sav.-grobstai/ID69362895.html",
-   "pavadinimas": "Klaipėdos r. sav., Grobštai",
-   "vieta": "Klaipėdos r. sav., Grobštai",
-   "kaina": 220000.0,
-   "plotas": 109.0,
-   "sklypas": 94.19,
-   "metai": 2006.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260618/23/69362895_6a345b2b83505_large.jpg",
-   "data": "2026-09-22",
-   "zona": "D",
-   "zonos_aprasas": "Tolimesnis rajonas",
+   "id": "kampas-1073753",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-skudziu-k-parduodama-isskirtine-sodyba-gamtos-apsuptyje-1073753",
+   "pavadinimas": "Klaipėdos r. sav., Skudžiai",
+   "vieta": "Klaipėdos r. sav., Skudžiai",
+   "kaina": 207000.0,
+   "plotas": 231.0,
+   "nuotrauka": "https://i.kampas.lt/images/2026/09/22/63068263_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
    "teritorija": "rajonas",
-   "seniunija": "Agluonėnų",
-   "gyvenviete": "Grobštai",
-   "namo_tipas": "atskiras namas",
+   "seniunija": "Kretingalės",
+   "gyvenviete": "Skudžiai",
+   "namo_tipas": "sodyba",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
-   "bendra_kaina": 220000.0,
+   "bendra_kaina": 207000.0,
    "balas": 15,
-   "pirma_karta": "2026-09-21",
-   "kitur": [
-    {
-     "saltinis": "kampas.lt",
-     "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-grobstu-k-puiki-vietaandnbspvertinantiems-gamtos-grozi-ir-1060412"
-    }
-   ],
-   "sujungti_id": [
-    "kampas-1060412"
-   ]
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "zyma": "NAUJAS",
+   "pirma_karta": "2026-09-28"
   },
   {
    "id": "domoplius-8606128",
@@ -7815,26 +7573,26 @@ window.DUOMENYS = {
    "pirma_karta": "2026-09-21"
   },
   {
-   "id": "domoplius-8680408",
-   "saltinis": "domoplius.lt",
-   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-priekuleje-naujoji-g-8680408.html",
-   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Priekulėje, Naujoji g.",
-   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Priekulėje, Naujoji g.",
+   "id": "kampas-1060412",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-grobstu-k-puiki-vietaandnbspvertinantiems-gamtos-grozi-ir-1060412",
+   "pavadinimas": "Klaipėdos r. sav., Grobštai",
+   "vieta": "Klaipėdos r. sav., Grobštai",
    "kaina": 220000.0,
-   "plotas": 164.1,
-   "sklypas": 22.0,
-   "metai": 1974.0,
-   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8680/8680408-main-144327460-1777991453-4c05bf179ff1048c-ecf8fcb76be5.webp",
+   "plotas": 109.0,
+   "sklypas": 94.19,
+   "nuotrauka": "https://i.kampas.lt/images/2026/06/18/62631130_600x450.jpg",
    "zona": "D",
    "zonos_aprasas": "Tolimesnis rajonas",
    "teritorija": "rajonas",
-   "seniunija": "Priekulės",
-   "gyvenviete": "Priekulė",
+   "seniunija": "Agluonėnų",
+   "gyvenviete": "Grobštai",
    "namo_tipas": "atskiras namas",
    "apdaila": "nezinoma",
    "irengimo_samata": 0,
    "bendra_kaina": 220000.0,
    "balas": 10,
+   "metai_nezinomi": true,
    "data_nezinoma": true,
    "pirma_karta": "2026-09-21"
   },
@@ -7940,7 +7698,8 @@ window.DUOMENYS = {
    "bendra_kaina": 217000.0,
    "balas": 5,
    "metai_nezinomi": true,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   },
   {
    "id": "alio-69537415",
@@ -7964,54 +7723,11 @@ window.DUOMENYS = {
    "irengimo_samata": 0,
    "bendra_kaina": 239000.0,
    "balas": 5,
-   "pirma_karta": "2026-09-21"
+   "pirma_karta": "2026-09-21",
+   "neatnaujinta": "2026-09-22"
   }
  ],
  "patikrinti": [
-  {
-   "id": "rinka-5082521",
-   "saltinis": "rinka.lt",
-   "url": "https://www.rinka.lt/skelbimas/audi-a6c7-allraud-id-5082521",
-   "pavadinimas": "Audi a6c7 allraud",
-   "vieta": "Klaipėdos kraštas",
-   "kaina": 13900.0,
-   "nuotrauka": "https://www.rinka.lt/storage/24502505/conversions/1000006124-gallery_preview.jpg",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "vietove_nepatikslinta": true,
-   "atmesta": "plotas nenurodytas"
-  },
-  {
-   "id": "rinka-5082512",
-   "saltinis": "rinka.lt",
-   "url": "https://www.rinka.lt/skelbimas/apple-iphone-18-pro-max-iphone-18-pro-apple-iphone-duo-iphone-17-pro-max-iphone-17-pro-id-5082512",
-   "pavadinimas": "Apple iPhone 18 Pro Max, iPhone 18 Pro,  Apple iPhone Duo , iPhone 17 Pro Max, iPhone 17 Pro,",
-   "vieta": "Klaipėdos kraštas",
-   "kaina": 600.0,
-   "nuotrauka": "https://www.rinka.lt/storage/24502484/conversions/%240caaaa---Copyssa1a0a00aaaanbaa-gallery_preview.jpg",
-   "data": "2021-09-28",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "vietove_nepatikslinta": true,
-   "atmesta": "plotas nenurodytas"
-  },
-  {
-   "id": "rinka-5082508",
-   "saltinis": "rinka.lt",
-   "url": "https://www.rinka.lt/skelbimas/nekilnojamojo-turto-brokeris-id-5082508",
-   "pavadinimas": "Nekilnojamojo Turto Brokeris",
-   "vieta": "Klaipėdos kraštas",
-   "kaina": 1.0,
-   "nuotrauka": "https://www.rinka.lt/storage/24502478/conversions/c7c3754a-d597-43de-961b-d538b3d80fc9-gallery_preview.jpg",
-   "data": "2024-11-13",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "vietove_nepatikslinta": true,
-   "atmesta": "plotas nenurodytas"
-  },
   {
    "id": "rinka-4948295",
    "saltinis": "rinka.lt",
@@ -8032,191 +7748,6 @@ window.DUOMENYS = {
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   },
   {
-   "id": "alio-69143433",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/klaipeda/ID69143433.html",
-   "pavadinimas": "Klaipėda",
-   "vieta": "Klaipėda",
-   "kaina": 135000.0,
-   "plotas": 150000.0,
-   "sklypas": 2.0,
-   "metai": 2021.0,
-   "sildymas": "Dujinis",
-   "pastatas": "Mūrinis",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "vietove_nepatikslinta": true,
-   "atmesta": "plotas 150000 m2 - įtartina"
-  },
-  {
-   "id": "alio-69637493",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodami-jusu-svajoniu-namai-prie-baltijos-juros/ID69637493.html",
-   "pavadinimas": "Parduodami Jūsų svajonių namai prie Baltijos jūros",
-   "vieta": "Parduodami Jūsų svajonių namai prie Baltijos jūros",
-   "kaina": 325000.0,
-   "nuotrauka": "https://s.alio.lt/photos/260908/18/69637493-parduodami-jusu-svajoniu-namai-prie-baltijos-juros-9502-0_large.jpg",
-   "data": "2026-09-22",
-   "zona": "A",
-   "zonos_aprasas": "Klaipėdos miestas",
-   "teritorija": "miestas",
-   "gyvenviete": "Baltija",
-   "atmesta": "plotas nenurodytas"
-  },
-  {
-   "id": "alio-69637341",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-nebaigtas-statyti-gyvenamosios-paskirties-namas/ID69637341.html",
-   "pavadinimas": "Parduodamas nebaigtas statyti gyvenamosios paskirties namas",
-   "vieta": "Parduodamas nebaigtas statyti gyvenamosios paskirties namas",
-   "kaina": 87000.0,
-   "plotas": 178.39,
-   "sklypas": 6.8,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260908/14/69637341-parduodamas-nebaigtas-statyti-gyvenamosios-paskirt-8233-0_large.jpg",
-   "data": "2026-09-22",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69550313",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/puikus-sodo-namas-su-visais-patogumais/ID69550313.html",
-   "pavadinimas": "Puikus sodo namas su visais patogumais",
-   "vieta": "Puikus sodo namas su visais patogumais",
-   "kaina": 145000.0,
-   "plotas": 100.0,
-   "sklypas": 6.0,
-   "metai": 2011.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260812/08/69550313-puikus-sodo-namas-su-visais-patogumais-6743-0_large.jpg",
-   "data": "2026-08-23",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69499129",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/atnaujinta-kaina-parduodamas-5-a-sklypas-su-registruotu-ukiniu-pastatu-tinkamu-rekonstrukcijai/ID69499129.html",
-   "pavadinimas": "Atnaujinta Kaina Parduodamas 5 a sklypas su registruotu ūkiniu pastatu, tinkamu rekonstrukcijai",
-   "vieta": "Atnaujinta Kaina Parduodamas 5 a sklypas su registruotu ūkiniu pastatu, tinkamu rekonstrukcijai",
-   "kaina": 71000.0,
-   "plotas": 120.0,
-   "metai": 1985.0,
-   "sildymas": "Dujinis, Elektra, Geoterminis",
-   "nuotrauka": "https://s.alio.lt/photos/260726/13/69499129-5927-0_large.jpg",
-   "data": "2026-09-03",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69471975",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/dvieju-aukstu-namas-su-garazu-ir-sodu/ID69471975.html",
-   "pavadinimas": "Dviejų aukštų namas su garažu ir sodu",
-   "vieta": "Dviejų aukštų namas su garažu ir sodu",
-   "kaina": 165000.0,
-   "plotas": 102.0,
-   "sklypas": 7.5,
-   "metai": 1991.0,
-   "nuotrauka": "https://s.alio.lt/photos/260718/14/69471975-4766-0_large.jpg",
-   "data": "2026-09-22",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69458585",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/sodas-sb-minija-murinis-namas-10965-kv.m./ID69458585.html",
-   "pavadinimas": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
-   "vieta": "Sodas S/B Minija, Mūrinis Namas 109,65 Kv.m.",
-   "kaina": 175000.0,
-   "plotas": 109.65,
-   "sklypas": 6.0,
-   "metai": 2011.0,
-   "sildymas": "Centrinis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260715/07/69458585-2854-11_large.jpg",
-   "data": "2026-09-22",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69143737",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/namas-2011m-tvarkingas-ir-jaukus/ID69143737.html",
-   "pavadinimas": "Namas 2011m  Tvarkingas Ir Jaukus",
-   "vieta": "Namas 2011m  Tvarkingas Ir Jaukus",
-   "kaina": 145000.0,
-   "plotas": 100.0,
-   "sklypas": 6.0,
-   "metai": 2011.0,
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260414/17/69143737-namas-2011m-tvarkingas-ir-jaukus-6173-0_large.jpg",
-   "data": "2026-09-20",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69056355",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodu-nama-soduose-sb-smiltele./ID69056355.html",
-   "pavadinimas": "Parduodu namą  soduose s/b Smiltele.",
-   "vieta": "Parduodu namą  soduose s/b Smiltele.",
-   "kaina": 89000.0,
-   "plotas": 120.0,
-   "sklypas": 6.6,
-   "sildymas": "Dujinis, Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260322/11/69056355-9467-0_large.jpg",
-   "data": "2026-08-25",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-69036207",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-dalimis-5-funkciniu-zonu-sodybu-kompleksas-su-veikianciu-verslu-–-su-unikaliu-restoran/ID69036207.html",
-   "pavadinimas": "PARDUODAMAS  DALIMIS 5 FUNKCINIŲ ZONŲ SODYBŲ KOMPLEKSAS SU VEIKIANČIU VERSLU – SU UNIKALIU RESTORANU",
-   "vieta": "PARDUODAMAS  DALIMIS 5 FUNKCINIŲ ZONŲ SODYBŲ KOMPLEKSAS SU VEIKIANČIU VERSLU – SU UNIKALIU RESTORANU",
-   "kaina": 185000.0,
-   "plotas": 369.62,
-   "sklypas": 420.0,
-   "metai": 2006.0,
-   "sildymas": "Centrinis, Elektra, Geoterminis",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/260318/13/69036207-parduodamas-dalimis-5-funkciniu-zonu-sodybu-komple-8449-0_large.jpg",
-   "data": "2026-07-24",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-67911337",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/vokieciu-statybos-namas-1889namo-dalis/ID67911337.html",
-   "pavadinimas": "Vokiečių Statybos Namas 1889//Namo Dalis",
-   "vieta": "Vokiečių Statybos Namas 1889//Namo Dalis",
-   "kaina": 144000.0,
-   "plotas": 165.0,
-   "sklypas": 0.3,
-   "metai": 1889.0,
-   "sildymas": "Elektra, Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250613/08/67911337-vokieciu-statybos-namas-1889--metu-7421-0_large.jpg",
-   "data": "2026-09-13",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
-   "id": "alio-68331265",
-   "saltinis": "alio.lt",
-   "url": "https://www.alio.lt/skelbimai/parduodamas-unikalus-4-sodybu-kompleksas-su-veikianciu-verslu-–-„rugpieniu-kaimas-minijos-slenyj/ID68331265.html",
-   "pavadinimas": "PARDUODAMAS UNIKALUS 4 SODYBŲ KOMPLEKSAS SU VEIKIANČIU VERSLU – „RŪGPIENIŲ KAIMAS“ MINIJOS SLĖNYJE",
-   "vieta": "PARDUODAMAS UNIKALUS 4 SODYBŲ KOMPLEKSAS SU VEIKIANČIU VERSLU – „RŪGPIENIŲ KAIMAS“ MINIJOS SLĖNYJE",
-   "kaina": 165000.0,
-   "plotas": 744.03,
-   "sklypas": 1884.9,
-   "metai": 2015.0,
-   "sildymas": "Centrinis, Elektra, Geoterminis, Kietu kuru",
-   "pastatas": "Mūrinis",
-   "nuotrauka": "https://s.alio.lt/photos/250922/11/68331265-3549-0_large.jpg",
-   "data": "2026-09-02",
-   "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
-  },
-  {
    "id": "ntportalas-741918",
    "saltinis": "ntportalas.lt",
    "url": "https://ntportalas.lt/parduodami-a++-energines-klases-dvibuciai-namai_741918",
@@ -8232,5 +7763,214 @@ window.DUOMENYS = {
    "atmesta": "vietovė neatpažinta - pridėk į vietoves.yaml"
   }
  ],
- "dinge": []
+ "dinge": [
+  {
+   "id": "kampas-1066143",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-kiskenu-k-smilteles-g-parduodamas-140-kv-m-namas-salia-1066143",
+   "pavadinimas": "Klaipėdos r. sav., Kiškėnai, Smiltelės g.",
+   "vieta": "Klaipėdos r. sav., Kiškėnai, Smiltelės g.",
+   "kaina": 45000.0,
+   "plotas": 140.0,
+   "sklypas": 7.29,
+   "nuotrauka": "https://i.kampas.lt/images/2026/08/03/62849702_600x450.jpg",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dovilų",
+   "gyvenviete": "Kiškėnai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 45000.0,
+   "telpa": true,
+   "balas": 50,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8775775",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodama-gyvenamojo-namo-dalis-klaipedos-rajono-sav-slapsileje-8775775.html",
+   "pavadinimas": "Gyvenamojo namo dalis Klaipėdos rajono sav., Šlapšilėje",
+   "vieta": "Gyvenamojo namo dalis Klaipėdos rajono sav., Šlapšilėje",
+   "kaina": 195000.0,
+   "plotas": 120.0,
+   "sklypas": 7.0,
+   "metai": 2023.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8775/8775775-main-149334685-1786440046-95086ad4028926ef-168c88892d54.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Dauparų-Kvietinių",
+   "gyvenviete": "Šlapšilė",
+   "namo_tipas": "kotedžas / dalis",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 195000.0,
+   "telpa": true,
+   "balas": 40,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "kampas-1045296",
+   "saltinis": "kampas.lt",
+   "url": "https://www.kampas.lt/skelbimai/namas-klaipedos-rajone-truseliu-k-ragupes-g-parduodami-a-klases-namai-isvystytame-1045296",
+   "pavadinimas": "Klaipėdos r. sav., Trušeliai, Ragupės g.",
+   "vieta": "Klaipėdos r. sav., Trušeliai, Ragupės g.",
+   "kaina": 240000.0,
+   "plotas": 125.0,
+   "sklypas": 5.0,
+   "nuotrauka": "https://www.kampas.lt/storage/images/2026/04/29/62355815_600x450.jpg",
+   "zona": "B",
+   "zonos_aprasas": "Sendvario seniūnija",
+   "teritorija": "rajonas",
+   "seniunija": "Sendvario",
+   "gyvenviete": "Trušeliai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 240000.0,
+   "balas": 40,
+   "metai_nezinomi": true,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8776027",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-vezaiciuose-8776027.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
+   "kaina": 122000.0,
+   "plotas": 193.0,
+   "sklypas": 14.0,
+   "metai": 2002.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8776/8776027-main-149336659-1786440223-95140a598ee6dc0d-8e577d656017.webp",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Vėžaičių",
+   "gyvenviete": "Vėžaičiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 122000.0,
+   "telpa": true,
+   "balas": 35,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8791564",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-vezaiciuose-8791564.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Vėžaičiuose",
+   "kaina": 145000.0,
+   "plotas": 230.0,
+   "sklypas": 18.0,
+   "metai": 1981.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8791/8791564-main-151178569-1789536503-e1aca359fb12caa1-ce9d3a29b360.webp",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Vėžaičių",
+   "gyvenviete": "Vėžaičiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 145000.0,
+   "telpa": true,
+   "balas": 35,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8668432",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodama-sodyba-klaipedos-rajono-sav-vezaiciuose-8668432.html",
+   "pavadinimas": "Sodyba Klaipėdos rajono sav., Vėžaičiuose",
+   "vieta": "Sodyba Klaipėdos rajono sav., Vėžaičiuose",
+   "kaina": 80000.0,
+   "plotas": 200.0,
+   "sklypas": 58.0,
+   "metai": 1939.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8668/8668432-main-144888838-1779192575-aac61b445b87edba-7b379575ce19.webp",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Vėžaičių",
+   "gyvenviete": "Vėžaičiai",
+   "namo_tipas": "sodyba",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 80000.0,
+   "telpa": true,
+   "balas": 25,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8268346",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-plikiuose-8268346.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Plikiuose",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Plikiuose",
+   "kaina": 240000.0,
+   "plotas": 229.47,
+   "sklypas": 30.0,
+   "metai": 2020.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8268/8268346-main-115951393-1713433175-360c511f930ccbf5-8806d8b9e819.webp",
+   "zona": "C",
+   "zonos_aprasas": "Artimiausias rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Kretingalės",
+   "gyvenviete": "Plikiai",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 240000.0,
+   "balas": 25,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  },
+  {
+   "id": "domoplius-8680408",
+   "saltinis": "domoplius.lt",
+   "url": "https://domoplius.lt/skelbimai/parduodamas-gyvenamasis-namas-klaipedos-rajono-sav-priekuleje-naujoji-g-8680408.html",
+   "pavadinimas": "Gyvenamasis namas Klaipėdos rajono sav., Priekulėje, Naujoji g.",
+   "vieta": "Gyvenamasis namas Klaipėdos rajono sav., Priekulėje, Naujoji g.",
+   "kaina": 220000.0,
+   "plotas": 164.1,
+   "sklypas": 22.0,
+   "metai": 1974.0,
+   "nuotrauka": "https://domoplius.lt/storage/image-cache/listing-cards/8680/8680408-main-144327460-1777991453-4c05bf179ff1048c-ecf8fcb76be5.webp",
+   "zona": "D",
+   "zonos_aprasas": "Tolimesnis rajonas",
+   "teritorija": "rajonas",
+   "seniunija": "Priekulės",
+   "gyvenviete": "Priekulė",
+   "namo_tipas": "atskiras namas",
+   "apdaila": "nezinoma",
+   "irengimo_samata": 0,
+   "bendra_kaina": 220000.0,
+   "balas": 10,
+   "data_nezinoma": true,
+   "pirma_karta": "2026-09-21",
+   "dinge": "2026-09-28"
+  }
+ ],
+ "neveike": [
+  "alio.lt"
+ ]
 };
